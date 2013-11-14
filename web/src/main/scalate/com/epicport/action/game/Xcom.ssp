@@ -1,0 +1,9 @@
+<%
+	import com.epicport.action.game.CanvasComponent
+
+	val canvas = new CanvasComponent()
+%>
+
+${unescape(canvas.render("openxcom"))}
+
+<!--<script type="text/javascript" src="http://localhost/openxcom.js"></script>-->

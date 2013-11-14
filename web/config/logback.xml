@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://logback.qos.ch/manual/configuration.html -->
+<configuration scan="true" scanPeriod="30 seconds">
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>[%level] %m%n</pattern>
+    </encoder>
+  </appender>
+
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>./log/xitrum.log</file>
+    <encoder>
+      <pattern>[%level] [%d{yy-MM-dd HH:mm:ss}] %c{1}: %m%n</pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>./log/xitrum.log.%d{yy-MM-dd}</fileNamePattern>
+    </rollingPolicy>
+  </appender>
+
+  <!-- Set to INFO to avoid noisy log -->
+  <logger name="com.hazelcast" level="INFO"/>
+  <logger name="org.fusesource.scalate" level="INFO"/>
+
+  <!-- Should be set to INFO in production mode for speed  -->
+  <root level="DEBUG">
+    <!-- Should be commented out in production mode for speed -->
+    <appender-ref ref="CONSOLE"/>
+
+    <appender-ref ref="FILE"/>
+  </root>
+</configuration>

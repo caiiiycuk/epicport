@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Aleksander Guryanov <caiiiycuk@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../../../../src/main/scala/com/epicport/action/SiteIndex.scala:8
+msgid "html_description"
+msgstr ""
+
+#: ../../../../src/main/scala/com/epicport/action/SiteIndex.scala:9
+msgid "html_keywords"
+msgstr ""
+
+#: ../../../../src/main/scala/com/epicport/action/Errors.scala:7
+msgid "html_error_title"
+msgstr "Ошибка !!11"
+
+#: ../../../../src/main/scala/com/epicport/action/SiteIndex.scala:7
+msgid "html_title"
+msgstr "epicport (доработать)"
+
+#: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
+msgid "html_not_found_description"
+msgstr "Ошибка 404 (страница не найдена)"
+
+#: ../../../../src/main/scala/com/epicport/action/Errors.scala:22
+msgid "html_server_error_description"
+msgstr "Ошибка 500 (ошибка сервера)"

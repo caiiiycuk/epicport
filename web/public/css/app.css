@@ -1,0 +1,99 @@
+div.container_12 {
+    background: #fff url("/img/12_col.gif") repeat-y;
+    border: 1px solid black;
+}
+
+.container_12 div {
+	border: 1px solid blue;
+}
+
+#canvas::selection {
+    background:transparent;
+}
+
+#canvas::-moz-selection {
+    background:transparent;
+}
+
+#canvas::-webkit-selection {
+    background:transparent;
+}
+
+#canvas {
+   margin: 0;
+   padding: 0;
+   clear: both;
+
+  -webki t-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.canvas_container {
+	position: relative;
+	margin: auto;
+}
+
+.canvas_overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.5);
+	display: table;
+}
+
+.click_to_start {
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+}
+
+.click_to_start .huge {
+	font-size: 4em;
+	font-weight: bold;
+	text-decoration: underline;
+	display: block;
+}
+
+.canvas_overlay .loader {
+  background: url(../img/loading.gif) no-repeat center center;
+  cursor: progress;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+}
+
+.loader .info {
+  position: relative;
+  top: 150px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.loader .status {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.loader .progressbar {
+}
+
+/* openxcom */
+
+.openxcom {
+	width: 960px;
+	height: 600px;
+	background: url(../xcom/canvas_bg.jpg);
+}
+
+.openxcom canvas {
+  cursor: none;
+	width: 960px;
+	height: 600px;
+}

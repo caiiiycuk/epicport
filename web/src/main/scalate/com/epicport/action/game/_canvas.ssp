@@ -1,0 +1,26 @@
+<div class="canvas_container ${at("game")}">
+  <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+  <div id="output" class="canvas_overlay">
+
+    <div class="click_to_start">
+      <span class="huge">${t("html_click_to_start")}</span>
+      <span class="little">${t("html_note_hangs")}</span>
+    </div> 
+
+    <div class="loader">
+      <div class="info">
+        <div id="status" class="status"></div>
+        <div id="progress" class="progressbar"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript" src="${publicUrl("js/game/canvas.js")}"></script>
+<script type="text/javascript" src="${publicUrl("js/game/module.js")}"></script>
+
+<script type="text/javascript">
+  var canvas = new Epicport.Canvas({ js: '${publicUrl("js/" + at("game").toString + ".js")}' });
+  var Module = Epicport.makeModule({ canvas: canvas });
+</script>
