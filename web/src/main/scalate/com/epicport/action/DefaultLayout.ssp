@@ -1,9 +1,12 @@
 <%
   import com.epicport.action._
+  import com.epicport.action.core._
   import com.epicport.i18n.I18N._
 
   val defaultAction = currentAction.asInstanceOf[DefaultAction]
   val altUri = alternateUri(request.getUri)
+  val coreComponent = new CoreComponent()
+  val loginComponent = new LoginComponent()
 
   import defaultAction._
 %>
@@ -29,36 +32,13 @@
     <meta name="author" content="Guryanov Aleksander" />  
     <meta name="description" content="${description}" />
     <meta name="keywords" content="${keywords}" />
+
+    <%=jsDefaults%>
+    <script type="text/javascript" src="${publicUrl("js/jquery-ui.min.js")}"></script
   </head>
   <body>
-    <%=jsDefaults%>
-    <%=jsForView%>
-    <script type="text/javascript" src="${publicUrl("js/jquery-ui.min.js")}"></script>
-    <script type="text/javascript">
-      var Epicport = {};
-    </script>
-
-    <div class="container_12">
-      <div class="grid_12">
-        <div id="uLogin1" data-uloginid="fee955b6"></div>
-      </div>
-    </div> 
-
-    <%=unescape(renderedView)%>
-<!--
-    <script type="text/javascript">
-      function login(token) {
-        $.getJSON("//ulogin.ru/token.php?host=" + encodeURIComponent(location.toString()) + "&token=" + token + "&callback=?", function(data) {
-            data = $.parseJSON(data.toString());
-            if(!data.error) {
-              alert("Привет, " + data.first_name + " " + data.last_name + " " + data.nickname + " " + data.email + " " + data.identity + "!");
-              console.log(data);
-            }
-        });
-      }
-    </script>
-
-    <script src="//ulogin.ru/js/ulogin.js"></script>
--->    
+    ${unescape(coreComponent.render)}
+    ${unescape(renderedView)}
+    ${unescape(loginComponent.render)}
   </body>
 </html>

@@ -1,0 +1,21 @@
+<div class="login_modal" title="${t("html_login_modal")}">
+  <div>${t("html_advice_login")}</div>
+  <div id="uLogin1" data-uloginid="fee955b6"></div>
+</div>
+
+<script type="text/javascript">
+  function login(token) {
+    $.getJSON("//ulogin.ru/token.php?host=" + encodeURIComponent(location.toString()) + "&token=" + token + "&callback=?", function(data) {
+        data = $.parseJSON(data.toString());
+        if (!data.error) {
+          new Epicport.Login({ data: data });
+          $( ".login_modal" ).dialog("close");
+          Epicport.modalMessage("${t("html_login_success_title")}", "${t("html_login_success_desc")}");
+        } else {
+          Epicport.modalMessage("${t("html_login_error")}", data.error);
+        }
+    });
+  }
+</script>
+
+<script src="//ulogin.ru/js/ulogin.js"></script>

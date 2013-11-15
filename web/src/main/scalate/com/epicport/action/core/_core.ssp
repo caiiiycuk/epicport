@@ -1,0 +1,8 @@
+<script type="text/javascript">
+  var Epicport = {}; // Namespace
+</script>
+
+<script type="text/javascript" src="${publicUrl("js/core/dialog.js")}"></script>
+<script type="text/javascript" src="${publicUrl("js/core/login.js")}"></script>
+<script type="text/javascript" src="${publicUrl("js/game/canvas.js")}"></script>
+<script type="text/javascript" src="${publicUrl("js/game/module.js")}"></script>

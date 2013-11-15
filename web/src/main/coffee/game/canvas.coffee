@@ -6,7 +6,8 @@ class Epicport.Canvas
 
     start = () -> 
       console.log('Loading ' + options.js +  '...')
-      $(document.body).append('<script type="text/javascript" src="' + options.js +  '"/>')
+      $.getScript(options.js)
+      #$(document.body).append('<script type="text/javascript" src="' + options.js +  '"/>')
     clickToStart = $('.click_to_start')
     
     clickToStart.click () => 
