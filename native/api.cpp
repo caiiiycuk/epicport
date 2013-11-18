@@ -10,4 +10,7 @@ bool Epicport_CanLoad() {
 	return true;
 }
 
+void Epicport_PushSave(const char*) {
+}
+
 #endif

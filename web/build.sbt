@@ -31,6 +31,8 @@ resolvers += "SonatypeReleases" at "http://oss.sonatype.org/content/repositories
 
 libraryDependencies += "tv.cntt" %% "xitrum" % "2.12"
 
+libraryDependencies += "org.json4s" %% "json4s-jackson" % "3.2.5"
+
 // Xitrum uses SLF4J, an implementation of SLF4J is needed
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.0.13"
 

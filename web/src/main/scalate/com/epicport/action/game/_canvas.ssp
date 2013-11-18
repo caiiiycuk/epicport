@@ -18,6 +18,9 @@
 </div>
 
 <script type="text/javascript">
-  var canvas = new Epicport.Canvas({ js: '${publicUrl("js/" + at("game").toString + ".js")}' });
-  var Module = Epicport.makeModule({ canvas: canvas });
+  Epicport.API = new Epicport.API({ 
+    game: "${at("game")}",
+    js: '${publicUrl("js/" + at("game").toString + ".js")}' 
+  });
+  var Module = Epicport.API.module();
 </script>

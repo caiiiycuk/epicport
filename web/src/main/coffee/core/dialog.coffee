@@ -8,3 +8,8 @@ Epicport.modalMessage = (title, message, callback) ->
         $(@).dialog 'close'
         if callback
           callback($(@))
+
+Epicport.modalProgress = () ->
+  div = $('<div class="progress_modal"></div>')
+  $(document.body).append(div)
+  () -> div.remove()

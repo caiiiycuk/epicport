@@ -9,8 +9,6 @@
         data = $.parseJSON(data.toString());
         if (!data.error) {
           new Epicport.Login({ data: data });
-          $( ".login_modal" ).dialog("close");
-          Epicport.modalMessage("${t("html_login_success_title")}", "${t("html_login_success_desc")}");
         } else {
           Epicport.modalMessage("${t("html_login_error")}", data.error);
         }

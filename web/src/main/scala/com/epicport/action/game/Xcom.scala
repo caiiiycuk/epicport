@@ -16,21 +16,3 @@ class Xcom extends GameLayout {
   }
   
 }
-
-//FIXME:
-
-@First
-@GET(":any/openxcom.data")
-class XcomData extends Action {
-  def execute() {
-    respondFile("/var/www/openxcom.data")
-  }
-}
-
-@First
-@GET(":any/openxcom.js")
-class XcomJs extends Action {
-  def execute() {
-    respondFile("/var/www/openxcom.js")
-  }
-}

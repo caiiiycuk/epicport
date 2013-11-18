@@ -86,6 +86,17 @@ div.container_12 {
 
 .login_modal {
   display: none;
+  z-index: 99;
+}
+
+.progress_modal {
+  background: rgba(255, 255, 255, 0.5) url(../img/loading.gif) no-repeat center center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
 }
 
 /* openxcom */

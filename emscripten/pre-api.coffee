@@ -1,8 +1,5 @@
-_Epicport_CanSave = () ->
-  if (Epicport['profile'])
-    return true
+_Epicport_CanSave = Epicport.API.canSave
 
-  Epicport.login()
-  return false
+_Epicport_CanLoad = Epicport.API.canLoad
 
-_Epicport_CanLoad = _Epicport_CanSave
+_Epicport_PushSave = Epicport.API.pushSave

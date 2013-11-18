@@ -13,11 +13,11 @@ object Configuration {
   val profile = new File(data, "profile")
   
   if (!data.exists) {
-    throw new IllegalStateException(s"Folder {$data} does not exists")
+    throw new IllegalStateException(s"Folder ${data} does not exists")
   }
   
   if (!profile.exists) {
-    throw new IllegalStateException(s"Folder {profile} does not exists")
+    throw new IllegalStateException(s"Folder ${profile} does not exists")
   }
   
 }
