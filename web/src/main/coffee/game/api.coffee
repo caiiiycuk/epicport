@@ -10,7 +10,7 @@ class Epicport.API
     progress.progressbar value: 0
 
     Module = 
-      arguments: ["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "true", "-playIntro", "false", "-language", "en-US", "-displayWidth", "960", "-displayHeight", "600"]
+      arguments: ["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "false", "-language", "en-US", "-displayWidth", "960", "-displayHeight", "600"]
       
       screenIsReadOnly: true
       preRun: [
