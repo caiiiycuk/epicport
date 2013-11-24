@@ -13,6 +13,8 @@ extern "C" {
 extern bool Epicport_CanSave();
 extern bool Epicport_CanLoad();
 extern void Epicport_PushSave(const char*);
+extern void Epicport_PlayMusic(const char*, int);
+extern void Epicport_HaltMusic();
 
 }
 

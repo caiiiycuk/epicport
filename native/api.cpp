@@ -13,4 +13,10 @@ bool Epicport_CanLoad() {
 void Epicport_PushSave(const char*) {
 }
 
+extern void Epicport_PlayMusic(const char*, int) {
+}
+
+extern void Epicport_HaltMusic() {
+}
+
 #endif

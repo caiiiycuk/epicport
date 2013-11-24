@@ -4,13 +4,15 @@ class Epicport.API
     self = @
     @canvas = new Epicport.Canvas(options)
     @game = options.game
+    @audio = new Audio();
+    @audio.volume = 0.5;
 
     status = document.getElementById("status")
     progress = $("#progress")
     progress.progressbar value: 0
 
     Module = 
-      arguments: ["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "false", "-language", "en-US", "-displayWidth", "960", "-displayHeight", "600"]
+      arguments: ["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "true", "-language", "en-US", "-displayWidth", "960", "-displayHeight", "600"]
       
       screenIsReadOnly: true
       preRun: [
@@ -164,3 +166,12 @@ class Epicport.API
             data: resp
         error: (xhr, state, error) ->
           callback error, null
+
+  playMusic: (filePtr, loops) ->
+    file = Pointer_stringify(filePtr)
+    name = file.substring file.lastIndexOf('/') + 1
+    Epicport.API.audio.src = "/" + name
+    Epicport.API.audio.play()
+
+  haltMusic: ->
+    Epicport.API.audio.pause()
