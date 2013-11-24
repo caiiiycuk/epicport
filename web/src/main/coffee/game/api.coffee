@@ -173,5 +173,8 @@ class Epicport.API
     Epicport.API.audio.src = "/" + name
     Epicport.API.audio.play()
 
+  volumeMusic: (volume) ->
+    Epicport.API.audio.volume = volume / 128.0
+
   haltMusic: ->
     Epicport.API.audio.pause()

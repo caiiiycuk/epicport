@@ -19,4 +19,7 @@ extern void Epicport_PlayMusic(const char*, int) {
 extern void Epicport_HaltMusic() {
 }
 
+extern void Epicport_VolumeMusic(int) {
+}
+
 #endif

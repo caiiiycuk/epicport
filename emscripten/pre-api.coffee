@@ -6,4 +6,6 @@ _Epicport_PushSave = Epicport.API.pushSave
 
 _Epicport_PlayMusic = Epicport.API.playMusic
 
+_Epicport_VolumeMusic = Epicport.API.volumeMusic
+
 _Epicport_HaltMusic = Epicport.API.haltMusic
