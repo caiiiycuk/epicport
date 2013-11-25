@@ -1,12 +1,12 @@
 package com.epicport.i18n
 
 object I18N {
-  private final val alternatePattern = """^/\w+/""".r
+  private final val alternatePattern = """^/ru|^/en""".r
   
   final val languages = Set[String]("en", "ru")
   
   def alternateUri(baseUri: String): (String) => String = {
     (lang: String) =>
-      alternatePattern.replaceFirstIn(baseUri, s"/$lang/")
+      alternatePattern.replaceFirstIn(baseUri, s"/$lang")
   }
 }

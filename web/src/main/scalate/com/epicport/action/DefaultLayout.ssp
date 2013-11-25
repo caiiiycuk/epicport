@@ -7,6 +7,11 @@
   val altUri = alternateUri(request.getUri)
   val coreComponent = new CoreComponent()
   val loginComponent = new LoginComponent()
+  val navbarComponent = new NavbarComponent()
+
+  coreComponent.setLanguage(getLanguage)
+  loginComponent.setLanguage(getLanguage)
+  navbarComponent.setLanguage(getLanguage)
 
   import defaultAction._
 %>
@@ -37,8 +42,22 @@
     <script type="text/javascript" src="${publicUrl("js/jquery-ui.min.js")}"></script>
   </head>
   <body>
+    <div class="adsense">
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:970px;height:90px"
+           data-ad-client="ca-pub-9186880238664597"
+           data-ad-slot="4270728960"></ins>
+    </div>
+
     ${unescape(coreComponent.render)}
+    ${unescape(navbarComponent.render)}
     ${unescape(renderedView)}
     ${unescape(loginComponent.render)}
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </body>
 </html>

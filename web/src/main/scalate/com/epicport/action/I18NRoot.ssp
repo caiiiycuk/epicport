@@ -1,1 +1,16 @@
-<h1>Hello my friend!</h1>
+<div class="container_12 game_container">
+  <a href="/${getLanguage}/xcom">
+    <div>
+      <h1>X-COM: UFO Enemy Unknown</h1>
+      <div class="game_description game_description_openxcom">
+        Культовая компьютерная игра, выпущенная 31 декабря 1993 года фирмой MicroProse. Игра представляет собой смесь пошаговой стратегии и тактической ролевой игры.<br/></br/>
+        Действие игры начинается в 1999 году. Обеспокоенные участившимися сообщениями о появлении НЛО и похищениях людей, правительства Земли учреждают службу X-COM, которая призвана защитить человечество от внеземной агрессии. Игрок является главой этой службы.
+
+        <p class="wiki"><small>(источник: ru.wikipedia.org)</small></p>
+      </div>
+      <div class="game_play_link">
+        Играть в браузере
+      </div>
+    </div>
+  </a>
+</div>

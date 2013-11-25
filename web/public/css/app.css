@@ -1,12 +1,3 @@
-div.container_12 {
-    background: #fff url("/img/12_col.gif") repeat-y;
-    border: 1px solid black;
-}
-
-.container_12 div {
-	border: 1px solid blue;
-}
-
 #canvas::selection {
     background:transparent;
 }
@@ -99,12 +90,100 @@ div.container_12 {
   z-index: 98;
 }
 
+.adsense {
+  margin: auto;
+  width: 970px;
+}
+
+.navbar {
+  background-color: rgba(238, 238, 238, 1);
+  height: 50px;
+  line-height: 50px;  
+  margin: 15px auto;
+}
+
+.navbar .navbar-content {
+  width: 970px;
+  margin: 0 auto;
+}
+
+.navbar a.en {
+  display: block;
+  width: 25px;
+  height: 50px;
+  display: block;
+  background: url("../img/en.png") center center no-repeat;
+}
+
+.navbar a.ru {
+  display: block;
+  width: 25px;
+  height: 50px;
+  display: block;
+  background: url("../img/ru.png") center center no-repeat;
+}
+
+.navbar .login {
+  /*margin-right: 15px;*/
+}
+
+.navbar .share {
+  margin-left: 30px;
+  border-left: 1px solid #CCC;
+  padding-left: 5px;
+}
+
+.navbar .home {
+  margin-right: 5px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.game_container {
+  padding: 5px;
+}
+
+.game_container:hover {
+  background: rgba(238, 238, 238, 1);
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+.game_container a {
+  text-decoration: none;
+  color: black;
+}
+
+.game_description {
+  padding-left: 220px;
+  min-height: 70px;
+}
+
+.game_play_link {
+  margin-top: 10px;
+  text-decoration: underline !important;
+  color: blue;
+  font-size: 1.5em;
+}
+
+.wiki {
+  color: #333;
+  margin-top: 5px;
+}
+
 /* openxcom */
 
 .openxcom {
 	width: 960px;
 	height: 600px;
-	background: url(../xcom/canvas_bg.jpg);
+	background: url(../xcom/canvas_bg.jpg) center center;
 }
 
 .openxcom canvas {
@@ -112,3 +191,7 @@ div.container_12 {
 	width: 960px;
 	height: 600px;
 }
+
+.game_description_openxcom {
+  background: url(../xcom/game-logo.png) left center no-repeat;
+} 
