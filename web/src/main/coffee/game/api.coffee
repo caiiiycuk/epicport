@@ -68,7 +68,6 @@ class Epicport.API
         Epicport.API.createFs()
         Epicport.modalMessage(Epicport.i18n.html_login_success_title, Epicport.i18n.html_can_save_desc)
 
-
     return false
 
   canLoad: () ->

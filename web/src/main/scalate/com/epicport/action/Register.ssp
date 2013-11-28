@@ -1,0 +1,53 @@
+<div class="container_12">
+  #if (paramo("error").isDefined)
+    <div class="registration_error">${param("error")}</div>
+  #end
+  <h1>${t("html_register")}</h1>
+  <form class="register" method="POST">
+    ${unescape(antiCsrfInput)}
+    <div class="input">
+      <div>
+        <label for="email">${t("html_form_email")}</label>
+        <input id="registration_email" type="text" name="email" value="${paramo("email").getOrElse("")}"/>
+      </div>
+      <div>
+        <label for="name">${t("html_form_name")}</label>
+        <input id="registration_name" type="text" name="name" value="${paramo("name").getOrElse("")}"/>
+      </div>
+      <br/>
+      <div>
+        <label for="password">${t("html_form_password")}</label>
+        <input id="registration_password" type="password" name="password"/>
+      </div>
+      <div>
+        <label for="password">${t("html_confirm_password")}</label>
+        <input id="registration_confirm_password" type="password" name="confirm_password"/>
+      </div>
+    </div>
+    <div class="left">
+      <button id="form_register_button" type="submit">${t("html_form_button_register")}</button>
+    </div>
+  </form>
+</div>
+
+<script type="text/javascript">
+  function doesPasswordFieldsMatch(values){
+    if(values.password == values.verification)
+      return {valid:true}
+    else
+      return {valid:false, message:'${t("html_passwords_not_match")}'}
+  }
+
+  $('#form_register_button').button();
+  $('#registration_email').valid8('${t("html_email_required")}');
+  $('#registration_name').valid8('${t("html_name_required")}');
+  $('#registration_password').valid8('${t("html_password_required")}');
+  $('#registration_confirm_password').valid8({
+      'jsFunctions': [
+          { function: doesPasswordFieldsMatch, values: function(){
+                  return { password: $('#registration_password').val(), verification: $('#registration_confirm_password').val() }
+              }
+          }
+      ]
+  });
+</script>

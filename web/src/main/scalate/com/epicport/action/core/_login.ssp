@@ -1,5 +1,21 @@
 <div class="login_modal" title="${t("html_login_modal")}">
   <div>${t("html_advice_login")}</div>
+  <hr/>
+  <form class="login">
+    <div class="input">
+      <label for="email">${t("html_form_email")}</label>
+      <input type="text" name="email"/>
+      <br/>
+      <label for="password">${t("html_form_password")}</label>
+      <input type="password" name="password"/>
+    </div>
+    <div class="left">
+      <button id="form_login_button">${t("html_form_button_login")}</button>
+    </div>
+    <div class="right"><a href="/${getLanguage}/register">${t("html_register")}</a></div>
+  </form>
+  <hr/>
+  <p class="social">${t("html_social_network_login")}</p>
   <div id="uLogin1" data-uloginid="fee955b6"></div>
 </div>
 
@@ -14,6 +30,8 @@
         }
     });
   }
+
+  $('#form_login_button').button();
 </script>
 
 <script src="//ulogin.ru/js/ulogin.js"></script>

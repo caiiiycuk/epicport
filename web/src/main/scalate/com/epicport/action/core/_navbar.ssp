@@ -8,7 +8,12 @@
       <div class="yashare-auto-init" data-yashareL10n="${getLanguage}" data-yashareType="link" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus"></div> 
     </div>
     <div class="login right">
-      ${t("html_login")}
+      <a id="navbar_login_link" href="#">${t("html_login")}</a>
+      <span id="navbar_name"></span>&nbsp<a id="navbar_logout_link" href="#">${t("html_logout")}</a>
     </div>
   </div>
 </div>
+
+<script>
+  new Epicport.Navbar()
+</script>

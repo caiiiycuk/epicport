@@ -75,10 +75,50 @@
 .loader .progressbar {
 }
 
+.ui-dialog {
+  overflow: visible;
+}
+
 .login_modal {
   display: none;
-  z-index: 99;
+  overflow: visible !important;
 }
+
+p.social {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+form.login label {
+  display: block;
+  overflow: hidden;
+}
+
+form.login input {
+  width: 100%;
+  font-size: 1.5em !important;
+}
+
+form.login div.input {
+  padding-left: .2em;
+  margin-bottom: 10px;
+}
+
+form.register label {
+  display: block;
+  overflow: hidden;
+}
+
+form.register input {
+  width: 300px;
+  font-size: 1.5em !important;
+}
+
+form.register div.input {
+  padding-left: .2em;
+  margin-bottom: 10px;
+}
+
 
 .progress_modal {
   background: rgba(255, 255, 255, 0.5) url(../img/loading.gif) no-repeat center center;
@@ -93,6 +133,15 @@
 .adsense {
   margin: auto;
   width: 970px;
+}
+
+
+.footer {
+  margin-top: 15px;
+  padding: 0 15px;
+  background-color: rgba(238, 238, 238, 1);
+  height: 50px;
+  line-height: 50px;
 }
 
 .navbar {
@@ -163,7 +212,7 @@
 
 .game_description {
   padding-left: 220px;
-  min-height: 70px;
+  min-height: 120px;
 }
 
 .game_play_link {
@@ -171,11 +220,43 @@
   text-decoration: underline !important;
   color: blue;
   font-size: 1.5em;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
 }
+
+.game_play_link a {
+  color: blue;
+}
+
 
 .wiki {
   color: #333;
   margin-top: 5px;
+}
+
+.display_none {
+  display: none;
+}
+
+div.error {
+  background: rgb(255, 187, 187);
+  display: inline-block;
+  padding: 15px;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+.fatal {
+  font-size: 1.5em;
+  color: red;
+}
+
+.registration_error {
+  background: rgb(255, 200, 200);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /* openxcom */
@@ -194,4 +275,16 @@
 
 .game_description_openxcom {
   background: url(../xcom/game-logo.png) left center no-repeat;
+} 
+
+/* opendune */
+
+.game_description_opendune {
+  background: url(../dune2/dune2.png) left center no-repeat;
+}
+
+/* openttd */
+
+.game_description_openttd {
+  background: url(../ttd/ttd.png) left center no-repeat;
 } 

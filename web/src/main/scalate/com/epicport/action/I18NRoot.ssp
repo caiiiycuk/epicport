@@ -14,3 +14,36 @@
     </div>
   </a>
 </div>
+<br/>
+<div class="container_12 game_container">
+  <a href="http://${getLanguage}.play-dune.com">
+    <div>
+      <h1>Dune II The Building of A Dynasty</h1>
+      <div class="game_description game_description_opendune">
+        ТОТ КТО КОНТРОЛИРУЕТ СПАЙС ... КОНТРОЛИРУЕТ ВСЕЛЕННУЮ<br/><br/>Планета Аракис, известная как Дюна - земля песков, месторождение спайса. Спайс управляет имерией - тот кто управляет Дюной, - контроллирует спайс. Вступите в отчаянную борьбу за управление Дюной.
+      </div>
+      <div class="game_play_link">
+        Играть в браузере 
+      </div>
+      <div class="game_play_link">
+        <a href="https://play.google.com/store/apps/details?id=com.gamesinjs.dune2">Играть на телефоне</a>
+      </div>
+    </div>
+  </a>
+</div>
+<br/>
+<div class="container_12 game_container">
+  <a href="http://${getLanguage}.play-ttd.com">
+    <div>
+      <h1>Transport Tycoon Deluxe</h1>
+      <div class="game_description game_description_openttd">
+        Transport Tycoon Deluxe — это компьютерная игра, экономическая стратегия в реальном времени. В TTD игрок выступает в качестве управляющего транспортной компании и пытается получить максимальную прибыль за счёт оперативной перевозки пассажиров и разнообразных грузов по автодорогам, железным дорогам, а также водным и воздушным транспортом. Суть игры в том, что игроку надо получить как можно больше прибыли.
+
+        <p class="wiki"><small>(источник: ru.wikipedia.org)</small></p>
+      </div>
+      <div class="game_play_link">
+        Играть в браузере 
+      </div>
+    </div>
+  </a>
+</div>

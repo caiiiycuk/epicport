@@ -1,1 +1,3 @@
-p This is custom 500 page
+<div class="container_12 fatal">
+500 internal server error
+</div>

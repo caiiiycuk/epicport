@@ -8,10 +8,16 @@
     html_success: "${t("html_success")}",
     html_game_saved: "${t("html_game_saved")}"
   };
+
+  var profile = $.cookie('profile');
+  if (profile) {
+    Epicport.profile = JSON.parse(profile);
+  }
 </script>
 
 <script type="text/javascript" src="${publicUrl("js/async.js")}"></script>
 <script type="text/javascript" src="${publicUrl("js/core/dialog.js")}"></script>
 <script type="text/javascript" src="${publicUrl("js/core/login.js")}"></script>
+<script type="text/javascript" src="${publicUrl("js/core/navbar.js")}"></script>
 <script type="text/javascript" src="${publicUrl("js/game/canvas.js")}"></script>
 <script type="text/javascript" src="${publicUrl("js/game/api.js")}"></script>
