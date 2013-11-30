@@ -150,7 +150,7 @@ msgstr "Register / Epicport"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:46
 msgid "html_xcom_data_link"
-msgstr "Enter data link here"
+msgstr "Enter link here"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:46
 msgid "html_form_button_register"
@@ -201,7 +201,7 @@ msgstr "Email"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:49
 msgid "html_link_input"
-msgstr "Enter link here"
+msgstr "Enter data link here"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:21
 msgid "html_note_hangs"

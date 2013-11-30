@@ -12,16 +12,13 @@ class Epicport.API
     progress.progressbar value: 0
 
     Module = 
-      arguments: ["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "true", "-language", "en-US", "-displayWidth", "960", "-displayHeight", "600"]
+      arguments: options.arguments
       
       screenIsReadOnly: true
       preRun: [
         () -> 
-          Module['FS_createFolder']('/', 'home', true, true)
-          Module['FS_createFolder']('/home', 'emscripten', true, true)
-          Module['FS_createFolder']('/home/emscripten', '.openxcom', true, true)
-          Module['FS_createFolder']('/home/emscripten', '.config', true, true)
-          Module['FS_createFolder']('/home/emscripten/.config', '.openxcom', true, true)
+          if (options.preRun)
+            options.preRun()
 
           Epicport.API.createFs()
       ]

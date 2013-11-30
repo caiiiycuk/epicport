@@ -19,7 +19,10 @@
 
 <script type="text/javascript">
   Epicport.API = new Epicport.API({ 
-    game: "${at("game")}",
+    game: "${unescape(at("game"))}",
+    arguments: ${unescape(at("arguments"))},
+    preRun: ${unescape(at("preRun"))},
+    start: ${unescape(at("start"))},
     js: '${publicUrl("js/" + at("game").toString + ".js")}' 
   });
   var Module = Epicport.API.module();

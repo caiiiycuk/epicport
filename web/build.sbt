@@ -29,6 +29,8 @@ scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
 // and it takes several hours to sync from Sonatype to Maven Central
 resolvers += "SonatypeReleases" at "http://oss.sonatype.org/content/repositories/releases/"
 
+resolvers += "SonatypeSnapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
+
 libraryDependencies += "tv.cntt" %% "xitrum" % "2.12"
 
 libraryDependencies += "org.json4s" %% "json4s-jackson" % "3.2.5"
@@ -39,6 +41,8 @@ libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.27"
 
 // Xitrum uses SLF4J, an implementation of SLF4J is needed
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.0.13"
+
+libraryDependencies += "com.github.caiiiycuk" %% "async4s-http-client" % "0.3-SNAPSHOT" % "compile"
 
 // xgettext i18n translation key string extractor is a compiler plugin ---------
 

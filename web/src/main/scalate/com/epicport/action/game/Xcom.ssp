@@ -1,8 +1,43 @@
 <%
-	import com.epicport.action.game.CanvasComponent
+  at("game") = "openxcom"
 
-	val canvas = new CanvasComponent()
-    canvas.setLanguage(getLanguage)
+  at("arguments") = """
+["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "true", "-language", "en-US", "-displayWidth", "960", "-displayHeight", "600"]
+"""
+
+  at("preRun") = """
+function () {
+  Module['FS_createFolder']('/', 'home', true, true);
+  Module['FS_createFolder']('/home', 'emscripten', true, true);
+  Module['FS_createFolder']('/home/emscripten', '.openxcom', true, true);
+  Module['FS_createFolder']('/home/emscripten', '.config', true, true);
+  Module['FS_createFolder']('/home/emscripten/.config', '.openxcom', true, true);
+}    
+"""
+
+  at("start") = """
+function () {
+  var xcom = new Epicport.XCOM();
+  xcom.start();
+}   
+"""
 %>
 
-${unescape(canvas.render("openxcom"))}
+<div class="openxcom_eula" title="${t("html_eula")}">
+  <p>
+    ${unescape(t("html_xcom_eula"))}
+  </p>
+  <p>
+    <label for="openxcom_data">${unescape(t("html_xcom_data_link"))}</label>
+    <input id="input_xcom_data_link" type="text" value="${t("html_link_input")}" name="openxcom_data"></input>
+  </p>
+  <p class="label">
+    ${unescape(t("html_xcom_demo_data_link"))}
+    
+  </p>
+  <p class="data_link">
+    <a id="xcom_data_link" href="http://fake.com/openxcom.data">http://fake.com/openxcom.data</a>
+  </p>
+</div>
+
+${unescape(renderFragment("canvas"))}

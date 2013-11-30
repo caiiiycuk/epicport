@@ -275,7 +275,38 @@ div.error {
 
 .game_description_openxcom {
   background: url(../xcom/game-logo.png) left center no-repeat;
-} 
+}
+
+.openxcom_eula {
+  display: none;
+}
+
+.openxcom_eula label {
+  display: block;
+  font-weight: bold;
+}
+
+.openxcom_eula input {
+  display: block;
+  width: 550px;
+  font-size: 1.2em;
+  margin: auto;
+}
+
+.openxcom_eula .label {
+  margin-bottom: 5px;
+}
+
+.openxcom_eula .data_link {
+  background: rgb(200, 255,200);
+  padding: 5px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px dashed black;
+  margin-bottom: 5px;
+}
 
 /* opendune */
 
