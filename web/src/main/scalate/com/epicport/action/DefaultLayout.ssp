@@ -41,7 +41,7 @@
     <script type="text/javascript" src="${resourceUrl("xitrum/jquery-1.10.2.js")}"></script>
     <script type="text/javascript" src="${publicUrl("js/jquery-ui.min.js")}"></script>
     <script type="text/javascript" src="${publicUrl("js/jquery.cookie.js")}"></script>
-    <script type="text/javascript" src="${publicUrl("js/jquery.valid8.js")}"></script>
+    <!-- <script type="text/javascript" src="${publicUrl("js/jquery.valid8.js")}"></script> -->
   </head>
   <body>
     <div class="adsense">
@@ -61,7 +61,7 @@
         ${t("html_support")} <a href="https://github.com/caiiiycuk/epicport">github</a>
       </div>
       <div class="right">
-        Aleksander Guryanov, 2013
+        <a href="http://www.linkedin.com/pub/aleksander-guryanov/3b/738/734">Aleksander Guryanov</a>, 2013
       </div>
     </div>
 

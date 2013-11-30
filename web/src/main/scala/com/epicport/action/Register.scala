@@ -6,6 +6,7 @@ import xitrum.Action
 import xitrum.annotation.POST
 import com.epicport.db.User
 import org.jboss.netty.handler.codec.http.DefaultCookie
+import java.net.URLEncoder
 
 @GET("/:lang/register")
 class Register extends DefaultLayout {
@@ -27,9 +28,11 @@ class NewRegistration extends Action with Db {
     val password = paramo("password")
     val confirmPassword = paramo("confirm_password")
 
-    if (!email.isDefined || !password.isDefined || !confirmPassword.isDefined || !name.isDefined) {
+    val fields = Seq(email, name, password, confirmPassword).flatten.toSeq
+    
+    if (fields.isEmpty || fields.find(_.length == 0).isDefined) {
       redirectTo[Register]("lang" -> param("lang"),
-        "error" -> t("html_required_fields_not_set"))
+        "error" -> "html_required_fields_not_set")
     } else {
       register(email.get.toLowerCase, name.get, password.get, confirmPassword.get)
     }
@@ -40,7 +43,7 @@ class NewRegistration extends Action with Db {
       redirectTo[Register]("lang" -> param("lang"),
         "email" -> email,
         "name" -> name,
-        "error" -> t("html_passwords_not_match"))
+        "error" -> "html_passwords_not_match")
       return
     }
 
@@ -49,12 +52,13 @@ class NewRegistration extends Action with Db {
         redirectTo[Register]("lang" -> param("lang"),
           "email" -> email,
           "name" -> name,
-          "error" -> t("html_alredy_exists"))
+          "error" -> "html_alredy_exists")
         return
       }
 
       val created = User.create(email, name, password)
-      val cookie = new DefaultCookie("profile", created.toJson)
+      val encoded = URLEncoder.encode(created.toJson, "UTF-8")
+      val cookie = new DefaultCookie("profile", encoded)
       responseCookies.append(cookie)
 
       redirectTo[I18NRoot]("lang" -> param("lang"))

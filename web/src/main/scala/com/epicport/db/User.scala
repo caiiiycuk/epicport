@@ -10,13 +10,13 @@ import scala.slick.session.Database.threadLocalSession
 
 import org.json4s._
 import org.json4s.native.JsonMethods._
-  import org.json4s.JsonDSL._
-  
+import org.json4s.JsonDSL._
+
 case class User(email: String, name: String) {
   def identity = s"epicport.com/u/$email"
-  
-  def toJson = 
-    compact(render(("identity" -> identity) ~ ("first_name" -> name)))  
+
+  def toJson =
+    compact(render(("identity" -> identity) ~ ("first_name" -> name)))
 }
 
 object User {
@@ -30,16 +30,23 @@ object User {
       .as[User].firstOption
   }
 
-  def create(email: String, name: String, password: String)(implicit db: Database): User = {
+  def byEmail(email: String, password: String)(implicit db: Database): Option[User] = {
     val hashedPassword = hashPassword(password)
     
+    sql"""select email, name from users where email = $email and password = $hashedPassword"""
+      .as[User].firstOption
+  }
+
+  def create(email: String, name: String, password: String)(implicit db: Database): User = {
+    val hashedPassword = hashPassword(password)
+
     sqlu"""insert into users(email, name, password) values($email, $name, $hashedPassword)"""
       .execute
 
     User(email, name)
   }
 
-  def hashPassword(password: String) = 
+  def hashPassword(password: String) =
     digest.digest(password.getBytes).map("%02X".format(_)).mkString
 
 }

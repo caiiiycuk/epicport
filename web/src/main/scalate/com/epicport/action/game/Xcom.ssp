@@ -2,6 +2,7 @@
 	import com.epicport.action.game.CanvasComponent
 
 	val canvas = new CanvasComponent()
+    canvas.setLanguage(getLanguage)
 %>
 
 ${unescape(canvas.render("openxcom"))}

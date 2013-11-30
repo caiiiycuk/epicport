@@ -1,6 +1,6 @@
 <div class="container_12">
   #if (paramo("error").isDefined)
-    <div class="registration_error">${param("error")}</div>
+    <div class="registration_error">${t(param("error"))}</div>
   #end
   <h1>${t("html_register")}</h1>
   <form class="register" method="POST">
@@ -39,15 +39,15 @@
   }
 
   $('#form_register_button').button();
-  $('#registration_email').valid8('${t("html_email_required")}');
-  $('#registration_name').valid8('${t("html_name_required")}');
-  $('#registration_password').valid8('${t("html_password_required")}');
-  $('#registration_confirm_password').valid8({
-      'jsFunctions': [
-          { function: doesPasswordFieldsMatch, values: function(){
-                  return { password: $('#registration_password').val(), verification: $('#registration_confirm_password').val() }
-              }
-          }
-      ]
-  });
+  // $('#registration_email').valid8('${t("html_email_required")}');
+  // $('#registration_name').valid8('${t("html_name_required")}');
+  // $('#registration_password').valid8('${t("html_password_required")}');
+  // $('#registration_confirm_password').valid8({
+  //     'jsFunctions': [
+  //         { function: doesPasswordFieldsMatch, values: function(){
+  //                 return { password: $('#registration_password').val(), verification: $('#registration_confirm_password').val() }
+  //             }
+  //         }
+  //     ]
+  // });
 </script>

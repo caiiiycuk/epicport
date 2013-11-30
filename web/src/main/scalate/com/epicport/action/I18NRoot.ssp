@@ -1,15 +1,12 @@
 <div class="container_12 game_container">
   <a href="/${getLanguage}/xcom">
     <div>
-      <h1>X-COM: UFO Enemy Unknown</h1>
+      <h1>X-COM: UFO Defense</h1>
       <div class="game_description game_description_openxcom">
-        Культовая компьютерная игра, выпущенная 31 декабря 1993 года фирмой MicroProse. Игра представляет собой смесь пошаговой стратегии и тактической ролевой игры.<br/></br/>
-        Действие игры начинается в 1999 году. Обеспокоенные участившимися сообщениями о появлении НЛО и похищениях людей, правительства Земли учреждают службу X-COM, которая призвана защитить человечество от внеземной агрессии. Игрок является главой этой службы.
-
-        <p class="wiki"><small>(источник: ru.wikipedia.org)</small></p>
+        ${unescape(t("html_game_description_openxcom"))}
       </div>
       <div class="game_play_link">
-        Играть в браузере
+      ${t("html_play_in_browser")}
       </div>
     </div>
   </a>
@@ -20,13 +17,13 @@
     <div>
       <h1>Dune II The Building of A Dynasty</h1>
       <div class="game_description game_description_opendune">
-        ТОТ КТО КОНТРОЛИРУЕТ СПАЙС ... КОНТРОЛИРУЕТ ВСЕЛЕННУЮ<br/><br/>Планета Аракис, известная как Дюна - земля песков, месторождение спайса. Спайс управляет имерией - тот кто управляет Дюной, - контроллирует спайс. Вступите в отчаянную борьбу за управление Дюной.
+        ${unescape(t("html_game_description_opendune"))}
       </div>
       <div class="game_play_link">
-        Играть в браузере 
+        ${t("html_play_in_browser")}
       </div>
       <div class="game_play_link">
-        <a href="https://play.google.com/store/apps/details?id=com.gamesinjs.dune2">Играть на телефоне</a>
+        <a href="https://play.google.com/store/apps/details?id=com.gamesinjs.dune2">${t("html_play_on_phone")}</a>
       </div>
     </div>
   </a>
@@ -37,12 +34,10 @@
     <div>
       <h1>Transport Tycoon Deluxe</h1>
       <div class="game_description game_description_openttd">
-        Transport Tycoon Deluxe — это компьютерная игра, экономическая стратегия в реальном времени. В TTD игрок выступает в качестве управляющего транспортной компании и пытается получить максимальную прибыль за счёт оперативной перевозки пассажиров и разнообразных грузов по автодорогам, железным дорогам, а также водным и воздушным транспортом. Суть игры в том, что игроку надо получить как можно больше прибыли.
-
-        <p class="wiki"><small>(источник: ru.wikipedia.org)</small></p>
+        ${unescape(t("html_game_description_openttd"))}
       </div>
       <div class="game_play_link">
-        Играть в браузере 
+        ${t("html_play_in_browser")}
       </div>
     </div>
   </a>

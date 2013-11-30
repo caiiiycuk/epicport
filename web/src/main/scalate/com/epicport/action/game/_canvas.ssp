@@ -4,7 +4,7 @@
 
     <div class="click_to_start">
       <span class="huge">${t("html_click_to_start")}</span>
-      <span class="little">${t("html_note_hangs")}</span>
+      <span class="little">${unescape(t("html_note_hangs"))}</span>
     </div> 
 
     <div class="loader">

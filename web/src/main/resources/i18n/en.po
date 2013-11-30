@@ -10,26 +10,225 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
 
-#: ../../../../src/main/scala/com/epicport/action/SiteIndex.scala:8
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:36
+msgid "html_social_network_login"
+msgstr "Social networks"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:21
+msgid "html_can_load_desc"
+msgstr "Now you can load games"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:10
+msgid "html_xcom_title"
+msgstr "XCOM / Classic games in browser"
+
+#: ../../../../src/main/scala/com/epicport/action/Root.scala:20
 msgid "html_description"
 msgstr ""
+"Browser version of classic games XCOM, DUNE 2, TTD.  This games can be "
+"played in every major browser."
 
-#: ../../../../src/main/scala/com/epicport/action/SiteIndex.scala:9
-msgid "html_keywords"
-msgstr ""
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:22
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:33
+msgid "html_register"
+msgstr "Register"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:33
+msgid "html_play_on_phone"
+msgstr "Android"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:18
+msgid "html_can_save_desc"
+msgstr "Now you can save games"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:12
+msgid "html_xcom_keywords"
+msgstr "xcom,ufo,browser,online,play,game"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:52
+msgid "html_email_required"
+msgstr "Email required"
 
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:7
 msgid "html_error_title"
 msgstr "Error !!11"
 
-#: ../../../../src/main/scala/com/epicport/action/SiteIndex.scala:7
-msgid "html_title"
-msgstr "epicport (fix me)"
+#: ../../../../src/main/scala/com/epicport/action/Root.scala:21
+msgid "html_keywords"
+msgstr ""
+"xcom,ufo,dune,dune 2,ttd,Transport Tycoon,Transport Tycoon Deluxe,browser,"
+"online,play,game"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:18
+msgid "html_game_description_openxcom"
+msgstr ""
+"X-COM: UFO Defense is a science fiction strategy video game developed by "
+"Mythos Games and MicroProse. The game mixes real-time management simulation "
+"with turn-based tactics. The player takes the role of commander of X-COM – a "
+"clandestine, international paramilitary organization defending Earth from "
+"alien invasion. Through the game, the player is tasked with issuing orders "
+"to individual X-COM troops in a series of turn-based tactical missions. At "
+"strategic scale, the player directs the research and development of new "
+"technologies, builds and expands X-COM's bases, manages the organization's "
+"finances and personnel, and monitors and responds to UFO activity. The game "
+"received strong reviews and was commercially successful, acquiring a cult "
+"following among strategy fans; several publications listed UFO: Enemy "
+"Unknown as one of top video games ever made, including IGN ranking it as the "
+"best PC game of all time in 2000 and 2007.<p class=\"wiki\"><small>(source: "
+"en.wikipedia.org)</small></p>"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:15
+msgid "html_login_success_title"
+msgstr "You successfully logged in"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:21
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:42
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:30
+msgid "html_play_in_browser"
+msgstr "Play in browser"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:18
+msgid "html_advice_login"
+msgstr "You should login if you want save or load game"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:18
+msgid "html_home"
+msgstr "Home"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:58
+msgid "html_password_required"
+msgstr "Password is required"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:18
+msgid "html_click_to_start"
+msgstr "Please click to start game"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:24
+msgid "html_login"
+msgstr "Login"
+
+#: ../../../../src/main/scala/com/epicport/action/Register.scala:15
+msgid "html_register_keywords"
+msgstr "register,epicport"
+
+#: ../../../../src/main/scala/com/epicport/action/Register.scala:14
+msgid "html_register_description"
+msgstr "Here you can register on Epicport.com"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:27
+msgid "html_logout"
+msgstr "logout"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:49
+#: ../../../../src/main/scala/com/epicport/action/Register.scala:44
+msgid "html_passwords_not_match"
+msgstr "Passwords does not match"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/DefaultLayout_ssp.scala:101
+msgid "html_support"
+msgstr "Support"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:34
+msgid "html_form_name"
+msgstr " Name"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:55
+msgid "html_name_required"
+msgstr "Name is required"
+
+#: ../../../../src/main/scala/com/epicport/action/Register.scala:13
+msgid "html_register_title"
+msgstr "Register / Epicport"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:46
+msgid "html_form_button_register"
+msgstr "Register"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:27
+msgid "html_form_button_login"
+msgstr "Login"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:27
+msgid "html_game_saved"
+msgstr "Game successfully saved"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:43
+msgid "html_confirm_password"
+msgstr "Confirm password"
 
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
 msgid "html_not_found_description"
 msgstr "Error 404 (page not found)"
 
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:45
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:39
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:42
+msgid "html_login_error"
+msgstr "Invalid login or password"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:15
+msgid "html_login_modal"
+msgstr "Login required"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:24
+msgid "html_success"
+msgstr "Success"
+
+#: ../../../../src/main/scala/com/epicport/action/Root.scala:19
+msgid "html_title"
+msgstr "epicport (fix me)"
+
+#: ../../../../src/main/scala/com/epicport/action/Register.scala:33
+msgid "html_required_fields_not_set"
+msgstr "Reuired fields does not set"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:28
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:21
+msgid "html_form_email"
+msgstr "Email"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:21
+msgid "html_note_hangs"
+msgstr ""
+"<b>NOTE:</b>&nbsp;During loading of the game browser can hangs up for some "
+"time, please be patient"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:11
+msgid "html_xcom_description"
+msgstr ""
+"Browser version of classig game X-COM: UFO Defense. Here you can play  X-COM "
+"in your browser."
+
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:22
 msgid "html_server_error_description"
 msgstr "Error 500 (server error)"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:24
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:40
+msgid "html_form_password"
+msgstr "Password"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:39
+msgid "html_game_description_openttd"
+msgstr ""
+"Transport Tycoon (TT) is a video game developed by Chris Sawyer and "
+"published by MicroProse in 1994. It is a business simulation game, presented "
+"in an isometric view in 2D with graphics by Simon Foster, in which the "
+"player acts an entrepreneur in control of a transport company, and can "
+"compete against rival companies to make as much profit as possible by "
+"transporting passengers and various goods by road, rail, sea and air.<p "
+"class=\"wiki\"><small>(source: en.wikipedia.org)</small></p>"
+
+#: ../../../../src/main/scala/com/epicport/action/Register.scala:53
+msgid "html_alredy_exists"
+msgstr "User already exists"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:27
+msgid "html_game_description_opendune"
+msgstr ""
+"Dune 2 is a Westwood Studios game put together back in 1992, and it's "
+"probably best known for being the prototypical RTS, one of the first games "
+"to put together all of the elements that later led to the genre that made "
+"StarCraft and Command & Conquer so popular. An open-source recreation of the "
+"game was started up a few years ago, and that version has now been ported to "
+"HTML5."

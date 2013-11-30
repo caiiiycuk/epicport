@@ -9,9 +9,13 @@
     html_game_saved: "${t("html_game_saved")}"
   };
 
-  var profile = $.cookie('profile');
-  if (profile) {
-    Epicport.profile = JSON.parse(profile);
+  try {
+    var profile = $.cookie('profile');
+    if (profile) {
+      Epicport.profile = JSON.parse(profile);
+    }
+  } catch (e) {
+    Epicport.profile = undefined;
   }
 </script>
 

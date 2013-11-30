@@ -4,15 +4,15 @@
   <form class="login">
     <div class="input">
       <label for="email">${t("html_form_email")}</label>
-      <input type="text" name="email"/>
+      <input id="email" type="text" name="email"/>
       <br/>
       <label for="password">${t("html_form_password")}</label>
-      <input type="password" name="password"/>
+      <input id="password" type="password" name="password"/>
     </div>
     <div class="left">
       <button id="form_login_button">${t("html_form_button_login")}</button>
     </div>
-    <div class="right"><a href="/${getLanguage}/register">${t("html_register")}</a></div>
+    <div class="right"><a href="/${getLanguage}/register" target="_blank">${t("html_register")}</a></div>
   </form>
   <hr/>
   <p class="social">${t("html_social_network_login")}</p>
@@ -32,6 +32,22 @@
   }
 
   $('#form_login_button').button();
+  $('#form_login_button')
+    .click(function () {
+      $.post("/xhr/login", { 
+        'csrf-token': $("meta[name='csrf-token']").attr("content"),
+        email: $('#email').val(),
+        password: $('#password').val()
+      },
+      function (data) {
+        new Epicport.Login({ data: data });
+      })
+    .fail(function() {
+      Epicport.modalMessage("${t("html_login_error")}", "${t("html_login_error")}");
+    });
+    
+    return false;
+  });
 </script>
 
 <script src="//ulogin.ru/js/ulogin.js"></script>

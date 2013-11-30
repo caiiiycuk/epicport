@@ -9,27 +9,218 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Bookmarks: -1,39,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
-#: ../../../../src/main/scala/com/epicport/action/SiteIndex.scala:8
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:36
+msgid "html_social_network_login"
+msgstr "Войти через социальные сети"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:21
+msgid "html_can_load_desc"
+msgstr "Теперь вы можете загружать игры"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:10
+msgid "html_xcom_title"
+msgstr "XCOM / Классические игры в браузере"
+
+#: ../../../../src/main/scala/com/epicport/action/Root.scala:20
 msgid "html_description"
 msgstr ""
+"Браузерные версии классических игр XCOM, DUNE 2, TTD. Можно играть в любом "
+"современном браузере"
 
-#: ../../../../src/main/scala/com/epicport/action/SiteIndex.scala:9
-msgid "html_keywords"
-msgstr ""
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:22
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:33
+msgid "html_register"
+msgstr "Регистрация"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:33
+msgid "html_play_on_phone"
+msgstr "Играть на телефоне"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:18
+msgid "html_can_save_desc"
+msgstr "Теперь вы можете сохраняться"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:12
+msgid "html_xcom_keywords"
+msgstr "xcom,ufo,хком,браузер,онлайн,играть,игра"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:52
+msgid "html_email_required"
+msgstr "Необходимо ввести email"
 
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:7
 msgid "html_error_title"
-msgstr "Ошибка !!11"
+msgstr "Ошибка"
 
-#: ../../../../src/main/scala/com/epicport/action/SiteIndex.scala:7
-msgid "html_title"
-msgstr "epicport (доработать)"
+#: ../../../../src/main/scala/com/epicport/action/Root.scala:21
+msgid "html_keywords"
+msgstr ""
+"xcom,ufo,дюна,dune,dune 2,ttd,Transport Tycoon,Transport Tycoon Deluxe,"
+"браузер,онлайн,играть"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:18
+msgid "html_game_description_openxcom"
+msgstr ""
+"Культовая компьютерная игра, выпущенная 31 декабря 1993 года фирмой "
+"MicroProse. Игра представляет собой смесь пошаговой стратегии и тактической "
+"ролевой игры.<br/></br/>Действие игры начинается в 1999 году. Обеспокоенные "
+"участившимися сообщениями о появлении НЛО и похищениях людей, правительства "
+"Земли учреждают службу X-COM, которая призвана защитить человечество от "
+"внеземной агрессии. Игрок является главой этой службы.<p class=\"wiki"
+"\"><small>(источник: ru.wikipedia.org)</small></p>"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:15
+msgid "html_login_success_title"
+msgstr "Вы успешно вошли"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:21
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:42
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:30
+msgid "html_play_in_browser"
+msgstr "Играть в браузере"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:18
+msgid "html_advice_login"
+msgstr "Что бы сохранять и загружать игры нужно войти или зарегистрироваться"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:18
+msgid "html_home"
+msgstr "Главная"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:58
+msgid "html_password_required"
+msgstr "Необходимо ввести пароль"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:18
+msgid "html_click_to_start"
+msgstr "Нажмите что бы начать игру"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:24
+msgid "html_login"
+msgstr "Войти"
+
+#: ../../../../src/main/scala/com/epicport/action/Register.scala:15
+msgid "html_register_keywords"
+msgstr "Регистрация,epicport"
+
+#: ../../../../src/main/scala/com/epicport/action/Register.scala:14
+msgid "html_register_description"
+msgstr "Здесь вы можете зарегестрироваться на сайте Epicport.com"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:27
+msgid "html_logout"
+msgstr "выйти"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:49
+#: ../../../../src/main/scala/com/epicport/action/Register.scala:44
+msgid "html_passwords_not_match"
+msgstr "Пароли не совпадают"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/DefaultLayout_ssp.scala:101
+msgid "html_support"
+msgstr "Поддержка"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:34
+msgid "html_form_name"
+msgstr "Имя"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:55
+msgid "html_name_required"
+msgstr "Введите имя"
+
+#: ../../../../src/main/scala/com/epicport/action/Register.scala:13
+msgid "html_register_title"
+msgstr "Регистрация / Epicport"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:46
+msgid "html_form_button_register"
+msgstr "Зарегестрироваться"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:27
+msgid "html_form_button_login"
+msgstr "Войти"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:27
+msgid "html_game_saved"
+msgstr "Игра сохранена"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:43
+msgid "html_confirm_password"
+msgstr "Пароль ещё раз"
 
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
 msgid "html_not_found_description"
 msgstr "Ошибка 404 (страница не найдена)"
 
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:45
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:39
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:42
+msgid "html_login_error"
+msgstr "Неверный логин или пароль"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:15
+msgid "html_login_modal"
+msgstr "Требуется вход"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:24
+msgid "html_success"
+msgstr "Успешно"
+
+#: ../../../../src/main/scala/com/epicport/action/Root.scala:19
+msgid "html_title"
+msgstr "Epicport / Классические игры в браузере"
+
+#: ../../../../src/main/scala/com/epicport/action/Register.scala:33
+msgid "html_required_fields_not_set"
+msgstr "Все поля обязательны для заполнения"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:28
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:21
+msgid "html_form_email"
+msgstr "Email"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:21
+msgid "html_note_hangs"
+msgstr ""
+"<b>ВАЖНО:</b>&nbsp;Во время загрузки игры браузер может подвисать не надолго"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:11
+msgid "html_xcom_description"
+msgstr ""
+"Браузерная версия классической игры X-COM: UFO Defense. Здесь вы можете "
+"играть в XCOM в вашем браузере."
+
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:22
 msgid "html_server_error_description"
 msgstr "Ошибка 500 (ошибка сервера)"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:24
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:40
+msgid "html_form_password"
+msgstr "Пароль"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:39
+msgid "html_game_description_openttd"
+msgstr ""
+"Экономическая стратегия в реальном времени. В TTD игрок выступает в качестве "
+"управляющего транспортной компании и пытается получить максимальную прибыль "
+"за счёт оперативной перевозки пассажиров и разнообразных грузов по "
+"автодорогам, железным дорогам, а также водным и воздушным транспортом. Суть "
+"игры в том, что игроку надо получить как можно больше прибыли.<p class=\"wiki"
+"\"><small>(источник: ru.wikipedia.org)</small></p>"
+
+#: ../../../../src/main/scala/com/epicport/action/Register.scala:53
+msgid "html_alredy_exists"
+msgstr "Пользователь уже существует"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:27
+msgid "html_game_description_opendune"
+msgstr ""
+"Одна из первых компьютерных стратегических игр в реальном времени. Её часто "
+"называют первой игрой этого жанра. Игра стала чрезвычайно популярной "
+"благодаря нестандартному на то время игровому процессу и качественному "
+"графическому и звуковому оформлению. Вступите в отчаянную борьбу за "
+"управление Дюной.<p class=\"wiki\"><small>(источник: ru.wikipedia.org)</"
+"small></p>"
