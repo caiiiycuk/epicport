@@ -23,6 +23,10 @@ msgstr "Теперь вы можете загружать игры"
 msgid "html_social_network_login"
 msgstr "Войти через социальные сети"
 
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:58
+msgid "html_powered_by"
+msgstr "Основано на:"
+
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:22
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:33
 msgid "html_register"

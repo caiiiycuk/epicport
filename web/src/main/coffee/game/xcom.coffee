@@ -10,7 +10,7 @@ class Epicport.XCOM
     #$(document.body).append('<script type="text/javascript" src="' + options.js +  '"/>')
     
     $(".openxcom_eula").dialog
-      width: 600
+      width: 650
       modal: true
       buttons: [
         {

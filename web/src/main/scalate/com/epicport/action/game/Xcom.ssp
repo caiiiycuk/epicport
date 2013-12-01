@@ -1,8 +1,8 @@
 <%
   at("game") = "openxcom"
 
-  at("arguments") = """
-["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "true", "-language", "en-US", "-displayWidth", "960", "-displayHeight", "600"]
+  at("arguments") = s"""
+["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "true", "-language", "$getLanguage", "-displayWidth", "960", "-displayHeight", "600"]
 """
 
   at("preRun") = """
@@ -36,8 +36,12 @@ function () {
     
   </p>
   <p class="data_link">
-    <a id="xcom_data_link" href="http://fake.com/openxcom.data">http://fake.com/openxcom.data</a>
+    <a id="xcom_data_link" href="${at("demoLink")}">${at("demoLink")}</a>
   </p>
 </div>
 
 ${unescape(renderFragment("canvas"))}
+
+<div class="container_12 powered">
+  <span class="powered">${t("html_powered_by")}</span> <a href="http://openxcom.org/">openxcom</a>, <a href="https://github.com/kripken/emscripten/wiki">emscripten</a>
+</div>

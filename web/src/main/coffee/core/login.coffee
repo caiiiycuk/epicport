@@ -10,7 +10,15 @@ class Epicport.Login
 
 Epicport.login = (options) ->
   options ||= {}
+
+  if (Module)
+    Module['disable_sdl_envents'] = true
+
   $(".login_modal").dialog 
     modal: true
     width: 500
-    close: options.callback
+    close: () ->
+      if (Module)
+        Module['disable_sdl_envents'] = false
+
+      options.callback()

@@ -259,6 +259,14 @@ div.error {
   border-radius: 5px;
 }
 
+.powered {
+  margin-top: 15px;
+}
+
+span.powered {
+  font-weight: bold;
+}
+
 /* openxcom */
 
 .openxcom {
@@ -288,7 +296,7 @@ div.error {
 
 .openxcom_eula input {
   display: block;
-  width: 550px;
+  width: 600px;
   font-size: 1.2em;
   margin: auto;
 }

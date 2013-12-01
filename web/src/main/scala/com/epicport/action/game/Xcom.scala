@@ -3,6 +3,7 @@ package com.epicport.action.game
 import xitrum.annotation.GET
 import xitrum.Action
 import xitrum.annotation.First
+import com.epicport.Configuration
 
 @GET("/:lang/xcom")
 class Xcom extends GameLayout {
@@ -12,6 +13,7 @@ class Xcom extends GameLayout {
   def keywords = t("html_xcom_keywords")
   
   def execute() {
+    at("demoLink") = Configuration.demoLink
     respondView()
   }
   

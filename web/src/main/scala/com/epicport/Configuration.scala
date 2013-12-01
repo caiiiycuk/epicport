@@ -20,4 +20,6 @@ object Configuration {
     throw new IllegalStateException(s"Folder ${profile} does not exists")
   }
   
+  val demoLink = application.getString("epicport.demo_link")
+  
 }

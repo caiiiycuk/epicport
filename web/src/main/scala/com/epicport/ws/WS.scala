@@ -9,7 +9,6 @@ private object HttpClient {
       configBuilder.setAllowPoolingConnection(true)
       configBuilder.setMaximumConnectionsTotal(100)
       configBuilder.setConnectionTimeoutInMs(3000)
-      configBuilder.setRequestTimeoutInMs(3000)
       configBuilder.setFollowRedirects(true)
 
       val client = new AsyncHttpClient(configBuilder.build())

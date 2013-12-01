@@ -58,7 +58,7 @@
 
     <div class="container_12 footer">
       <div class="left">
-        ${t("html_support")} <a href="https://github.com/caiiiycuk/epicport">github</a>
+        ${t("html_support")} <a href="https://github.com/caiiiycuk/epicport">github:epicport</a>
       </div>
       <div class="right">
         <a href="http://www.linkedin.com/pub/aleksander-guryanov/3b/738/734">Aleksander Guryanov</a>, 2013
