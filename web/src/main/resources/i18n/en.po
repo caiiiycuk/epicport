@@ -16,7 +16,7 @@ msgstr "XCOM / Classic games in browser"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:21
 msgid "html_can_load_desc"
-msgstr "Now you can load games"
+msgstr "Now you can load game saves"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:36
 msgid "html_social_network_login"
@@ -35,7 +35,7 @@ msgstr "Register"
 msgid "html_description"
 msgstr ""
 "Browser version of classic games XCOM, DUNE 2, TTD.  This games can be "
-"played in every major browser."
+"played in all major browsers."
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:33
 msgid "html_play_on_phone"
@@ -51,7 +51,7 @@ msgstr "xcom,ufo,browser,online,play,game"
 
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:7
 msgid "html_error_title"
-msgstr "Error !!11"
+msgstr "Error"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:52
 msgid "html_email_required"
@@ -97,7 +97,7 @@ msgstr "Ok"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:18
 msgid "html_advice_login"
-msgstr "You should login if you want save or load game"
+msgstr "You should log in if you want save or load game"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:58
 msgid "html_password_required"
@@ -109,16 +109,19 @@ msgstr "Home"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:18
 msgid "html_click_to_start"
-msgstr "Please click to start game"
+msgstr "Please click to start the game"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:24
 msgid "html_login"
-msgstr "Login"
+msgstr "Log in"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:43
-#, fuzzy
 msgid "html_xcom_eula"
-msgstr "TODO!!!!!!!!!"
+msgstr ""
+"This game uses resources of original XCOM: Ufo Defense. These resources "
+"belong to <b>Take-Two Interactive Software, Inc.</b> Providing these "
+"resources on this site breaks rights of copyright holders. Therefore you "
+"must provide a link to the resources in case you would like to play the game."
 
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:14
 msgid "html_register_description"
@@ -130,11 +133,11 @@ msgstr "register,epicport"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:49
 msgid "html_passwords_not_match"
-msgstr "Passwords does not match"
+msgstr "Passwords do not match"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:27
 msgid "html_logout"
-msgstr "logout"
+msgstr "log out"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/DefaultLayout_ssp.scala:101
 msgid "html_support"
@@ -154,7 +157,7 @@ msgstr "Register / Epicport"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:46
 msgid "html_xcom_data_link"
-msgstr "Enter data link here"
+msgstr "Enter link to data here"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:46
 msgid "html_form_button_register"
@@ -162,7 +165,7 @@ msgstr "Register"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:52
 msgid "html_xcom_demo_data_link"
-msgstr "You can use this data link for demo purposes only"
+msgstr "You may use this data link for demo purposes only"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:43
 msgid "html_confirm_password"
@@ -196,7 +199,7 @@ msgstr "Login required"
 
 #: ../../../../src/main/scala/com/epicport/action/Root.scala:19
 msgid "html_title"
-msgstr "epicport (fix me)"
+msgstr "Epicport / Classic games in browser"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:28
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:21
@@ -210,13 +213,13 @@ msgstr "Enter link here"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:21
 msgid "html_note_hangs"
 msgstr ""
-"<b>NOTE:</b>&nbsp;During loading of the game browser can hangs up for some "
-"time, please be patient"
+"<b>NOTE:</b>&nbsp;Your browser may hang up during loading of the game, "
+"please be patient"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:11
 msgid "html_xcom_description"
 msgstr ""
-"Browser version of classig game X-COM: UFO Defense. Here you can play  X-COM "
+"Browser version of classic game X-COM: UFO Defense. Here you can play  X-COM "
 "in your browser."
 
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:22
