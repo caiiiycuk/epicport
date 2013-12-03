@@ -37,8 +37,7 @@ class Epicport.API
         m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/)
         if m
           text = m[1]
-          progress.progressbar "option", "value", parseInt(m[2]) * 100
-          progress.progressbar "option", "max", parseInt(m[4]) * 100
+          Epicport.API.progress(parseInt(m[2]) * 100, parseInt(m[4]) * 100)
         status.innerHTML = text
 
         if (text == '') 
@@ -53,6 +52,12 @@ class Epicport.API
     Module.setStatus "Downloading..."
 
     @Module = Module
+
+  progress: (value, max) ->
+    progress = $("#progress")
+    progress.progressbar "option", "value", value
+    progress.progressbar "option", "max", max
+
 
   module: () -> @Module    
 

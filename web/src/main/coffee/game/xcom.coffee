@@ -20,7 +20,17 @@ class Epicport.XCOM
             
             Module['openxcom.data'] = "/storage/proxy?url=" + $("#input_xcom_data_link").val()
 
-            startGame = $.getScript("openxcom.js")
+            startGame = $.ajax
+              url: "openxcom.js"
+              dataType: "script"
+              xhr: () ->
+                Module.setStatus "Downloading script (openxcom.js)"
+                xhr = $.ajaxSettings.xhr()
+                xhr.addEventListener "progress", (evt) ->
+                  if (evt.lengthComputable)
+                    Epicport.API.progress evt.loaded, evt.total
+                xhr
+
             setTimeout startGame, 500
         },
         {

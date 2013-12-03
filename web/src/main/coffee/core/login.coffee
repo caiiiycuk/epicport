@@ -11,14 +11,14 @@ class Epicport.Login
 Epicport.login = (options) ->
   options ||= {}
 
-  if (Module)
+  unless (typeof Module == 'undefined')
     Module['disable_sdl_envents'] = true
 
   $(".login_modal").dialog 
     modal: true
     width: 500
     close: () ->
-      if (Module)
+      unless (typeof Module == 'undefined')
         Module['disable_sdl_envents'] = false
 
       options.callback()

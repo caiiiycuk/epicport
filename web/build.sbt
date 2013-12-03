@@ -11,7 +11,7 @@ scalateTemplateConfig in Compile := Seq(TemplateConfig(
   Seq(Binding("helper", "xitrum.Action", true))
 ))
 
-libraryDependencies += "tv.cntt" %% "xitrum-scalate" % "1.3"
+libraryDependencies += "tv.cntt" %% "xitrum-scalate" % "1.5-SNAPSHOT"
 
 //------------------------------------------------------------------------------
 
