@@ -98,7 +98,7 @@ class Epicport.API
       processData: false
       contentType: 'application/octet-stream'
       beforeSend: (request) ->
-        request.setRequestHeader('X-Profile', JSON.stringify(Epicport['profile']))
+        request.setRequestHeader('X-Profile', JSON.stringify(identity: Epicport['profile'].identity))
         request.setRequestHeader('X-File-Name', file)
         request.setRequestHeader('X-Game', Epicport.API.game)
         request.setRequestHeader('X-csrf-token', $("meta[name='csrf-token']").attr("content"))
