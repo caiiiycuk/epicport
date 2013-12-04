@@ -207,7 +207,7 @@ msgstr "Введите ссылку сюда"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:21
 msgid "html_note_hangs"
 msgstr ""
-"<b>ВАЖНО:</b>&nbsp;Во время загрузки игры браузер может подвисать не надолго"
+"<b>ВАЖНО:</b>&nbsp;Во время загрузки игры браузер может подвисать ненадолго"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:11
 msgid "html_xcom_description"
