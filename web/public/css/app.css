@@ -13,6 +13,7 @@
 #canvas {
    margin: 0;
    padding: 0;
+   border: 0px none;
    clear: both;
 
   -webki t-touch-callout: none;
