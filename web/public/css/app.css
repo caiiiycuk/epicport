@@ -317,6 +317,17 @@ span.powered {
   margin-bottom: 5px;
 }
 
+#xcom_data_link:before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url("../img/pointer.png");
+  position: relative;
+  top: 4px;
+  left: -2px;
+}
+
 /* opendune */
 
 .game_description_opendune {
