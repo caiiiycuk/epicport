@@ -306,7 +306,7 @@ span.powered {
   display: block;
   width: 600px;
   font-size: 1.2em;
-  margin: auto;
+  padding: 5px;
 }
 
 .openxcom_eula .label {
@@ -316,15 +316,15 @@ span.powered {
 .openxcom_eula .data_link {
   background: rgb(200, 255,200);
   padding: 5px;
-  text-align: center;
   font-size: 1.2em;
   font-weight: bold;
   border-radius: 5px;
   border: 1px dashed black;
   margin-bottom: 5px;
+  text-align: center;
 }
 
-#xcom_data_link:before {
+/*#xcom_data_link:before {
   content: "";
   display: inline-block;
   width: 22px;
@@ -333,7 +333,7 @@ span.powered {
   position: relative;
   top: 4px;
   left: -2px;
-}
+}*/
 
 /* opendune */
 
