@@ -61,6 +61,11 @@
         ${t("html_support")} <a href="https://github.com/caiiiycuk/epicport">github:epicport</a>
       </div>
       <div class="right">
+        <form class="donate-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="CBGGPN6THJCEE">
+          <button id="donate_button" type="submit">Donate</button>
+        </form>
         <a href="http://www.linkedin.com/pub/aleksander-guryanov/3b/738/734">Aleksander Guryanov</a>, 2013
       </div>
     </div>
@@ -108,5 +113,9 @@
     </script>
     <noscript><div><img src="//mc.yandex.ru/watch/23247073" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <script type="text/javascript">
+      $("#donate_button").button();
+    </script>
   </body>
 </html>
