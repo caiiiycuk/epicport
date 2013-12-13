@@ -103,7 +103,7 @@ msgstr "Главная"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:18
 msgid "html_click_to_start"
-msgstr "Нажмите что бы начать игру"
+msgstr "Нажмите, чтобы начать игру"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:24
 msgid "html_login"
