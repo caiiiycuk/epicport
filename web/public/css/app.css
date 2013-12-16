@@ -195,6 +195,10 @@ form.register div.input {
   float: right;
 }
 
+.margin-bottom {
+  margin-bottom: 30px;
+}
+
 .game_container {
   padding: 5px;
 }
