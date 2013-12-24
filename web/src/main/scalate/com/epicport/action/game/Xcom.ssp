@@ -38,8 +38,8 @@ function () {
     ${unescape(t("html_xcom_eula"))}
   </p>
   <p>
-    <label for="openxcom_data">${unescape(t("html_xcom_data_link"))}</label>
-    <input id="input_xcom_data_link" type="text" value="${t("html_link_input")}" name="openxcom_data"></input>
+    <label for="input_xcom_data_link">${unescape(t("html_xcom_data_link"))}</label>
+    <input id="input_xcom_data_link" type="text" value="${t("html_link_input")}" name="openxcom_data" />
   </p>
   <p class="label">
     ${unescape(t("html_xcom_demo_data_link"))}

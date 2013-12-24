@@ -11,16 +11,16 @@
         <input id="registration_email" type="text" name="email" value="${paramo("email").getOrElse("")}"/>
       </div>
       <div>
-        <label for="name">${t("html_form_name")}</label>
+        <label for="registration_name">${t("html_form_name")}</label>
         <input id="registration_name" type="text" name="name" value="${paramo("name").getOrElse("")}"/>
       </div>
       <br/>
       <div>
-        <label for="password">${t("html_form_password")}</label>
+        <label for="registration_password">${t("html_form_password")}</label>
         <input id="registration_password" type="password" name="password"/>
       </div>
       <div>
-        <label for="password">${t("html_confirm_password")}</label>
+        <label for="registration_confirm_password">${t("html_confirm_password")}</label>
         <input id="registration_confirm_password" type="password" name="confirm_password"/>
       </div>
     </div>

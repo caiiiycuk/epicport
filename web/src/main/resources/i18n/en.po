@@ -79,8 +79,8 @@ msgstr ""
 "received strong reviews and was commercially successful, acquiring a cult "
 "following among strategy fans; several publications listed UFO: Enemy "
 "Unknown as one of top video games ever made, including IGN ranking it as the "
-"best PC game of all time in 2000 and 2007.<p class=\"wiki\"><small>(source: "
-"en.wikipedia.org)</small></p>"
+"best PC game of all time in 2000 and 2007.<p class='wiki'><small>(source: en."
+"wikipedia.org)</small></p>"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:15
 msgid "html_login_success_title"
@@ -114,7 +114,7 @@ msgstr "Please click to start the game"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:24
 msgid "html_login"
-msgstr "Log in"
+msgstr "Login"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:53
 msgid "html_xcom_eula"
@@ -245,7 +245,7 @@ msgstr ""
 "player acts an entrepreneur in control of a transport company, and can "
 "compete against rival companies to make as much profit as possible by "
 "transporting passengers and various goods by road, rail, sea and air.<p "
-"class=\"wiki\"><small>(source: en.wikipedia.org)</small></p>"
+"class='wiki'><small>(source: en.wikipedia.org)</small></p>"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:18
 msgid "html_site_description"
