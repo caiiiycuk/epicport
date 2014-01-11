@@ -31,7 +31,7 @@ resolvers += "SonatypeReleases" at "http://oss.sonatype.org/content/repositories
 
 resolvers += "SonatypeSnapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
 
-libraryDependencies += "tv.cntt" %% "xitrum" % "2.12"
+libraryDependencies += "tv.cntt" %% "xitrum" % "3.0-SNAPSHOT"
 
 libraryDependencies += "org.json4s" %% "json4s-jackson" % "3.2.5"
 

@@ -11,7 +11,7 @@ import java.util.zip.GZIPOutputStream
 class Push extends Storage {
 
   def execute() {
-    val content = request.getContent()
+    val content = request.content()
     val target  = profile.mapAbsoluteFile(game, fileName)
 
     if (!target.getParentFile().exists && !target.getParentFile().mkdirs) {
