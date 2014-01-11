@@ -5,7 +5,7 @@ import com.epicport.db.Db
 import xitrum.Action
 import xitrum.annotation.POST
 import com.epicport.db.User
-import org.jboss.netty.handler.codec.http.DefaultCookie
+import io.netty.handler.codec.http.DefaultCookie
 import java.net.URLEncoder
 
 @GET("/:lang/register")

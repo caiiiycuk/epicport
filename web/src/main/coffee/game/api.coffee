@@ -101,7 +101,7 @@ class Epicport.API
         request.setRequestHeader('X-Profile', JSON.stringify(identity: Epicport['profile'].identity))
         request.setRequestHeader('X-File-Name', file)
         request.setRequestHeader('X-Game', Epicport.API.game)
-        request.setRequestHeader('X-csrf-token', $("meta[name='csrf-token']").attr("content"))
+        request.setRequestHeader('X-CSRF-Token', $("meta[name='csrf-token']").attr("content"))
       success: (resp) ->
         done()
         Epicport.modalMessage(Epicport.i18n.html_success, Epicport.i18n.html_game_saved)

@@ -20,31 +20,4 @@ trait Storage extends Action with SkipCsrfCheck {
   lazy val fileName =
     Option(handlerEnv.request.headers.get("X-File-Name")).getOrElse(param("fileName")).replaceAll("\\P{InBasic_Latin}", "?")
 
-  beforeFilter {
-    if (!isValidToken(Storage.this)) {
-      forwardTo[NotFoundError]()
-      false
-    } else {
-      true
-    }
-  }
-
-  private def isValidToken(action: Action): Boolean = {
-    if (action.request.getMethod.getName == "GET") {
-      return true
-    }
-
-    // The token must be in the request body for more security
-    val bodyParams = action.handlerEnv.bodyParams
-    val headers = action.handlerEnv.request.headers
-    val tokenInRequest = Option(headers.get(s"X-${Csrf.TOKEN}"))
-      .getOrElse(action.param(Csrf.TOKEN, bodyParams))
-
-    // Cleaner for application developers when seeing access log
-    bodyParams.remove(Csrf.TOKEN)
-
-    val tokenInSession = action.antiCsrfToken
-    tokenInRequest == tokenInSession
-  }
-
 }

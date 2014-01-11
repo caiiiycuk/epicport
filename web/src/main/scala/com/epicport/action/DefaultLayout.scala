@@ -28,5 +28,5 @@ trait DefaultAction extends Action {
 }
 
 trait DefaultLayout extends DefaultAction {
-  override def layout = renderViewNoLayout(classOf[DefaultLayout])
+  override def layout = renderViewNoLayout[DefaultLayout]()
 }

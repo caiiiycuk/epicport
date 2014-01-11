@@ -26,7 +26,7 @@ class Proxy extends Action with WS {
       def onHeadersReceived(h: HttpResponseHeaders): STATE = {
         response.headers().add("Content-Length", h.getHeaders().getFirstValue("Content-Length"))
         response.headers().add("Content-Type", h.getHeaders().getFirstValue("Content-Type"))
-        response.setChunked(true)
+//        response.setChunked(true)
         STATE.CONTINUE
       }
       

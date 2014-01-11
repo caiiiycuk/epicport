@@ -1,18 +1,23 @@
+#
+# Aleksander <caiiiycuk@gmail.com>, 2014.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: Aleksander Guryanov <caiiiycuk@gmail.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2014-01-11 22:22+0700\n"
+"Last-Translator: Aleksander <caiiiycuk@gmail.com>\n"
+"Language-Team: русский <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Gtranslator 2.91.6\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:10
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:11
 msgid "html_xcom_title"
-msgstr "XCOM / Classic games in browser"
+msgstr "Online games / XCOM "
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:21
 msgid "html_can_load_desc"
@@ -22,7 +27,7 @@ msgstr "Now you can load game saves"
 msgid "html_social_network_login"
 msgstr "Social networks"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:58
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:74
 msgid "html_powered_by"
 msgstr "Powered by:"
 
@@ -34,20 +39,21 @@ msgstr "Register"
 #: ../../../../src/main/scala/com/epicport/action/Root.scala:20
 msgid "html_description"
 msgstr ""
-"Browser version of classic games XCOM, DUNE 2, TTD.  This games can be "
-"played in all major browsers."
+"This site is all about the greatest classic games. Now you can play Dune 2, "
+"XCOM, Transport Tycoon Deluxe online in your browser. You can start right "
+"now - you don't even need to register on our website."
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:33
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:39
 msgid "html_play_on_phone"
-msgstr "Android"
+msgstr "Version for Android"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:18
 msgid "html_can_save_desc"
 msgstr "Now you can save games"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:12
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:13
 msgid "html_xcom_keywords"
-msgstr "xcom,ufo,browser,online,play,game"
+msgstr "online games,ufo,xcom"
 
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:7
 msgid "html_error_title"
@@ -59,11 +65,9 @@ msgstr "Email required"
 
 #: ../../../../src/main/scala/com/epicport/action/Root.scala:21
 msgid "html_keywords"
-msgstr ""
-"xcom,ufo,dune,dune 2,ttd,Transport Tycoon,Transport Tycoon Deluxe,browser,"
-"online,play,game"
+msgstr "online games,ufo,xcom,dune,dune 2,Transport Tycoon,Tycoon"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:18
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:24
 msgid "html_game_description_openxcom"
 msgstr ""
 "X-COM: UFO Defense is a science fiction strategy video game developed by "
@@ -78,18 +82,18 @@ msgstr ""
 "received strong reviews and was commercially successful, acquiring a cult "
 "following among strategy fans; several publications listed UFO: Enemy "
 "Unknown as one of top video games ever made, including IGN ranking it as the "
-"best PC game of all time in 2000 and 2007.<p class=\"wiki\"><small>(source: "
-"en.wikipedia.org)</small></p>"
+"best PC game of all time in 2000 and 2007.<p class='wiki'><small>(source: en."
+"wikipedia.org)</small></p>"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:15
 msgid "html_login_success_title"
 msgstr "You successfully logged in"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:21
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:42
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:30
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:27
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:48
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:36
 msgid "html_play_in_browser"
-msgstr "Play in browser"
+msgstr "Play online"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:30
 msgid "html_ok"
@@ -97,7 +101,7 @@ msgstr "Ok"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:18
 msgid "html_advice_login"
-msgstr "You should log in if you want save or load game"
+msgstr "You should login if you want save or load game"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:58
 msgid "html_password_required"
@@ -113,9 +117,9 @@ msgstr "Please click to start the game"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:24
 msgid "html_login"
-msgstr "Log in"
+msgstr "Login"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:43
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:53
 msgid "html_xcom_eula"
 msgstr ""
 "This game uses resources of original XCOM: Ufo Defense. These resources "
@@ -125,7 +129,7 @@ msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:14
 msgid "html_register_description"
-msgstr "Here you can register on Epicport.com"
+msgstr "Here you can register on epicport.com"
 
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:15
 msgid "html_register_keywords"
@@ -137,7 +141,7 @@ msgstr "Passwords do not match"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:27
 msgid "html_logout"
-msgstr "log out"
+msgstr "logout"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/DefaultLayout_ssp.scala:101
 msgid "html_support"
@@ -145,7 +149,7 @@ msgstr "Support"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:34
 msgid "html_form_name"
-msgstr " Name"
+msgstr "Name"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:55
 msgid "html_name_required"
@@ -155,7 +159,7 @@ msgstr "Name is required"
 msgid "html_register_title"
 msgstr "Register / Epicport"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:46
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:56
 msgid "html_xcom_data_link"
 msgstr "Enter link to data here"
 
@@ -163,17 +167,17 @@ msgstr "Enter link to data here"
 msgid "html_form_button_register"
 msgstr "Register"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:52
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:62
 msgid "html_xcom_demo_data_link"
 msgstr "You may use this data link for demo purposes only"
-
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:43
-msgid "html_confirm_password"
-msgstr "Confirm password"
 
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
 msgid "html_not_found_description"
 msgstr "Error 404 (page not found)"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:43
+msgid "html_confirm_password"
+msgstr "Confirm password"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:27
 msgid "html_game_saved"
@@ -199,14 +203,14 @@ msgstr "Login required"
 
 #: ../../../../src/main/scala/com/epicport/action/Root.scala:19
 msgid "html_title"
-msgstr "Epicport / Classic games in browser"
+msgstr "Online games"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:28
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:21
 msgid "html_form_email"
 msgstr "Email"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:49
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:59
 msgid "html_link_input"
 msgstr "Enter link here"
 
@@ -216,11 +220,11 @@ msgstr ""
 "<b>NOTE:</b>&nbsp;Your browser may hang up during loading of the game, "
 "please be patient"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:11
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:12
 msgid "html_xcom_description"
 msgstr ""
-"Browser version of classic game X-COM: UFO Defense. Here you can play  X-COM "
-"in your browser."
+"Browser version of classic game X-COM: UFO Defense. Here you can play online "
+"X-COM in your browser."
 
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:22
 msgid "html_server_error_description"
@@ -235,7 +239,7 @@ msgstr "Cancel"
 msgid "html_form_password"
 msgstr "Password"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:39
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:45
 msgid "html_game_description_openttd"
 msgstr ""
 "Transport Tycoon (TT) is a video game developed by Chris Sawyer and "
@@ -244,13 +248,21 @@ msgstr ""
 "player acts an entrepreneur in control of a transport company, and can "
 "compete against rival companies to make as much profit as possible by "
 "transporting passengers and various goods by road, rail, sea and air.<p "
-"class=\"wiki\"><small>(source: en.wikipedia.org)</small></p>"
+"class='wiki'><small>(source: en.wikipedia.org)</small></p>"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:40
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:18
+msgid "html_site_description"
+msgstr ""
+"This site is all about the greatest classic games. Now you can play Dune 2, "
+"XCOM, Transport Tycoon Deluxe in your browser. You can start right now - you "
+"don't even need to register on our website. Just click the link of your "
+"favorite game."
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:50
 msgid "html_eula"
 msgstr "End-user license agreement"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:27
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:33
 msgid "html_game_description_opendune"
 msgstr ""
 "Dune 2 is a Westwood Studios game put together back in 1992, and it's "
@@ -259,6 +271,10 @@ msgstr ""
 "StarCraft and Command & Conquer so popular. An open-source recreation of the "
 "game was started up a few years ago, and that version has now been ported to "
 "HTML5."
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:15
+msgid "html_site_title"
+msgstr "Free online games"
 
 #~ msgid "html_required_fields_not_set"
 #~ msgstr "Reuired fields does not set"
