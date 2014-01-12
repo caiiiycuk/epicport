@@ -18,6 +18,7 @@
 <!DOCTYPE html>
 <html lang="${getLanguage}">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <%=unescape(antiCsrfMeta)%>
     
     <title>${title}</title>
@@ -28,12 +29,12 @@
     <link type="text/css" rel="stylesheet" media="all" href="${publicUrl("css/960/960.css")}"/>
     <link type="text/css" rel="stylesheet" media="all" href="${publicUrl("css/Aristo/Aristo.css")}"/>
     <link type="text/css" rel="stylesheet" media="all" href="${publicUrl("css/app.css")}"/>
+    <link type="text/css" rel="stylesheet" media="all" href="${publicUrl("js/colorbox/colorbox.css")}"/>
 
 #for (lang <- languages)
     <link rel="alternate" hreflang="${lang}" href="${altUri(lang)}" />
 #end
 
-    <meta charset="utf-8">
     <meta name="author" content="Guryanov Aleksander" />  
     <meta name="description" content="${description}" />
     <meta name="keywords" content="${keywords}" />
@@ -59,15 +60,17 @@
     <!--noindex-->
     <div class="container_12 footer">
       <div class="left">
-        ${t("html_support")} <a href="https://github.com/caiiiycuk/epicport"  rel="nofollow">github:epicport</a>
+        ${t("html_support")} <a href="https://github.com/caiiiycuk/epicport" class="gray-link"  rel="nofollow">github:epicport</a>
       </div>
       <div class="right">
+<!--
         <form class="donate-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="CBGGPN6THJCEE">
           <button id="donate_button" type="submit">Donate</button>
-        </form>
-        <a href="http://www.linkedin.com/pub/aleksander-guryanov/3b/738/734"  rel="nofollow">Aleksander Guryanov</a>, 2013
+        </form> 
+-->
+        <a href="http://www.linkedin.com/pub/aleksander-guryanov/3b/738/734" class="gray-link"  rel="nofollow">Aleksander Guryanov</a>, 2013
       </div>
     </div>
     <!--/noindex-->
@@ -115,9 +118,10 @@
     </script>
     <noscript><div><img src="//mc.yandex.ru/watch/23247073" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
-
+<!--
     <script type="text/javascript">
       $("#donate_button").button();
     </script>
+-->    
   </body>
 </html>
