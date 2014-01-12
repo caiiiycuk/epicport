@@ -1,0 +1,32 @@
+<%
+val action = currentAction.asInstanceOf[com.epicport.action.game.GameDescription]
+import action._
+%>
+
+<div class="container_12">
+<div class="grid_12"><h1>${gameName}</h1></div>
+
+<div class="grid_9">
+  <div class="game-description">
+    ${unescape(gameDescription)}
+  </div>
+</div>
+<div class="grid_3">
+  <div><a href="."><div class="play-button">${t("html_play_in_browser")}</div></a></div>
+</div>
+
+<div class="grid_12">
+  <div class="screenshots">
+    #for (screenshot <- screenshots)
+      <a class="colorbox" href="${publicUrl(screenshot.big)}" rel="nofollow">
+        <img src="${publicUrl(screenshot.small)}" alt="screenshot"/>
+      </a>
+    #end
+  </div>
+</div>
+</div>
+
+<script src="/js/colorbox/jquery.colorbox-min.js"></script>
+<script type="text/javascript">
+  $("a.colorbox").colorbox({ rel: 'screenshots' });
+</script>

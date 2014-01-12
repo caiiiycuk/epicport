@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-01-11 22:22+0700\n"
+"PO-Revision-Date: 2014-01-12 20:55+0700\n"
 "Last-Translator: Aleksander <caiiiycuk@gmail.com>\n"
 "Language-Team: русский <>\n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,7 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:11
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:25
 msgid "html_xcom_title"
 msgstr "Online games / XCOM "
 
@@ -52,6 +53,7 @@ msgid "html_can_save_desc"
 msgstr "Now you can save games"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:13
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:27
 msgid "html_xcom_keywords"
 msgstr "online games,ufo,xcom"
 
@@ -70,26 +72,18 @@ msgstr "online games,ufo,xcom,dune,dune 2,Transport Tycoon,Tycoon"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:24
 msgid "html_game_description_openxcom"
 msgstr ""
-"X-COM: UFO Defense is a science fiction strategy video game developed by "
-"Mythos Games and MicroProse. The game mixes real-time management simulation "
-"with turn-based tactics. The player takes the role of commander of X-COM – a "
-"clandestine, international paramilitary organization defending Earth from "
-"alien invasion. Through the game, the player is tasked with issuing orders "
-"to individual X-COM troops in a series of turn-based tactical missions. At "
-"strategic scale, the player directs the research and development of new "
-"technologies, builds and expands X-COM's bases, manages the organization's "
-"finances and personnel, and monitors and responds to UFO activity. The game "
-"received strong reviews and was commercially successful, acquiring a cult "
-"following among strategy fans; several publications listed UFO: Enemy "
-"Unknown as one of top video games ever made, including IGN ranking it as the "
-"best PC game of all time in 2000 and 2007.<p class='wiki'><small>(source: en."
-"wikipedia.org)</small></p>"
+"You are in control of X-COM: an organization formed by the world's "
+"governments to fight the ever-increasing alien menace. Features: command "
+"deadly close-combat battles; research and manufacture alien technologies; "
+"develop a strategy to save the Earth <p class='wiki'><small>Read more...</"
+"small></p>"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:15
 msgid "html_login_success_title"
 msgstr "You successfully logged in"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:27
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/GameDescription_ssp.scala:23
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:48
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:36
 msgid "html_play_in_browser"
@@ -115,10 +109,6 @@ msgstr "Home"
 msgid "html_click_to_start"
 msgstr "Please click to start the game"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:24
-msgid "html_login"
-msgstr "Login"
-
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:53
 msgid "html_xcom_eula"
 msgstr ""
@@ -126,6 +116,10 @@ msgstr ""
 "belong to <b>Take-Two Interactive Software, Inc.</b> Providing these "
 "resources on this site breaks rights of copyright holders. Therefore you "
 "must provide a link to the resources in case you would like to play the game."
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:24
+msgid "html_login"
+msgstr "Login"
 
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:14
 msgid "html_register_description"
@@ -143,7 +137,7 @@ msgstr "Passwords do not match"
 msgid "html_logout"
 msgstr "logout"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/DefaultLayout_ssp.scala:101
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/DefaultLayout_ssp.scala:104
 msgid "html_support"
 msgstr "Support"
 
@@ -210,6 +204,31 @@ msgstr "Online games"
 msgid "html_form_email"
 msgstr "Email"
 
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:31
+msgid "html_xcom_game_description_full"
+msgstr ""
+"You are in control of X-COM: an organization formed by the world's "
+"governments to fight the ever-increasing alien menace.<br/><br/> \n"
+"Features: <ul>\n"
+"<li><b>Command deadly close-combat battles</b><br/>\n"
+"Shooting down UFOs is just the beginning: you must then lead a squad of "
+"heavily-armed soldiers across different terrains as they investigate the UFO "
+"crash site. Tackle the aliens with automatic rifles, rocket launchers, and "
+"even tanks in the struggle to retrieve useful technology, weapons or life "
+"forms.</li> \n"
+"<li><b>Research and manufacture alien technologies</b><br/>\n"
+"Successful ground assault missions will allow X-COM scientists to analyze "
+"alien items. Each new breakthrough brings you a little closer to "
+"understanding the technology and culture of the alien races. Once you have "
+"sufficient research data on the UFO's superior weapons and crafts, you'll be "
+"able to manufacture weapons of equal capability.</li>\n"
+"<li><b>Develop a strategy to save the Earth</b><br/>\n"
+"You must make every crucial decision as you combat the powerful alien "
+"forces. But you'll also need to watch the world political situation: "
+"governments may be forced into secret pacts with the aliens and then begin "
+"to reduce X-COM funding.</li>\n"
+"</ul>"
+
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:59
 msgid "html_link_input"
 msgstr "Enter link here"
@@ -221,6 +240,7 @@ msgstr ""
 "please be patient"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:12
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:26
 msgid "html_xcom_description"
 msgstr ""
 "Browser version of classic game X-COM: UFO Defense. Here you can play online "
@@ -257,6 +277,10 @@ msgstr ""
 "XCOM, Transport Tycoon Deluxe in your browser. You can start right now - you "
 "don't even need to register on our website. Just click the link of your "
 "favorite game."
+
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:29
+msgid "html_xcom_game_name"
+msgstr "X-COM: UFO Defense"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:50
 msgid "html_eula"

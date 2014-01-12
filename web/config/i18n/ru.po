@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-01-11 22:24+0700\n"
+"PO-Revision-Date: 2014-01-12 20:45+0700\n"
 "Last-Translator: Aleksander <caiiiycuk@gmail.com>\n"
 "Language-Team: русский <>\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,7 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:11
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:25
 msgid "html_xcom_title"
 msgstr "Игры онлайн / XCOM"
 
@@ -54,6 +55,7 @@ msgid "html_can_save_desc"
 msgstr "Теперь вы можете сохраняться"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:13
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:27
 msgid "html_xcom_keywords"
 msgstr "игры онлайн,xcom,ufo"
 
@@ -72,19 +74,18 @@ msgstr "игры онлайн,xcom,ufo,dune,dune 2,Tycoon,Transport Tycoon"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:24
 msgid "html_game_description_openxcom"
 msgstr ""
-"Культовая компьютерная игра, выпущенная 31 декабря 1993 года фирмой "
-"MicroProse. Игра представляет собой смесь пошаговой стратегии и тактической "
-"ролевой игры.<br/><br/>Действие игры начинается в 1999 году. Обеспокоенные "
-"участившимися сообщениями о появлении НЛО и похищениях людей, правительства "
-"Земли учреждают службу X-COM, которая призвана защитить человечество от "
-"внеземной агрессии. Игрок является главой этой службы.<p class='wiki'><small>"
-"(источник: ru.wikipedia.org)</small></p>"
+"Действие игры начинается в 1999 году. Обеспокоенные участившимися "
+"сообщениями о появлении НЛО и похищениях людей, правительства Земли "
+"учреждают службу X-COM, которая призвана защитить человечество от внеземной "
+"агрессии. Игрок является главой этой службы.<p class='wiki'><small>Читать "
+"далее...</small></p>"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:15
 msgid "html_login_success_title"
 msgstr "Вы успешно вошли"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:27
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/GameDescription_ssp.scala:23
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:48
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:36
 msgid "html_play_in_browser"
@@ -110,10 +111,6 @@ msgstr "Главная"
 msgid "html_click_to_start"
 msgstr "Нажмите, чтобы начать игру"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:24
-msgid "html_login"
-msgstr "Войти"
-
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:53
 msgid "html_xcom_eula"
 msgstr ""
@@ -121,6 +118,10 @@ msgstr ""
 "ресурсы принадлежат компании <b>Take-Two Interactive Software, Inc.</b> "
 "Размещение этих ресурсов на данном сайте нарушает права правообладателя. "
 "Поэтому вы должны предоставить ссылку на ресурсы игры."
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:24
+msgid "html_login"
+msgstr "Войти"
 
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:14
 msgid "html_register_description"
@@ -138,7 +139,7 @@ msgstr "Пароли не совпадают"
 msgid "html_logout"
 msgstr "выйти"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/DefaultLayout_ssp.scala:101
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/DefaultLayout_ssp.scala:104
 msgid "html_support"
 msgstr "Поддержка"
 
@@ -205,6 +206,32 @@ msgstr "Игры онлайн"
 msgid "html_form_email"
 msgstr "Email"
 
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:31
+msgid "html_xcom_game_description_full"
+msgstr ""
+"Действие игры начинается в 1999 году. Обеспокоенные участившимися "
+"сообщениями о появлении НЛО и похищениях людей, правительства Земли "
+"учреждают службу X-COM, которая призвана защитить человечество от внеземной "
+"агрессии. Игрок является главой этой службы.<br/><br/>\n"
+"Основные особенности: <ul>\n"
+"<li><b>Управляйте сражением в режиме ближнего боя</b><br/> Сбить НЛО — это "
+"только начало: вы должны возглавить отряд вооруженных до зубов солдат для "
+"изучения различных мест падения НЛО. Уничтожайте инопланетян с помощью "
+"автоматов, гранатометов или даже танков в борьбе за получение новых "
+"технологий, оружия или новых форм жизни.</li>\n"
+"<li><b>Исследуйте и производите инопланетные технологии</b><br/> Проведение "
+"успешных миссий позволит ученым X-COM позволит проводить анализ инопланетных "
+"предметов. Каждое новое открытие позволит вам на шаг приблизиться к "
+"пониманию технологий и культуры инопланетных рас. Если вы имеете достаточно "
+"исследовательских данных о превосходящем ваше инопланетном оружии и его "
+"изготовлении, то вы можете производить оружие, равное по возможностям.</li>\n"
+"<li><b>Разработайте стратегию развития Земли</b><br/> Вы должны будете "
+"принимать каждое важное решение в борьбе с силами инопланетян. Но вы также "
+"должны смотреть на политическую ситуацию в мире: правительства могут "
+"заключать секретные соглашения с инопланетянами и начать сокращать "
+"финансирование проекта X-COM.</li>\n"
+"</ul>"
+
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:59
 msgid "html_link_input"
 msgstr "Введите ссылку сюда"
@@ -215,6 +242,7 @@ msgstr ""
 "<b>ВАЖНО:</b>&nbsp;Во время загрузки игры браузер может подвисать ненадолго"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:12
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:26
 msgid "html_xcom_description"
 msgstr ""
 "Браузерная версия классической игры X-COM: UFO Defense. Здесь вы можете "
@@ -251,6 +279,10 @@ msgstr ""
 "браузере. Начните прямо сейчас, для этого вам даже не потребуется "
 "регистрироваться у нас на сайте. Просто перейдите по ссылке в раздел "
 "посвященный вашей любимой игре."
+
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:29
+msgid "html_xcom_game_name"
+msgstr "X-COM: UFO Defense"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:50
 msgid "html_eula"

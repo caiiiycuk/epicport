@@ -217,7 +217,7 @@ form.register div.input {
 
 .game_description {
   padding-left: 220px;
-  min-height: 120px;
+  min-height: 60px;
 }
 
 .game_play_link {
@@ -277,6 +277,54 @@ span.powered {
   border-right: 1px solid #CCC;
   padding-right: 5px;
   display: inline-block;
+}
+
+.game-description {
+  padding-right: 25px;
+}
+
+.play-button {
+  background: rgba(255, 178, 178, 1);
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+
+  width: 100%;
+
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+}
+
+.play-button:hover {
+  background: rgba(178, 255, 178, 1);
+}
+
+a.gray-link, a.gray-link:visited {
+  color: #333;
+}
+
+a.dotted-link {
+  border-bottom: 1px dotted #333;
+  text-decoration: none;
+}
+
+.screenshots {
+  margin: 10px;
+}
+
+.screenshots img {
+  margin-top: 10px;
+  opacity: 0.7;
+  width: 225px;
+
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+
+.screenshots img:hover {
+  opacity: 1;
 }
 
 /* openxcom */

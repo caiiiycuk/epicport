@@ -3,17 +3,18 @@
   ${t("html_site_description")}
 </div>
 <div class="container_12 game_container">
-  <a href="/${getLanguage}/xcom">
+  <a href="/${getLanguage}/xcom/description">
     <div>
       <h2>X-COM: UFO Defense</h2>
       <div class="game_description game_description_openxcom">
         ${unescape(t("html_game_description_openxcom"))}
       </div>
-      <div class="game_play_link">
-      ${t("html_play_in_browser")}
-      </div>
     </div>
   </a>
+  
+  <div class="game_play_link">
+    <a href="/${getLanguage}/xcom">${t("html_play_in_browser")}</a>
+  </div> 
 </div>
 <br/>
 <div class="container_12 game_container">
