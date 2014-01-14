@@ -5,29 +5,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-01-12 20:45+0700\n"
-"Last-Translator: Aleksander <caiiiycuk@gmail.com>\n"
+"PO-Revision-Date: 2014-01-13 21:29+0600\n"
+"Last-Translator: Aleksander Guryanov <caiiiycuk@gmail.com>\n"
 "Language-Team: русский <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-Bookmarks: -1,39,-1,-1,-1,-1,-1,-1,-1,-1\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:36
+msgid "html_social_network_login"
+msgstr "Войти через социальные сети"
+
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:11
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:25
 msgid "html_xcom_title"
-msgstr "Игры онлайн / XCOM"
+msgstr "Играть онлайн / XCOM"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:21
 msgid "html_can_load_desc"
 msgstr "Теперь вы можете загружать игры"
-
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:36
-msgid "html_social_network_login"
-msgstr "Войти через социальные сети"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:74
 msgid "html_powered_by"
@@ -46,9 +45,15 @@ msgstr ""
 "Deluxe прямо в браузере. Начните прямо сейчас, для этого вам даже не "
 "потребуется регистрироваться у нас на сайте."
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:39
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:15
 msgid "html_play_on_phone"
 msgstr "Играть на телефоне"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:24
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:25
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:28
+msgid "html_xcom_game_name"
+msgstr "X-COM: UFO Defense"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:18
 msgid "html_can_save_desc"
@@ -71,41 +76,50 @@ msgstr "Необходимо ввести email"
 msgid "html_keywords"
 msgstr "игры онлайн,xcom,ufo,dune,dune 2,Tycoon,Transport Tycoon"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:24
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:30
 msgid "html_game_description_openxcom"
 msgstr ""
 "Действие игры начинается в 1999 году. Обеспокоенные участившимися "
 "сообщениями о появлении НЛО и похищениях людей, правительства Земли "
 "учреждают службу X-COM, которая призвана защитить человечество от внеземной "
-"агрессии. Игрок является главой этой службы.<p class='wiki'><small>Читать "
-"далее...</small></p>"
+"агрессии. Игрок является главой этой службы.<p class='more'><small>Читать "
+"далее</small></p>"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:15
 msgid "html_login_success_title"
 msgstr "Вы успешно вошли"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:27
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/GameDescription_ssp.scala:23
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:48
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:36
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:10
+msgid "html_page_description_dune2_description_short"
+msgstr ""
+"Браузерная версия классической игры Дюна 2. В Дюна 2 онлайн можно играть в "
+"любом современном браузере."
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/GameDescription_ssp.scala:29
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:57
 msgid "html_play_in_browser"
 msgstr "Играть онлайн"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:30
-msgid "html_ok"
-msgstr "Продолжить"
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:12
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:9
+msgid "html_page_description_ttd_name"
+msgstr "Transport Tycoon Deluxe"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:18
 msgid "html_advice_login"
 msgstr "Что бы сохранять и загружать игры нужно войти или зарегистрироваться"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:58
-msgid "html_password_required"
-msgstr "Необходимо ввести пароль"
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:30
+msgid "html_ok"
+msgstr "Продолжить"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:18
 msgid "html_home"
 msgstr "Главная"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:58
+msgid "html_password_required"
+msgstr "Необходимо ввести пароль"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:18
 msgid "html_click_to_start"
@@ -122,6 +136,32 @@ msgstr ""
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:24
 msgid "html_login"
 msgstr "Войти"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:29
+msgid "html_xcom_game_description_full"
+msgstr ""
+"Действие игры начинается в 1999 году. Обеспокоенные участившимися "
+"сообщениями о появлении НЛО и похищениях людей, правительства Земли "
+"учреждают службу X-COM, которая призвана защитить человечество от внеземной "
+"агрессии. Игрок является главой этой службы.<br/><br/>\n"
+"Основные особенности: <ul>\n"
+"<li><b>Управляйте сражением в режиме ближнего боя</b><br/> Сбить НЛО — это "
+"только начало: вы должны возглавить отряд вооруженных до зубов солдат для "
+"изучения различных мест падения НЛО. Уничтожайте инопланетян с помощью "
+"автоматов, гранатометов или даже танков в борьбе за получение новых "
+"технологий, оружия или новых форм жизни.</li>\n"
+"<li><b>Исследуйте и производите инопланетные технологии</b><br/> Проведение "
+"успешных миссий позволит ученым X-COM позволит проводить анализ инопланетных "
+"предметов. Каждое новое открытие позволит вам на шаг приблизиться к "
+"пониманию технологий и культуры инопланетных рас. Если вы имеете достаточно "
+"исследовательских данных о превосходящем ваше инопланетном оружии и его "
+"изготовлении, то вы можете производить оружие, равное по возможностям.</li>\n"
+"<li><b>Разработайте стратегию развития Земли</b><br/> Вы должны будете "
+"принимать каждое важное решение в борьбе с силами инопланетян. Но вы также "
+"должны смотреть на политическую ситуацию в мире: правительства могут "
+"заключать секретные соглашения с инопланетянами и начать сокращать "
+"финансирование проекта X-COM.</li>\n"
+"</ul>"
 
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:14
 msgid "html_register_description"
@@ -151,6 +191,16 @@ msgstr "Имя"
 msgid "html_name_required"
 msgstr "Введите имя"
 
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:11
+msgid "html_page_description_ttd_keywords"
+msgstr "игры онлайн,Transport Tycoon,Transport Tycoon Deluxe,браузер,играть"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:12
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:9
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:36
+msgid "html_page_description_dune2_name"
+msgstr "Dune II: The Building of A Dynasty"
+
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:13
 msgid "html_register_title"
 msgstr "Регистрация / Epicport"
@@ -167,6 +217,10 @@ msgstr "Зарегестрироваться"
 msgid "html_xcom_demo_data_link"
 msgstr "Для ознакомления с игрой вы можете использовать ссылку"
 
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:27
+msgid "html_form_button_login"
+msgstr "Войти"
+
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
 msgid "html_not_found_description"
 msgstr "Ошибка 404 (страница не найдена)"
@@ -179,19 +233,15 @@ msgstr "Пароль ещё раз"
 msgid "html_game_saved"
 msgstr "Игра сохранена"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:27
-msgid "html_form_button_login"
-msgstr "Войти"
-
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:24
-msgid "html_success"
-msgstr "Успешно"
-
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:45
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:39
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:42
 msgid "html_login_error"
 msgstr "Неверный логин или пароль"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:24
+msgid "html_success"
+msgstr "Успешно"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:15
 msgid "html_login_modal"
@@ -199,38 +249,12 @@ msgstr "Требуется вход"
 
 #: ../../../../src/main/scala/com/epicport/action/Root.scala:19
 msgid "html_title"
-msgstr "Игры онлайн"
+msgstr "Бесплатные игры онлайн"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:28
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:21
 msgid "html_form_email"
 msgstr "Email"
-
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:31
-msgid "html_xcom_game_description_full"
-msgstr ""
-"Действие игры начинается в 1999 году. Обеспокоенные участившимися "
-"сообщениями о появлении НЛО и похищениях людей, правительства Земли "
-"учреждают службу X-COM, которая призвана защитить человечество от внеземной "
-"агрессии. Игрок является главой этой службы.<br/><br/>\n"
-"Основные особенности: <ul>\n"
-"<li><b>Управляйте сражением в режиме ближнего боя</b><br/> Сбить НЛО — это "
-"только начало: вы должны возглавить отряд вооруженных до зубов солдат для "
-"изучения различных мест падения НЛО. Уничтожайте инопланетян с помощью "
-"автоматов, гранатометов или даже танков в борьбе за получение новых "
-"технологий, оружия или новых форм жизни.</li>\n"
-"<li><b>Исследуйте и производите инопланетные технологии</b><br/> Проведение "
-"успешных миссий позволит ученым X-COM позволит проводить анализ инопланетных "
-"предметов. Каждое новое открытие позволит вам на шаг приблизиться к "
-"пониманию технологий и культуры инопланетных рас. Если вы имеете достаточно "
-"исследовательских данных о превосходящем ваше инопланетном оружии и его "
-"изготовлении, то вы можете производить оружие, равное по возможностям.</li>\n"
-"<li><b>Разработайте стратегию развития Земли</b><br/> Вы должны будете "
-"принимать каждое важное решение в борьбе с силами инопланетян. Но вы также "
-"должны смотреть на политическую ситуацию в мире: правительства могут "
-"заключать секретные соглашения с инопланетянами и начать сокращать "
-"финансирование проекта X-COM.</li>\n"
-"</ul>"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:59
 msgid "html_link_input"
@@ -261,15 +285,9 @@ msgstr "Отмена"
 msgid "html_form_password"
 msgstr "Пароль"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:45
-msgid "html_game_description_openttd"
-msgstr ""
-"Экономическая стратегия в реальном времени. В TTD игрок выступает в качестве "
-"управляющего транспортной компании и пытается получить максимальную прибыль "
-"за счёт оперативной перевозки пассажиров и разнообразных грузов по "
-"автодорогам, железным дорогам, а также водным и воздушным транспортом. Суть "
-"игры в том, что игроку надо получить как можно больше прибыли.<p "
-"class='wiki'><small>(источник: ru.wikipedia.org)</small></p>"
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:11
+msgid "html_page_description_dune2_keywords"
+msgstr "игры онлайн,дюна,dune,dune 2,браузер"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:18
 msgid "html_site_description"
@@ -280,27 +298,64 @@ msgstr ""
 "регистрироваться у нас на сайте. Просто перейдите по ссылке в раздел "
 "посвященный вашей любимой игре."
 
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:29
-msgid "html_xcom_game_name"
-msgstr "X-COM: UFO Defense"
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:51
+msgid "html_game_description_openttd"
+msgstr ""
+"Экономическая стратегия в реальном времени. В TTD игрок выступает в качестве "
+"управляющего транспортной компании и пытается получить максимальную прибыль "
+"за счёт оперативной перевозки пассажиров и разнообразных грузов по "
+"автодорогам, железным дорогам, а также водным и воздушным транспортом.<p "
+"class='more'><small>Читать далее</small></p>"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:13
+msgid "html_page_description_dune2_description"
+msgstr ""
+"Одна из первых компьютерных стратегических игр в реальном времени. Её часто "
+"называют первой игрой этого жанра. Игра стала чрезвычайно популярной "
+"благодаря нестандартному на то время игровому процессу и качественному "
+"графическому и звуковому оформлению. Вступите в отчаянную борьбу за "
+"управление Дюной.<br/><br/>Ключевые особенности особенности Dune II, которые "
+"в последствии появились во всех играх жанра:<ul>  <li>Глобальная карта</li>  "
+"<li>Добыча ресурсов для развития базы</li>  <li>Строительство зданий и "
+"юнитов</li>  <li>Дерево технологий</li>  <li>Мобильные юниты которые могут "
+"быть развернуты в здание</li>  <li>Различные стороны (три дома) с "
+"уникальными юнитами и супер оружием</li></ul>"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:10
+msgid "html_page_description_ttd_description_short"
+msgstr ""
+"Браузерная версия классической игры Transport Tycoon Deluxe (TTD). Здесь вы "
+"можете играть в Transport Tycoon Deluxe онлайн в вашем браузере."
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:50
 msgid "html_eula"
 msgstr "Пользовательское соглашение"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:33
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:42
 msgid "html_game_description_opendune"
 msgstr ""
 "Одна из первых компьютерных стратегических игр в реальном времени. Её часто "
 "называют первой игрой этого жанра. Игра стала чрезвычайно популярной "
 "благодаря нестандартному на то время игровому процессу и качественному "
 "графическому и звуковому оформлению. Вступите в отчаянную борьбу за "
-"управление Дюной.<p class='wiki'><small>(источник: ru.wikipedia.org)</"
-"small></p>"
+"управление Дюной.<p class='more'><small>Читать далее</small></p>"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:15
 msgid "html_site_title"
 msgstr "Бесплатные игры онлайн"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:13
+msgid "html_page_description_ttd_description"
+msgstr ""
+"Экономическая стратегия в реальном времени. В TTD игрок выступает в качестве "
+"управляющего транспортной компании и пытается получить максимальную прибыль "
+"за счёт оперативной перевозки пассажиров и разнообразных грузов по "
+"автодорогам, железным дорогам, а также водным и воздушным транспортом. Суть "
+"игры в том, что игроку надо получить как можно больше прибыли.<br/><br/"
+">Особенности: <ul><li>Огромный игровой мир</li><li>Все виды транспорта: "
+"грузовик, автобус, поезд, самолет, вертолет, корабль...</li><li>Десятки "
+"видов грузов</li><li>Десятки предприятий и сотни городов</li><li>Отличная "
+"музыка</li></ul>"
 
 #~ msgid "html_required_fields_not_set"
 #~ msgstr "Все поля обязательны для заполнения"

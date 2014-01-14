@@ -22,13 +22,13 @@ class Xcom extends GameLayout {
 @GET("/:lang/xcom/description")
 class XcomDescription extends GameDescription {
 
-  def title = t("html_xcom_title")
-  def description = t("html_xcom_description")
-  def keywords = t("html_xcom_keywords")
-  
-  def gameName = t("html_xcom_game_name")
-  
+  def title           = t("html_xcom_game_name")
+  def description     = t("html_xcom_description")
+  def keywords        = t("html_xcom_keywords")
+  def gameName        = t("html_xcom_game_name")
   def gameDescription = t("html_xcom_game_description_full")
+  def linkToPlay      = url[Xcom]("lang" -> getLanguage)
+  def links           = Seq()
 
   def screenshots: Seq[ScreenShot] =
     Seq(ScreenShot("xcom/00_small.png", "xcom/00.png"),

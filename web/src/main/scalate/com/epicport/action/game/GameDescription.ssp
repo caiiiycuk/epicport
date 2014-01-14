@@ -4,7 +4,7 @@ import action._
 %>
 
 <div class="container_12">
-<div class="grid_12"><h1>${gameName}</h1></div>
+<div class="grid_12"><h1>${title}</h1></div>
 
 <div class="grid_9">
   <div class="game-description">
@@ -12,7 +12,12 @@ import action._
   </div>
 </div>
 <div class="grid_3">
-  <div><a href="."><div class="play-button">${t("html_play_in_browser")}</div></a></div>
+  <div>
+    <a href="${linkToPlay}"><div class="play-button">${t("html_play_in_browser")}</div></a>
+    #for (link <- links)
+      <a href="${link.url}"><div class="${link.linkClass}">${link.title}</div></a>
+    #end
+  </div>
 </div>
 
 <div class="grid_12">
