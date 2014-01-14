@@ -329,6 +329,22 @@ span.powered {
   background: rgba(178, 255, 178, 1);
 }
 
+.default-link {
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 1em;
+}
+
+.default-link:before {
+  content: ">";
+  display: block;
+  float: left;
+  width: 10px;
+  height: 25px;
+  color: #333;
+  font-weight: bold;
+}
 a.gray-link, a.gray-link:visited {
   color: #333;
 }
