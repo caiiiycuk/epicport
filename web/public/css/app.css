@@ -234,10 +234,19 @@ form.register div.input {
   color: blue;
 }
 
-
 .wiki {
   color: #333;
   margin-top: 5px;
+}
+
+.more {
+  color: #00F;
+  margin-top: 5px;
+  text-decoration: underline;
+}
+
+.more small {
+  font-size: 0.9em;
 }
 
 .display_none {
@@ -298,6 +307,25 @@ span.powered {
 }
 
 .play-button:hover {
+  background: rgba(178, 255, 178, 1);
+}
+
+.play-on-phone-link {
+  margin-top: 10px;
+  background: #FFF;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+
+  width: 100%;
+
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+}
+
+.play-on-phone-link:hover {
   background: rgba(178, 255, 178, 1);
 }
 
