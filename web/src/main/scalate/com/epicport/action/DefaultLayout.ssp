@@ -31,8 +31,10 @@
     <link type="text/css" rel="stylesheet" media="all" href="${publicUrl("css/app.css")}"/>
     <link type="text/css" rel="stylesheet" media="all" href="${publicUrl("js/colorbox/colorbox.css")}"/>
 
-#for (lang <- languages)
-    <link rel="alternate" hreflang="${lang}" href="${altUri(lang)}" />
+#if (i18nSupport)
+  #for (lang <- languages)
+      <link rel="alternate" hreflang="${lang}" href="${altUri(lang)}" />
+  #end
 #end
 
     <meta name="author" content="Guryanov Aleksander" />  

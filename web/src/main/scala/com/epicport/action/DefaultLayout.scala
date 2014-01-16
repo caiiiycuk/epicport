@@ -25,6 +25,8 @@ trait DefaultAction extends Action {
         }
     }
   }
+
+  def i18nSupport = true
 }
 
 trait DefaultLayout extends DefaultAction {

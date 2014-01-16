@@ -2,6 +2,7 @@ package com.epicport.action.game
 
 import xitrum.annotation.GET
 import com.epicport.action.core.Link
+import com.epicport.action.core.StaticPageLink
 
 @GET("/:lang/ttd/description")
 class Ttd extends GameDescription {
@@ -12,7 +13,10 @@ class Ttd extends GameDescription {
   def gameName        = t("html_page_description_ttd_name")
   def gameDescription = t("html_page_description_ttd_description")
   def linkToPlay      = s" http://${getLanguage}.play-ttd.com"
-  def links           = Seq()
+  def links           = getLanguage match {
+    case "ru" => Seq(StaticPageLink("ttd-story"))
+    case _ => Seq()
+  }
 
   def screenshots: Seq[ScreenShot] =
     Seq(ScreenShot("ttd/00_small.png", "ttd/00.png"),
