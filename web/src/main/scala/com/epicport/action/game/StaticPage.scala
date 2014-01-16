@@ -23,7 +23,7 @@ class StaticPage extends DefaultLayout {
   def keywords    = t(s"html_static_page_keywords_$page")
 
   def execute = {
-    at("fragment") = renderFragment(page)
+    at("fragment") = renderFragment(page.replace("-", "_"))
     respondView()
   }
   
