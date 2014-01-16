@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-01-13 21:29+0600\n"
+"PO-Revision-Date: 2014-01-16 20:39+0600\n"
 "Last-Translator: Aleksander Guryanov <caiiiycuk@gmail.com>\n"
 "Language-Team: русский <>\n"
 "MIME-Version: 1.0\n"
@@ -356,6 +356,36 @@ msgstr ""
 "грузовик, автобус, поезд, самолет, вертолет, корабль...</li><li>Десятки "
 "видов грузов</li><li>Десятки предприятий и сотни городов</li><li>Отличная "
 "музыка</li></ul>"
+
+msgid "html_static_page_title_xcom-story"
+msgstr "НЛО прилетело и опубликовало себя в браузере"
+
+msgid "html_static_page_description_xcom-story"
+msgstr ""
+"Пронзительно гудела сирена, коридор полыхал от огня тревожных фонарей. "
+"Скайрейнджер был уже над землей. Отважные бойцы X-COM, на самом деле простые "
+"ребята из разных уголков планеты летели на свое первое задание."
+
+msgid "html_static_page_keywords_xcom-story"
+msgstr "фантастический рассказ"
+
+msgid "html_static_page_title_dune2-story"
+msgstr "История портирования Dune 2"
+
+msgid "html_static_page_description_dune2-story"
+msgstr "Dune 2 - это великолепная стратегия, одна из первых в жанре. Нет смысла распинаться и говорить насколько это великая игра для целого поколения детей 90х. А так как я, неожиданно для себя нахожу в удовольствие возиться с кодом и портировать его в JavaScript, то конечно же моей целью после TTD неизбежно стала Dune 2."
+
+msgid "html_static_page_keywords_dune2-story"
+msgstr "история портирования Dune 2 на JavaScript"
+
+msgid "html_static_page_title_ttd-story"
+msgstr "История портирования Transport Tycoon Deluxe"
+
+msgid "html_static_page_description_ttd-story"
+msgstr "Могу честно признаться: я убил огромное количество времени, играя в Transport Tycoon Deluxe. Да я просто фанат этой игры. Поэтому, когда на хабре появилась статья про то, как ребята из mozilla портировали Doom, я загорелся этой идей – перенести одну из моих любимейших игр сюда, в интернет."
+
+msgid "html_static_page_keywords_ttd-story"
+msgstr "история портирования Transport Tycoon Deluxe на JavaScript"
 
 #~ msgid "html_required_fields_not_set"
 #~ msgstr "Все поля обязательны для заполнения"
