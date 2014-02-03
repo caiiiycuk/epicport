@@ -20,7 +20,7 @@ class Epicport.XCOM
             
             Module['openxcom.data'] = "/storage/proxy?url=" + $("#input_xcom_data_link").val()
 
-            startGame = $.ajax
+            startGame = () => $.ajax
               url: "openxcom.js"
               dataType: "script"
               xhr: () ->

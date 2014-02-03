@@ -17,6 +17,20 @@
   </div>
 </div>
 
+
+<div class="select-file-dialog dialog" title="${t("html_dialog_select_file_title")}">
+  <p class="label">
+    ${t("html_dialog_select_file_list")}
+    <ul class="select-file-dialog-saves">
+      <span>${t("html_dialog_select_file_no_saves_found")}</span>
+    </ul>
+  </p>
+  <p class="select-file-input">
+    <label for="select-file-dialog-file">${unescape(t("html_dialog_select_file_filename"))}</label>
+    <input id="select-file-dialog-file" type="text" value="New Game" />
+  </p>
+</div>
+
 <script type="text/javascript">
   Epicport.API = new Epicport.API({ 
     game: "${unescape(at("game"))}",

@@ -1,0 +1,30 @@
+<%
+  at("game") = "opendune"
+
+  at("arguments") = s"""["-h"]"""
+
+  at("preRun") = """
+function () {
+  SDL.defaults.copyOnLock = false;
+}    
+"""
+
+  at("start") = """
+function () {
+  var preventUpDown = function (e) { 
+    if (e.keyCode === 38 || e.keyCode === 40) {
+      e.preventDefault(); 
+    }
+  }
+
+  document.addEventListener("keydown", preventUpDown);
+  document.addEventListener("keyup", preventUpDown);
+  document.addEventListener("keypress", preventUpDown);
+
+  var dune2 = new Epicport.Dune2();
+  dune2.start();
+}   
+"""
+%>
+
+${unescape(renderFragment("canvas"))}

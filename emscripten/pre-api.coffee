@@ -9,3 +9,7 @@ _Epicport_PlayMusic = Epicport.API.playMusic
 _Epicport_VolumeMusic = Epicport.API.volumeMusic
 
 _Epicport_HaltMusic = Epicport.API.haltMusic
+
+_Epicport_SelectLoadFileDialog = Epicport.API.selectLoadFileDialog
+
+_Epicport_SelectSaveFileDialog = Epicport.API.selectSaveFileDialog
