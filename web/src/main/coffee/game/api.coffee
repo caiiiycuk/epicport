@@ -4,8 +4,9 @@ class Epicport.API
     self = @
     @canvas = new Epicport.Canvas(options)
     @game = options.game
-    @audio = new Audio();
-    @audio.volume = 0.5;
+    @audio = new Audio()
+    @audio.volume = 0.5
+    @files = {}
 
     status = document.getElementById("status")
     progress = $("#progress")
@@ -90,22 +91,20 @@ class Epicport.API
     Epicport.API.selectFileDialog(extensionPtr, callback, false)
 
   selectFileDialog: (extensionPtr, callback, hideFileInputField) ->
+    extension = Module['Pointer_stringify'](extensionPtr)
+
     if hideFileInputField
       $('.select-file-input').hide()
     else
       $('.select-file-input').show()
 
-    unless Epicport.API.selectFileDialogPtr
-      Epicport.API.selectFileDialogPtr = Module['_malloc'](128)
+    files = Object.keys(Epicport.API.files)
 
-    extension = Module['Pointer_stringify'](extensionPtr)
-    
-    success = (filename) ->
-      Module['writeStringToMemory'](filename, Epicport.API.selectFileDialogPtr)
-      FUNCTION_TABLE[callback](Epicport.API.selectFileDialogPtr)
-
-      unless (typeof Module == 'undefined')
-        Module['disable_sdl_envents'] = false
+    if files.length
+      $(".select-file-dialog ul").empty()
+      for file in files
+        filename = file.substring file.lastIndexOf('/') + 1
+        $(".select-file-dialog ul").append("<li>" + filename + "</li>")
 
     $(".select-file-dialog ul > li").off('click')
     $(".select-file-dialog ul > li").click (e) ->
@@ -115,25 +114,43 @@ class Epicport.API
     unless (typeof Module == 'undefined')
       Module['disable_sdl_envents'] = true
 
+    success = (filename) ->
+      unless Epicport.API.selectFileDialogPtr
+        Epicport.API.selectFileDialogPtr = Module['_malloc'](128)
+
+      Module['writeStringToMemory'](filename, Epicport.API.selectFileDialogPtr)
+      FUNCTION_TABLE[callback](Epicport.API.selectFileDialogPtr)
+
+      unless (typeof Module == 'undefined')
+        Module['disable_sdl_envents'] = false
+
+    okButton = {
+      text: Epicport.i18n.html_ok
+      click: () -> 
+        selected = $('#select-file-dialog-file').val()
+        success(selected + "." + extension) if selected
+        $(@).dialog "close"
+    }
+
+
+    cancelButton = {
+      text: Epicport.i18n.html_cancel
+      click: () -> 
+        $(@).dialog "close"
+
+        unless (typeof Module == 'undefined')
+          Module['disable_sdl_envents'] = false
+    }
+
+    if hideFileInputField
+      buttons = [cancelButton]
+    else
+      buttons = [okButton, cancelButton]
+
     $(".select-file-dialog").dialog
       width: 650
       modal: true
-      buttons: [
-        {
-          text: Epicport.i18n.html_ok
-          click: () -> 
-            success($('#select-file-dialog-file').val() + "." + extension)
-            $(@).dialog "close"
-        },
-        {
-          text: Epicport.i18n.html_cancel
-          click: () -> 
-            $(@).dialog "close"
-
-            unless (typeof Module == 'undefined')
-              Module['disable_sdl_envents'] = false
-        }
-      ]
+      buttons: buttons
 
   pushSave: (filePtr) ->
     done = Epicport.modalProgress()
@@ -143,9 +160,7 @@ class Epicport.API
     contents = fs_object.contents
     array = new Uint8Array(contents)
 
-    filename = file.substring file.lastIndexOf('/') + 1
-    $(".select-file-dialog ul > span").hide()
-    $(".select-file-dialog ul").append("<li>" + filename + "</li>")
+    Epicport.API.files[file] = 1
 
     $.ajax 
       url: '/xhr/storage/push'
@@ -198,8 +213,7 @@ class Epicport.API
 
     loaders = []
     for file in files
-      filename = file.substring file.lastIndexOf('/') + 1
-      $(".select-file-dialog ul").append("<li>" + filename + "</li>")
+      Epicport.API.files[file] = 1
       loaders.push @loadFile(file)
     
     async.parallel loaders, (error, files) -> 
