@@ -27,4 +27,14 @@ function () {
 """
 %>
 
-${unescape(renderFragment("canvas"))}
+<div class="container_12">
+<div class="grid_2">
+  <div class="opendune-toggle-sound opendune-mute"></div>
+  &nbsp;
+</div>
+
+<div class="grid_8">
+  ${unescape(renderFragment("canvas"))}
+</div>
+
+</div>

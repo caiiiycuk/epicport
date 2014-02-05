@@ -482,6 +482,22 @@ a.dotted-link {
   height: 400px;
 }
 
+.opendune-toggle-sound {
+  width: 32px;
+  height: 32px;
+  margin: 15px auto;
+  cursor: pointer;
+  display: none;
+}
+
+.opendune-mute {
+  background: url(/dune2/mute.png);
+}
+
+.opendune-unmute {
+  background: url(/dune2/unmute.png);
+}
+
 /* openttd */
 
 .game_description_openttd {

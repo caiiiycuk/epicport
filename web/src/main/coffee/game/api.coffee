@@ -1,4 +1,4 @@
-class Epicport.API 
+class Epicport.API
 
   constructor: (options) ->
     self = @
@@ -225,7 +225,7 @@ class Epicport.API
           name = file.file.substring file.file.lastIndexOf('/') + 1
           parent = file.file.substring 0, file.file.lastIndexOf('/') + 1
           console.log "Creating file '" + name + "' in '" + parent + "'"
-          FS.createDataFile(parent, name, file.data, true, true)
+          Module['FS_createDataFile'](parent, name, file.data, true, true)
 
       callback()
 
