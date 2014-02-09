@@ -19,16 +19,32 @@ class Epicport.Dune2
 
     soundControl.show()
 
-  start: ->
-    startGame = () => $.ajax
-      url: "opendune.js"
-      dataType: "script"
-      xhr: () ->
-        Module.setStatus "Downloading script (opendune.js)"
-        xhr = $.ajaxSettings.xhr()
-        xhr.addEventListener "progress", (evt) ->
-          if (evt.lengthComputable)
-            Epicport.API.progress evt.loaded, evt.total
-        xhr
+    $('.opendune-a-house').click () ->
+      Module['arguments'] = ['-a']
+      $(".dune2-select-house-dialog").dialog('close')
 
-    setTimeout startGame, 500  
+    $('.opendune-o-house').click () ->
+      Module['arguments'] = ['-o']
+      $(".dune2-select-house-dialog").dialog('close')
+
+    $('.opendune-h-house').click () ->
+      Module['arguments'] = ['-h']
+      $(".dune2-select-house-dialog").dialog('close')      
+
+  start: (jsFile) ->
+    $(".dune2-select-house-dialog").dialog
+      width: 650
+      modal: true
+      close: () ->
+        startGame = () => $.ajax
+          url: jsFile
+          dataType: "script"
+          xhr: () ->
+            Module.setStatus "Downloading script (" + jsFile + ")"
+            xhr = $.ajaxSettings.xhr()
+            xhr.addEventListener "progress", (evt) ->
+              if (evt.lengthComputable)
+                Epicport.API.progress evt.loaded, evt.total
+            xhr
+
+        setTimeout startGame, 500  

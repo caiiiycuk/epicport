@@ -119,7 +119,7 @@ class Epicport.API
         Epicport.API.selectFileDialogPtr = Module['_malloc'](128)
 
       Module['writeStringToMemory'](filename, Epicport.API.selectFileDialogPtr)
-      FUNCTION_TABLE[callback](Epicport.API.selectFileDialogPtr)
+      Module['dunCall']('vi', callback, [Epicport.API.selectFileDialogPtr])
 
       unless (typeof Module == 'undefined')
         Module['disable_sdl_envents'] = false
@@ -155,8 +155,13 @@ class Epicport.API
   pushSave: (filePtr) ->
     done = Epicport.modalProgress()
 
-    file = Pointer_stringify(filePtr)
-    fs_object = FS.findObject(file)
+    file = Module['Pointer_stringify'](filePtr)
+    
+    if (Module['FS_findObject'])
+      fs_object = Module['FS_findObject'](file)
+    else
+      fs_object = FS.findObject(file)
+
     contents = fs_object.contents
     array = new Uint8Array(contents)
 
@@ -246,7 +251,7 @@ class Epicport.API
           callback error, null
 
   playMusic: (filePtr, loops) ->
-    file = Pointer_stringify(filePtr)
+    file = Module['Pointer_stringify'](filePtr)
     name = file.substring file.lastIndexOf('/') + 1
     Epicport.API.audio.src = "/" + name
     Epicport.API.audio.play()
