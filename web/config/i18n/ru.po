@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-01-16 20:39+0600\n"
+"PO-Revision-Date: 2014-02-13 22:00+0600\n"
 "Last-Translator: Aleksander Guryanov <caiiiycuk@gmail.com>\n"
 "Language-Team: русский <>\n"
 "MIME-Version: 1.0\n"
@@ -20,17 +20,13 @@ msgstr ""
 msgid "html_social_network_login"
 msgstr "Войти через социальные сети"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:11
-msgid "html_xcom_title"
-msgstr "Играть онлайн / XCOM"
-
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:21
 msgid "html_can_load_desc"
 msgstr "Теперь вы можете загружать игры"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:74
-msgid "html_powered_by"
-msgstr "Основано на:"
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:12
+msgid "html_xcom_title"
+msgstr "Играть онлайн / XCOM"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:22
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:33
@@ -45,13 +41,13 @@ msgstr ""
 "Deluxe прямо в браузере. Начните прямо сейчас, для этого вам даже не "
 "потребуется регистрироваться у нас на сайте."
 
-#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:15
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:23
 msgid "html_play_on_phone"
 msgstr "Играть на телефоне"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:24
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:25
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:28
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:29
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:31
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:26
 msgid "html_xcom_game_name"
 msgstr "X-COM: UFO Defense"
 
@@ -59,8 +55,12 @@ msgstr "X-COM: UFO Defense"
 msgid "html_can_save_desc"
 msgstr "Теперь вы можете сохраняться"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:13
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:27
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_xcom_story_ssp.scala:15
+msgid "html_static_page_title_xcom-story"
+msgstr "НЛО прилетело и опубликовало себя в браузере"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:14
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:28
 msgid "html_xcom_keywords"
 msgstr "игры онлайн,xcom,ufo"
 
@@ -76,7 +76,11 @@ msgstr "Необходимо ввести email"
 msgid "html_keywords"
 msgstr "игры онлайн,xcom,ufo,dune,dune 2,Tycoon,Transport Tycoon"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:30
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:30
+msgid "html_dialog_select_file_no_saves_found"
+msgstr "Нет сохраненных игр"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:37
 msgid "html_game_description_openxcom"
 msgstr ""
 "Действие игры начинается в 1999 году. Обеспокоенные участившимися "
@@ -85,23 +89,32 @@ msgstr ""
 "агрессии. Игрок является главой этой службы.<p class='more'><small>Читать "
 "далее</small></p>"
 
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:33
+msgid "html_dialog_select_file_filename"
+msgstr "Введите имя файла"
+
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:15
 msgid "html_login_success_title"
 msgstr "Вы успешно вошли"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:10
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/GameDescription_ssp.scala:29
+msgid "html_play_in_browser"
+msgstr "Играть онлайн"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:28
 msgid "html_page_description_dune2_description_short"
 msgstr ""
 "Браузерная версия классической игры Дюна 2. В Дюна 2 онлайн можно играть в "
 "любом современном браузере."
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/GameDescription_ssp.scala:29
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:57
-msgid "html_play_in_browser"
-msgstr "Играть онлайн"
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:40
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:43
+msgid "html_dialog_dune2_select_house_title"
+msgstr "Выберите сторону"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:12
-#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:9
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:13
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:55
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:10
 msgid "html_page_description_ttd_name"
 msgstr "Transport Tycoon Deluxe"
 
@@ -113,6 +126,10 @@ msgstr "Что бы сохранять и загружать игры нужно
 msgid "html_ok"
 msgstr "Продолжить"
 
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_ttd_story_ssp.scala:15
+msgid "html_static_page_title_ttd-story"
+msgstr "История портирования Transport Tycoon Deluxe"
+
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:18
 msgid "html_home"
 msgstr "Главная"
@@ -120,6 +137,10 @@ msgstr "Главная"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:58
 msgid "html_password_required"
 msgstr "Необходимо ввести пароль"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:24
+msgid "html_dialog_select_file_title"
+msgstr "Выберите файл"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:18
 msgid "html_click_to_start"
@@ -137,7 +158,7 @@ msgstr ""
 msgid "html_login"
 msgstr "Войти"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:29
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:30
 msgid "html_xcom_game_description_full"
 msgstr ""
 "Действие игры начинается в 1999 году. Обеспокоенные участившимися "
@@ -163,6 +184,10 @@ msgstr ""
 "финансирование проекта X-COM.</li>\n"
 "</ul>"
 
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:46
+msgid "html_dialog_dune2_atreides_house"
+msgstr "Дом Атрейдес"
+
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:14
 msgid "html_register_description"
 msgstr "Здесь вы можете зарегистрироваться на сайте Epicport.com"
@@ -179,7 +204,11 @@ msgstr "Пароли не совпадают"
 msgid "html_logout"
 msgstr "выйти"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/DefaultLayout_ssp.scala:104
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:49
+msgid "html_dialog_dune2_ordos_house"
+msgstr "Дом Ордос"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/DefaultLayout_ssp.scala:107
 msgid "html_support"
 msgstr "Поддержка"
 
@@ -191,13 +220,17 @@ msgstr "Имя"
 msgid "html_name_required"
 msgstr "Введите имя"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:11
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:12
 msgid "html_page_description_ttd_keywords"
 msgstr "игры онлайн,Transport Tycoon,Transport Tycoon Deluxe,браузер,играть"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:12
-#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:9
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:36
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:52
+msgid "html_dialog_dune2_harkonnen_house"
+msgstr "Дом Харконнен"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:27
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:43
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:30
 msgid "html_page_description_dune2_name"
 msgstr "Dune II: The Building of A Dynasty"
 
@@ -208,6 +241,10 @@ msgstr "Регистрация / Epicport"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:56
 msgid "html_xcom_data_link"
 msgstr "Укажите ссылку на игровые ресурсы"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_dune2_story_ssp.scala:15
+msgid "html_static_page_title_dune2-story"
+msgstr "История портирования Dune 2"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:46
 msgid "html_form_button_register"
@@ -221,6 +258,10 @@ msgstr "Для ознакомления с игрой вы можете испо
 msgid "html_form_button_login"
 msgstr "Войти"
 
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:27
+msgid "html_game_saved"
+msgstr "Игра сохранена"
+
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
 msgid "html_not_found_description"
 msgstr "Ошибка 404 (страница не найдена)"
@@ -228,10 +269,6 @@ msgstr "Ошибка 404 (страница не найдена)"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:43
 msgid "html_confirm_password"
 msgstr "Пароль ещё раз"
-
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:27
-msgid "html_game_saved"
-msgstr "Игра сохранена"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:45
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:39
@@ -242,6 +279,10 @@ msgstr "Неверный логин или пароль"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:24
 msgid "html_success"
 msgstr "Успешно"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:27
+msgid "html_dialog_select_file_list"
+msgstr "Выберите файл"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:15
 msgid "html_login_modal"
@@ -260,36 +301,40 @@ msgstr "Email"
 msgid "html_link_input"
 msgstr "Введите ссылку сюда"
 
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:10
+msgid "html_play_dune2_title"
+msgstr "Играть онлайн / Dune 2"
+
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:21
 msgid "html_note_hangs"
 msgstr ""
 "<b>ВАЖНО:</b>&nbsp;Во время загрузки игры браузер может подвисать ненадолго"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:12
-#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:26
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:13
+#: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:27
 msgid "html_xcom_description"
 msgstr ""
 "Браузерная версия классической игры X-COM: UFO Defense. Здесь вы можете "
 "играть онлайн в XCOM в вашем браузере."
 
-#: ../../../../src/main/scala/com/epicport/action/Errors.scala:22
-msgid "html_server_error_description"
-msgstr "Ошибка 500 (ошибка сервера)"
-
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:33
 msgid "html_cancel"
 msgstr "Отмена"
+
+#: ../../../../src/main/scala/com/epicport/action/Errors.scala:22
+msgid "html_server_error_description"
+msgstr "Ошибка 500 (ошибка сервера)"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:24
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:40
 msgid "html_form_password"
 msgstr "Пароль"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:11
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:29
 msgid "html_page_description_dune2_keywords"
 msgstr "игры онлайн,дюна,dune,dune 2,браузер"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:18
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:25
 msgid "html_site_description"
 msgstr ""
 "Этот портал посвящен классическим играм, хитам прошлых лет. Здесь вы можете "
@@ -298,7 +343,7 @@ msgstr ""
 "регистрироваться у нас на сайте. Просто перейдите по ссылке в раздел "
 "посвященный вашей любимой игре."
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:51
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:61
 msgid "html_game_description_openttd"
 msgstr ""
 "Экономическая стратегия в реальном времени. В TTD игрок выступает в качестве "
@@ -307,7 +352,7 @@ msgstr ""
 "автодорогам, железным дорогам, а также водным и воздушным транспортом.<p "
 "class='more'><small>Читать далее</small></p>"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:13
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:31
 msgid "html_page_description_dune2_description"
 msgstr ""
 "Одна из первых компьютерных стратегических игр в реальном времени. Её часто "
@@ -321,17 +366,27 @@ msgstr ""
 "быть развернуты в здание</li>  <li>Различные стороны (три дома) с "
 "уникальными юнитами и супер оружием</li></ul>"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:10
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:12
+msgid "html_play_dune2_keywords"
+msgstr "игры онлайн,дюна,dune,dune 2,браузер"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:11
 msgid "html_page_description_ttd_description_short"
 msgstr ""
 "Браузерная версия классической игры Transport Tycoon Deluxe (TTD). Здесь вы "
 "можете играть в Transport Tycoon Deluxe онлайн в вашем браузере."
 
+#: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:11
+msgid "html_play_dune2_description"
+msgstr ""
+"Браузерная версия классической игры Дюна 2. В Дюна 2 онлайн можно играть в "
+"любом современном браузере."
+
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:50
 msgid "html_eula"
 msgstr "Пользовательское соглашение"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:42
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:49
 msgid "html_game_description_opendune"
 msgstr ""
 "Одна из первых компьютерных стратегических игр в реальном времени. Её часто "
@@ -340,11 +395,11 @@ msgstr ""
 "графическому и звуковому оформлению. Вступите в отчаянную борьбу за "
 "управление Дюной.<p class='more'><small>Читать далее</small></p>"
 
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:15
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:22
 msgid "html_site_title"
 msgstr "Бесплатные игры онлайн"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:13
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:14
 msgid "html_page_description_ttd_description"
 msgstr ""
 "Экономическая стратегия в реальном времени. В TTD игрок выступает в качестве "
@@ -357,8 +412,8 @@ msgstr ""
 "видов грузов</li><li>Десятки предприятий и сотни городов</li><li>Отличная "
 "музыка</li></ul>"
 
-msgid "html_static_page_title_xcom-story"
-msgstr "НЛО прилетело и опубликовало себя в браузере"
+msgid "html_powered_by"
+msgstr "Основано на:"
 
 msgid "html_static_page_description_xcom-story"
 msgstr ""
@@ -369,20 +424,23 @@ msgstr ""
 msgid "html_static_page_keywords_xcom-story"
 msgstr "фантастический рассказ"
 
-msgid "html_static_page_title_dune2-story"
-msgstr "История портирования Dune 2"
-
 msgid "html_static_page_description_dune2-story"
-msgstr "Dune 2 - это великолепная стратегия, одна из первых в жанре. Нет смысла распинаться и говорить насколько это великая игра для целого поколения детей 90х. А так как я, неожиданно для себя нахожу в удовольствие возиться с кодом и портировать его в JavaScript, то конечно же моей целью после TTD неизбежно стала Dune 2."
+msgstr ""
+"Dune 2 - это великолепная стратегия, одна из первых в жанре. Нет смысла "
+"распинаться и говорить насколько это великая игра для целого поколения детей "
+"90х. А так как я, неожиданно для себя нахожу в удовольствие возиться с кодом "
+"и портировать его в JavaScript, то конечно же моей целью после TTD неизбежно "
+"стала Dune 2."
 
 msgid "html_static_page_keywords_dune2-story"
 msgstr "история портирования Dune 2 на JavaScript"
 
-msgid "html_static_page_title_ttd-story"
-msgstr "История портирования Transport Tycoon Deluxe"
-
 msgid "html_static_page_description_ttd-story"
-msgstr "Могу честно признаться: я убил огромное количество времени, играя в Transport Tycoon Deluxe. Да я просто фанат этой игры. Поэтому, когда на хабре появилась статья про то, как ребята из mozilla портировали Doom, я загорелся этой идей – перенести одну из моих любимейших игр сюда, в интернет."
+msgstr ""
+"Могу честно признаться: я убил огромное количество времени, играя в "
+"Transport Tycoon Deluxe. Да я просто фанат этой игры. Поэтому, когда на "
+"хабре появилась статья про то, как ребята из mozilla портировали Doom, я "
+"загорелся этой идей – перенести одну из моих любимейших игр сюда, в интернет."
 
 msgid "html_static_page_keywords_ttd-story"
 msgstr "история портирования Transport Tycoon Deluxe на JavaScript"
