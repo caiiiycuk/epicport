@@ -27,4 +27,5 @@
 <script type="text/javascript" src="${publicUrl("js/core/navbar.js")}"></script>
 <script type="text/javascript" src="${publicUrl("js/game/canvas.js")}"></script>
 <script type="text/javascript" src="${publicUrl("js/game/xcom.js")}"></script>
+<script type="text/javascript" src="${publicUrl("js/game/dune2.js")}"></script>
 <script type="text/javascript" src="${publicUrl("js/game/api.js")}"></script>

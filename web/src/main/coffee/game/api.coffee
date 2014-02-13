@@ -1,11 +1,12 @@
-class Epicport.API 
+class Epicport.API
 
   constructor: (options) ->
     self = @
     @canvas = new Epicport.Canvas(options)
     @game = options.game
-    @audio = new Audio();
-    @audio.volume = 0.5;
+    @audio = new Audio()
+    @audio.volume = 0.5
+    @files = {}
 
     status = document.getElementById("status")
     progress = $("#progress")
@@ -83,13 +84,88 @@ class Epicport.API
 
     return false
 
+  selectLoadFileDialog: (extensionPtr, callback, hideFileInputField) ->
+    Epicport.API.selectFileDialog(extensionPtr, callback, true)
+
+  selectSaveFileDialog: (extensionPtr, callback, hideFileInputField) ->
+    Epicport.API.selectFileDialog(extensionPtr, callback, false)
+
+  selectFileDialog: (extensionPtr, callback, hideFileInputField) ->
+    extension = Module['Pointer_stringify'](extensionPtr)
+
+    if hideFileInputField
+      $('.select-file-input').hide()
+    else
+      $('.select-file-input').show()
+
+    files = Object.keys(Epicport.API.files)
+
+    if files.length
+      $(".select-file-dialog ul").empty()
+      for file in files
+        filename = file.substring file.lastIndexOf('/') + 1
+        $(".select-file-dialog ul").append("<li>" + filename + "</li>")
+
+    $(".select-file-dialog ul > li").off('click')
+    $(".select-file-dialog ul > li").click (e) ->
+      success($(e.target).html())
+      $(".select-file-dialog").dialog('close')
+
+    unless (typeof Module == 'undefined')
+      Module['disable_sdl_envents'] = true
+
+    success = (filename) ->
+      unless Epicport.API.selectFileDialogPtr
+        Epicport.API.selectFileDialogPtr = Module['_malloc'](128)
+
+      Module['writeStringToMemory'](filename, Epicport.API.selectFileDialogPtr)
+      Module['dunCall']('vi', callback, [Epicport.API.selectFileDialogPtr])
+
+      unless (typeof Module == 'undefined')
+        Module['disable_sdl_envents'] = false
+
+    okButton = {
+      text: Epicport.i18n.html_ok
+      click: () -> 
+        selected = $('#select-file-dialog-file').val()
+        success(selected + "." + extension) if selected
+        $(@).dialog "close"
+    }
+
+
+    cancelButton = {
+      text: Epicport.i18n.html_cancel
+      click: () -> 
+        $(@).dialog "close"
+
+        unless (typeof Module == 'undefined')
+          Module['disable_sdl_envents'] = false
+    }
+
+    if hideFileInputField
+      buttons = [cancelButton]
+    else
+      buttons = [okButton, cancelButton]
+
+    $(".select-file-dialog").dialog
+      width: 650
+      modal: true
+      buttons: buttons
+
   pushSave: (filePtr) ->
     done = Epicport.modalProgress()
 
-    file = Pointer_stringify(filePtr)
-    fs_object = FS.findObject(file);
-    contents = fs_object.contents;
-    array = new Uint8Array(contents);
+    file = Module['Pointer_stringify'](filePtr)
+    
+    if (Module['FS_findObject'])
+      fs_object = Module['FS_findObject'](file)
+    else
+      fs_object = FS.findObject(file)
+
+    contents = fs_object.contents
+    array = new Uint8Array(contents)
+
+    Epicport.API.files[file] = 1
 
     $.ajax 
       url: '/xhr/storage/push'
@@ -137,8 +213,12 @@ class Epicport.API
         Epicport.modalMessage("Error (" + status+ ")", "(" + status + "): " + error)
 
   loadFiles: (files, callback) ->
+    if files.length
+      $(".select-file-dialog ul > span").hide()
+
     loaders = []
     for file in files
+      Epicport.API.files[file] = 1
       loaders.push @loadFile(file)
     
     async.parallel loaders, (error, files) -> 
@@ -150,7 +230,7 @@ class Epicport.API
           name = file.file.substring file.file.lastIndexOf('/') + 1
           parent = file.file.substring 0, file.file.lastIndexOf('/') + 1
           console.log "Creating file '" + name + "' in '" + parent + "'"
-          FS.createDataFile(parent, name, file.data, true, true)#
+          Module['FS_createDataFile'](parent, name, file.data, true, true)
 
       callback()
 
@@ -161,6 +241,8 @@ class Epicport.API
         type: 'GET'
         data: 
           $.extend(fileName: fileName, Epicport.profile)
+        beforeSend: (xhr) ->
+          xhr.overrideMimeType "text/plain; charset=x-user-defined" 
         success: (resp) ->
           callback null, 
             file: fileName
@@ -169,7 +251,7 @@ class Epicport.API
           callback error, null
 
   playMusic: (filePtr, loops) ->
-    file = Pointer_stringify(filePtr)
+    file = Module['Pointer_stringify'](filePtr)
     name = file.substring file.lastIndexOf('/') + 1
     Epicport.API.audio.src = "/" + name
     Epicport.API.audio.play()

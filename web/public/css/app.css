@@ -1,3 +1,8 @@
+.hidden-link {
+  color: black;
+  text-decoration: none;
+}
+
 #canvas::selection {
     background:transparent;
 }
@@ -298,7 +303,7 @@ span.powered {
 }
 
 .play-button {
-  background: rgba(255, 178, 178, 1);
+  background: rgba(208, 208, 255, 1);
   text-align: center;
   padding: 10px;
   border-radius: 5px;
@@ -395,7 +400,7 @@ a.dotted-link {
   background: url(../xcom/game-logo.png) left center no-repeat;
 }
 
-.openxcom_eula {
+.openxcom_eula, .dialog {
   display: none;
 }
 
@@ -404,7 +409,7 @@ a.dotted-link {
   font-weight: bold;
 }
 
-.openxcom_eula input {
+.openxcom_eula input, .dialog input {
   display: block;
   width: 600px;
   font-size: 1.2em;
@@ -426,21 +431,112 @@ a.dotted-link {
   text-align: center;
 }
 
-/*#xcom_data_link:before {
-  content: "";
+.dialog .label, .dialog label  {
+  display: block;
+  font-weight: bold;
+  margin: 2px 0;
+}
+
+.select-file-dialog-saves {
+  max-height: 150px;
+  overflow: auto;
+}
+
+.select-file-dialog-saves {
+  margin: 0;
+  padding: 5px 0;
+  background: #F0F0F0;
+  border: 1px solid #CCC;
+}
+
+.select-file-dialog-saves span {
+  text-align: center;
+  width: 100%;
   display: inline-block;
-  width: 22px;
-  height: 22px;
-  background: url("../img/pointer.png");
-  position: relative;
-  top: 4px;
-  left: -2px;
-}*/
+}
+
+.select-file-dialog-saves li {
+  padding: 0;
+  margin: 4px 0px 0px 20px;
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
 
 /* opendune */
 
 .game_description_opendune {
   background: url(../dune2/dune2.png) left center no-repeat;
+}
+
+.opendune, .opendune-ru, .opendune-en {
+  width: 600px;
+  height: 400px;
+  background: url(../dune2/canvas_bg.jpg) no-repeat center center;
+}
+
+.opendune canvas {
+  cursor: default;
+  width: 600px;
+  height: 400px;
+}
+
+.opendune-toggle-sound {
+  width: 32px;
+  height: 32px;
+  margin: 15px auto;
+  cursor: pointer;
+  display: none;
+}
+
+.opendune-mute {
+  background: url(/dune2/mute.png);
+}
+
+.opendune-unmute {
+  background: url(/dune2/unmute.png);
+}
+
+.opendune-house-container {
+  margin: 0 auto;
+  width: 510px;
+}
+
+.opendune-house {
+  float: left;
+  width: 124px;
+  height: 136px;
+  display: block;
+  cursor: pointer;
+  padding: 0 20px 30px 20px;
+  margin: 0;
+
+  opacity: 0.5;
+  transition: opacity 300ms;
+  -webkit-transition: opacity 300ms;
+}
+
+.opendune-house:hover {
+  opacity: 1.0;
+}
+
+.opendune-h-house {
+  background: url("/dune2/h_house.png") no-repeat center center;
+}
+
+.opendune-a-house {
+  background: url("/dune2/a_house.png") no-repeat center center;
+}
+
+.opendune-o-house {
+  background: url("/dune2/o_house.png") no-repeat center center;
+}
+
+.opendune-select-house {
+  text-align: center;
+  margin: 15px 0;
+  font-weight: bold;
 }
 
 /* openttd */

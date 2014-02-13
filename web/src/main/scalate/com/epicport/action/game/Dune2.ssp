@@ -1,0 +1,47 @@
+<%
+  at("game") = "opendune"
+
+  at("arguments") = s"""["-a"]"""
+
+  at("preRun") = """function () {}"""
+
+  at("start") = s"""
+function () {
+  var preventUpDown = function (e) { 
+    if (e.keyCode === 38 || e.keyCode === 40) {
+      e.preventDefault(); 
+    }
+  }
+
+  document.addEventListener("keydown", preventUpDown);
+  document.addEventListener("keyup", preventUpDown);
+  document.addEventListener("keypress", preventUpDown);
+
+  var dune2 = new Epicport.Dune2();
+  dune2.start('opendune-${getLanguage}.js');
+}   
+"""
+%>
+
+<div class="dune2-select-house-dialog dialog" title="${t("html_dialog_dune2_select_house_title")}">
+  <div class="opendune-house-container">
+    <p class="opendune-select-house">${t("html_dialog_dune2_select_house_title")}</p>
+    <p class="opendune-house opendune-a-house" title="${t("html_dialog_dune2_atreides_house")}"></p>
+    <p class="opendune-house opendune-o-house" title="${t("html_dialog_dune2_ordos_house")}"></p>
+    <p class="opendune-house opendune-h-house" title="${t("html_dialog_dune2_harkonnen_house")}"></p>
+  </div>
+</div>
+
+<div class="container_12">
+<div class="grid_2">
+  <div class="opendune-toggle-sound opendune-mute"></div>
+  &nbsp;
+</div>
+
+<div class="grid_8">
+  ${unescape(renderFragment("canvas"))}
+</div>
+
+</div>
+
+<!-- <script src="/opendune-en.js"/> -->

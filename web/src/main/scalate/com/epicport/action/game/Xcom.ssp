@@ -51,7 +51,3 @@ function () {
 </div>
 
 ${unescape(renderFragment("canvas"))}
-
-<div class="container_12 powered">
-  <span class="powered">${t("html_powered_by")}</span> <a href="http://openxcom.org/" class="gray-link">openxcom</a>, <a href="https://github.com/kripken/emscripten/wiki" class="gray-link">emscripten</a>
-</div>
