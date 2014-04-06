@@ -4,18 +4,42 @@ import xitrum.annotation.GET
 import com.epicport.action.core.Link
 import com.epicport.action.core.StaticPageLink
 
+@GET("/:lang/ttd")
+class Ttd extends GameLayout {
+
+  def title = t("html_play_ttd_title")
+  def description = t("html_play_ttd_description")
+  def keywords = t("html_play_ttd_keywords")
+
+  def execute() {
+    respondView()
+  }
+
+}
+
 @GET("/:lang/ttd/description")
-class Ttd extends GameDescription {
+class TtdDescription extends GameDescription {
+
+  def linkToMultiplayer = Link(
+    t("htmpl_page_description_ttd_multipalyer"), 
+    url[Ttd]("lang" -> language, "multiplayer" -> "yes"), 
+    "play-button ttd-multiplayer")
+
+  def linkToPerfomanceTest = Link(
+    t("htmpl_page_description_ttd_prefomance"), 
+    url[Ttd]("lang" -> language, "perfomance" -> "yes"), 
+    "default-link")
 
   def title           = t("html_page_description_ttd_name")
   def description     = t("html_page_description_ttd_description_short")
   def keywords        = t("html_page_description_ttd_keywords")
   def gameName        = t("html_page_description_ttd_name")
   def gameDescription = t("html_page_description_ttd_description")
-  def linkToPlay      = s" http://${getLanguage}.play-ttd.com"
-  def links           = getLanguage match {
-    case "ru" => Seq(StaticPageLink("ttd-story"))
-    case _ => Seq()
+
+  def linkToPlay        = url[Ttd]("lang" -> language)
+  def links             = language match {
+    case "ru" => Seq(linkToMultiplayer, linkToPerfomanceTest, StaticPageLink("ttd-story"))
+    case _ => Seq(linkToMultiplayer, linkToPerfomanceTest)
   }
 
   def screenshots: Seq[ScreenShot] =

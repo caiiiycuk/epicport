@@ -1,0 +1,63 @@
+<%
+  val multiplayer = 
+    paramo("multiplayer")
+      .map(_ => ", '-n', '23.92.28.238:3980'")
+      .getOrElse("")
+
+  val perfomance =
+    paramo("perfomance")
+      .map(_ => ", '-g', '/home/caiiiycuk/play-ttd/etc/preload/save/perfomance_test.sav'")
+      .getOrElse("")
+
+  at("game") = "ttd"
+
+  at("arguments") = s"""['-m', 'em_midi', '-s', 'sdl', '-x', '-c', '/home/caiiiycuk/play-ttd/etc/preload/openttd.cfg' $multiplayer $perfomance]"""
+
+  if (paramo("perfomance").isDefined) {
+    at("preRun") = """function() {
+
+  Module['update_fps'] = function(fps) {
+    //document.getElementById('fps').innerHTML = 'FPS: ' + Math.round(fps);
+    console.log('FPS:', fps);
+  };
+
+  Module["FS_createPath"]('/', 'home/caiiiycuk/play-ttd/etc/preload/save', true, true);
+  Module["FS_createPreloadedFile"](
+    '/home/caiiiycuk/play-ttd/etc/preload/save', 
+    'perfomance_test.sav', 
+    '/ttd/perfomance_test.sav',
+    true, true);
+
+}
+"""
+  } else {
+    at("preRun") = """function () {}"""
+  }
+
+  
+
+  at("start") = s"""
+function () {
+  var preventUpDown = function (e) { 
+    if (e.keyCode === 38 || e.keyCode === 40) {
+      e.preventDefault(); 
+    }
+  }
+
+  document.addEventListener("keydown", preventUpDown);
+  document.addEventListener("keyup", preventUpDown);
+  document.addEventListener("keypress", preventUpDown);
+
+  var ttd = new Epicport.Ttd();
+  ttd.start('openttd.js');
+}   
+"""
+%>
+
+
+
+<div class="ttd-resizable">
+  ${unescape(renderFragment("canvas"))}
+</div>
+
+ <!-- <script src="/openttd.js"/>  -->

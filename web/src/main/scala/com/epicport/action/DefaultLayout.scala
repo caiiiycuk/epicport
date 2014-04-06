@@ -20,7 +20,7 @@ trait DefaultAction extends Action {
     } else {
       paramo("lang") match {
         case Some(lang) if languages.contains(lang) =>
-          setLanguage(lang)
+          language = lang
           true
         case _ =>
           autosetLanguage(languages.toSeq: _*)

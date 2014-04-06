@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-02-13 22:00+0600\n"
+"PO-Revision-Date: 2014-04-06 17:22+0600\n"
 "Last-Translator: Aleksander Guryanov <caiiiycuk@gmail.com>\n"
 "Language-Team: русский <>\n"
 "MIME-Version: 1.0\n"
@@ -64,13 +64,17 @@ msgstr "НЛО прилетело и опубликовало себя в бра
 msgid "html_xcom_keywords"
 msgstr "игры онлайн,xcom,ufo"
 
-#: ../../../../src/main/scala/com/epicport/action/Errors.scala:7
-msgid "html_error_title"
-msgstr "Ошибка"
-
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:52
 msgid "html_email_required"
 msgstr "Необходимо ввести email"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:10
+msgid "html_play_ttd_title"
+msgstr "Играть онлайн / Transport Tycoon Deluxe"
+
+#: ../../../../src/main/scala/com/epicport/action/Errors.scala:7
+msgid "html_error_title"
+msgstr "Ошибка"
 
 #: ../../../../src/main/scala/com/epicport/action/Root.scala:21
 msgid "html_keywords"
@@ -112,9 +116,9 @@ msgstr ""
 msgid "html_dialog_dune2_select_house_title"
 msgstr "Выберите сторону"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:13
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:33
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:36
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:55
-#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:10
 msgid "html_page_description_ttd_name"
 msgstr "Transport Tycoon Deluxe"
 
@@ -158,6 +162,10 @@ msgstr ""
 msgid "html_login"
 msgstr "Войти"
 
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:12
+msgid "html_play_ttd_keywords"
+msgstr "игры онлайн,ttd,Transport Tycoon,Transport Tycoon Deluxe,браузер"
+
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:30
 msgid "html_xcom_game_description_full"
 msgstr ""
@@ -183,6 +191,10 @@ msgstr ""
 "заключать секретные соглашения с инопланетянами и начать сокращать "
 "финансирование проекта X-COM.</li>\n"
 "</ul>"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:29
+msgid "htmpl_page_description_ttd_prefomance"
+msgstr "Тест производительности"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:46
 msgid "html_dialog_dune2_atreides_house"
@@ -220,7 +232,7 @@ msgstr "Имя"
 msgid "html_name_required"
 msgstr "Введите имя"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:12
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:35
 msgid "html_page_description_ttd_keywords"
 msgstr "игры онлайн,Transport Tycoon,Transport Tycoon Deluxe,браузер,играть"
 
@@ -245,6 +257,12 @@ msgstr "Укажите ссылку на игровые ресурсы"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_dune2_story_ssp.scala:15
 msgid "html_static_page_title_dune2-story"
 msgstr "История портирования Dune 2"
+
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:11
+msgid "html_play_ttd_description"
+msgstr ""
+"Браузерная версия классической игры Transport Tycoon Deluxe (TTD). Здесь вы "
+"можете играть в Transport Tycoon Deluxe онлайн в вашем браузере."
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:46
 msgid "html_form_button_register"
@@ -310,6 +328,10 @@ msgid "html_note_hangs"
 msgstr ""
 "<b>ВАЖНО:</b>&nbsp;Во время загрузки игры браузер может подвисать ненадолго"
 
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:24
+msgid "htmpl_page_description_ttd_multipalyer"
+msgstr "Многопользовательская игра"
+
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:13
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:27
 msgid "html_xcom_description"
@@ -370,7 +392,7 @@ msgstr ""
 msgid "html_play_dune2_keywords"
 msgstr "игры онлайн,дюна,dune,dune 2,браузер"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:11
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:34
 msgid "html_page_description_ttd_description_short"
 msgstr ""
 "Браузерная версия классической игры Transport Tycoon Deluxe (TTD). Здесь вы "
@@ -399,7 +421,7 @@ msgstr ""
 msgid "html_site_title"
 msgstr "Бесплатные игры онлайн"
 
-#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:14
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:37
 msgid "html_page_description_ttd_description"
 msgstr ""
 "Экономическая стратегия в реальном времени. В TTD игрок выступает в качестве "

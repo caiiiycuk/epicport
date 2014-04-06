@@ -10,7 +10,7 @@ class Root extends Action {
   
   def execute() {
     autosetLanguage(languages.toSeq: _*)
-    redirectTo[I18NRoot]("lang" -> getLanguage)
+    redirectTo[I18NRoot]("lang" -> language)
   }
 }
 

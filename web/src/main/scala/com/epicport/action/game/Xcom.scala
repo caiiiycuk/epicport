@@ -28,8 +28,8 @@ class XcomDescription extends GameDescription {
   def keywords        = t("html_xcom_keywords")
   def gameName        = t("html_xcom_game_name")
   def gameDescription = t("html_xcom_game_description_full")
-  def linkToPlay      = url[Xcom]("lang" -> getLanguage)
-  def links           = getLanguage match {
+  def linkToPlay      = url[Xcom]("lang" -> language)
+  def links           = language match {
     case "ru" => Seq(StaticPageLink("xcom-story"))
     case _ => Seq()
   }

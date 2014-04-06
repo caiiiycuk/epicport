@@ -19,6 +19,7 @@ class Proxy extends Action with WS {
   def execute() {
     val url = param("url")
     
+    setChunked()
     httpClient.prepareGet(url).execute(new AsyncHandler[Unit]() {
 
       def onStatusReceived(s: HttpResponseStatus): STATE = STATE.CONTINUE 
@@ -26,7 +27,6 @@ class Proxy extends Action with WS {
       def onHeadersReceived(h: HttpResponseHeaders): STATE = {
         response.headers().add("Content-Length", h.getHeaders().getFirstValue("Content-Length"))
         response.headers().add("Content-Type", h.getHeaders().getFirstValue("Content-Type"))
-//        response.setChunked(true)
         STATE.CONTINUE
       }
       
@@ -36,11 +36,11 @@ class Proxy extends Action with WS {
       }
       
       def onCompleted(): Unit = {
-        respondLastChunk
+        respondLastChunk()
       }
       
       def onThrowable(t: Throwable): Unit = {
-        respondLastChunk
+        respondLastChunk()
       }
 
     })

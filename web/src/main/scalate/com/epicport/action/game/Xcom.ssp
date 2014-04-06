@@ -2,7 +2,7 @@
   at("game") = "openxcom"
 
   at("arguments") = s"""
-["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "true", "-language", "$getLanguage", "-displayWidth", "960", "-displayHeight", "600"]
+["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "true", "-language", "$language", "-displayWidth", "960", "-displayHeight", "600"]
 """
 
   at("preRun") = """

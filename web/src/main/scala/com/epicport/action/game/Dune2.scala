@@ -29,8 +29,8 @@ class Dune2Description extends GameDescription {
   def keywords        = t("html_page_description_dune2_keywords")
   def gameName        = t("html_page_description_dune2_name")
   def gameDescription = t("html_page_description_dune2_description")
-  def linkToPlay      = url[Dune2]("lang" -> getLanguage)
-  def links           = getLanguage match {
+  def linkToPlay      = url[Dune2]("lang" -> language)
+  def links           = language match {
     case "ru" => Seq(googlePlayLink, StaticPageLink("dune2-story"))
     case _ => Seq(googlePlayLink)
   }

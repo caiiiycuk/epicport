@@ -9,7 +9,7 @@ object StaticPageLink {
   
   def apply(page: String)(implicit action: Action) = 
     Link(action.t(s"html_static_page_title_$page"), 
-        action.url[StaticPage]("lang" -> action.getLanguage,
+        action.url[StaticPage]("lang" -> action.language,
             "page" -> page), 
         "default-link")
   

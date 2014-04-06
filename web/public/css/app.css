@@ -543,4 +543,19 @@ a.dotted-link {
 
 .game_description_openttd {
   background: url(../ttd/ttd.png) left center no-repeat;
-} 
+}
+
+.ttd {
+  width: 600px;
+  height: 450px;
+  background: url(../ttd/canvas_bg.jpg) no-repeat center center;
+}
+
+.ttd canvas {
+  cursor: default;
+}
+
+.ttd-multiplayer {
+  margin-top: 10px;
+  font-size: 1.2em;
+}

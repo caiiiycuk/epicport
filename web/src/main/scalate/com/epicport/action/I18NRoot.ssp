@@ -3,16 +3,16 @@ import com.epicport.action.I18NRoot
 %>
 
 <div class="container_12 margin-bottom">
-  <h1><a href="<%=url[I18NRoot]("lang" -> getLanguage)%>" class="hidden-link">${t("html_site_title")}</a></h1>
+  <h1><a href="<%=url[I18NRoot]("lang" -> language)%>" class="hidden-link">${t("html_site_title")}</a></h1>
   ${t("html_site_description")}
 </div>
 <div class="container_12 game_container">
     <div>
       <h2>
-        <a href="/${getLanguage}/xcom/description">${t("html_xcom_game_name")}</a>
+        <a href="/${language}/xcom/description">${t("html_xcom_game_name")}</a>
       </h2>
       
-      <a href="/${getLanguage}/xcom/description">
+      <a href="/${language}/xcom/description">
         <div class="game_description game_description_openxcom">
           ${unescape(t("html_game_description_openxcom"))}
         </div>
@@ -22,8 +22,8 @@ import com.epicport.action.I18NRoot
 <br/>
 <div class="container_12 game_container">
   <div>
-    <h2><a href="/${getLanguage}/dune2/description">${t("html_page_description_dune2_name")}</a></h2>
-    <a href="/${getLanguage}/dune2/description">
+    <h2><a href="/${language}/dune2/description">${t("html_page_description_dune2_name")}</a></h2>
+    <a href="/${language}/dune2/description">
       <div class="game_description game_description_opendune">
         ${unescape(t("html_game_description_opendune"))}
       </div>
@@ -33,8 +33,8 @@ import com.epicport.action.I18NRoot
 <br/>
 <div class="container_12 game_container">
   <div>
-    <h2><a href="/${getLanguage}/ttd/description">${t("html_page_description_ttd_name")}</a></h2>
-    <a href="/${getLanguage}/ttd/description">
+    <h2><a href="/${language}/ttd/description">${t("html_page_description_ttd_name")}</a></h2>
+    <a href="/${language}/ttd/description">
       <div class="game_description game_description_openttd">
         ${unescape(t("html_game_description_openttd"))}
       </div>

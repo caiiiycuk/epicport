@@ -228,8 +228,9 @@ class Epicport.API
       if files
         for file in files
           name = file.file.substring file.file.lastIndexOf('/') + 1
-          parent = file.file.substring 0, file.file.lastIndexOf('/') + 1
+          parent = file.file.substring 0, file.file.lastIndexOf('/')
           console.log "Creating file '" + name + "' in '" + parent + "'"
+          Module['FS_createPath']("/", parent, true, true)
           Module['FS_createDataFile'](parent, name, file.data, true, true)
 
       callback()

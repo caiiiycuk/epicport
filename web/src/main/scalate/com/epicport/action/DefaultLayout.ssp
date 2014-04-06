@@ -9,14 +9,14 @@
   val loginComponent = new LoginComponent()
   val navbarComponent = new NavbarComponent()
 
-  coreComponent.setLanguage(getLanguage)
-  loginComponent.setLanguage(getLanguage)
-  navbarComponent.setLanguage(getLanguage)
+  coreComponent.language = language
+  loginComponent.language = language
+  navbarComponent.language = language
 
   import defaultAction._
 %>
 <!DOCTYPE html>
-<html lang="${getLanguage}">
+<html lang="${language}">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <%=unescape(antiCsrfMeta)%>
@@ -41,7 +41,7 @@
     <meta name="description" content="${description}" />
     <meta name="keywords" content="${keywords}" />
 
-    <script type="text/javascript" src="${resourceUrl("xitrum/jquery-1.10.2.js")}"></script>
+    <script type="text/javascript" src="${resourceUrl("xitrum/jquery-1.11.0.min.js")}"></script>
     <script type="text/javascript" src="${publicUrl("js/jquery-ui.min.js")}"></script>
     <script type="text/javascript" src="${publicUrl("js/jquery.cookie.js")}"></script>
     <!-- <script type="text/javascript" src="${publicUrl("js/jquery.valid8.js")}"></script> -->

@@ -18,7 +18,7 @@ function () {
   document.addEventListener("keypress", preventUpDown);
 
   var dune2 = new Epicport.Dune2();
-  dune2.start('opendune-${getLanguage}.js');
+  dune2.start('opendune-${language}.js');
 }   
 """
 %>
@@ -44,4 +44,4 @@ function () {
 
 </div>
 
-<!-- <script src="/opendune-en.js"/> -->
+ <!-- <script src="/opendune-en.js"/> -->

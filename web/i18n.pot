@@ -1,57 +1,48 @@
-#
-# Aleksander <caiiiycuk@gmail.com>, 2014.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-04-06 17:24+0600\n"
-"Last-Translator: Aleksander Guryanov <caiiiycuk@gmail.com>\n"
-"Language-Team: русский <>\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your Name <email@example.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:36
 msgid "html_social_network_login"
-msgstr "Social networks"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:21
 msgid "html_can_load_desc"
-msgstr "Now you can load game saves"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:12
 msgid "html_xcom_title"
-msgstr "Online games / XCOM "
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:22
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:33
 msgid "html_register"
-msgstr "Register"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/Root.scala:20
 msgid "html_description"
 msgstr ""
-"This site is all about the greatest classic games. Now you can play Dune 2, "
-"XCOM, Transport Tycoon Deluxe online in your browser. You can start right "
-"now - you don't even need to register on our website."
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:23
 msgid "html_play_on_phone"
-msgstr "Version for Android"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:29
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:31
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:26
 msgid "html_xcom_game_name"
-msgstr "X-COM: UFO Defense"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:18
 msgid "html_can_save_desc"
-msgstr "Now you can save games"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_xcom_story_ssp.scala:15
 msgid "html_static_page_title_xcom-story"
@@ -60,73 +51,70 @@ msgstr ""
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:14
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:28
 msgid "html_xcom_keywords"
-msgstr "online games,ufo,xcom"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:52
 msgid "html_email_required"
-msgstr "Email required"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:10
 msgid "html_play_ttd_title"
-msgstr "Online games / Transport Tycoon Deluxe"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:7
 msgid "html_error_title"
-msgstr "Error"
+msgstr ""
+
+#: ../../../../src/main/scala/com/epicport/action/game/StaticPage.scala:23
+msgid new StringContext("html_static_page_keywords_", "").s(StaticPage.this.page)
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/Root.scala:21
 msgid "html_keywords"
-msgstr "online games,ufo,xcom,dune,dune 2,Transport Tycoon,Tycoon"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:30
 msgid "html_dialog_select_file_no_saves_found"
-msgstr "No saved games found"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:37
 msgid "html_game_description_openxcom"
 msgstr ""
-"You are in control of X-COM: an organization formed by the world's "
-"governments to fight the ever-increasing alien menace. Features: command "
-"deadly close-combat battles; research and manufacture alien technologies; "
-"develop a strategy to save the Earth <p class='more'><small>Read more</"
-"small></p>"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:33
 msgid "html_dialog_select_file_filename"
-msgstr "Enter file name"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:15
 msgid "html_login_success_title"
-msgstr "You successfully logged in"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/GameDescription_ssp.scala:29
 msgid "html_play_in_browser"
-msgstr "Play online"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:28
 msgid "html_page_description_dune2_description_short"
 msgstr ""
-"Browser version of classic game Dune 2. Dune 2 online can be played in every "
-"major browser."
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:40
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:43
 msgid "html_dialog_dune2_select_house_title"
-msgstr "Choose your side"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:33
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:36
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:55
 msgid "html_page_description_ttd_name"
-msgstr "Transport Tycoon Deluxe"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:18
 msgid "html_advice_login"
-msgstr "You should login if you want save or load game"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:30
 msgid "html_ok"
-msgstr "Ok"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_ttd_story_ssp.scala:15
 msgid "html_static_page_title_ttd-story"
@@ -134,305 +122,253 @@ msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:18
 msgid "html_home"
-msgstr "Home"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:58
 msgid "html_password_required"
-msgstr "Password is required"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:24
 msgid "html_dialog_select_file_title"
-msgstr "Select file"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:18
 msgid "html_click_to_start"
-msgstr "Please click to start the game"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:53
 msgid "html_xcom_eula"
 msgstr ""
-"This game uses resources of original XCOM: Ufo Defense. These resources "
-"belong to <b>Take-Two Interactive Software, Inc.</b> Providing these "
-"resources on this site breaks rights of copyright holders. Therefore you "
-"must provide a link to the resources in case you would like to play the game."
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:24
 msgid "html_login"
-msgstr "Login"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:12
 msgid "html_play_ttd_keywords"
-msgstr "online games,ttd,Transport Tycoon,Transport Tycoon Deluxe,browser,game"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:30
 msgid "html_xcom_game_description_full"
 msgstr ""
-"You are in control of X-COM: an organization formed by the world's "
-"governments to fight the ever-increasing alien menace.<br/><br/> \n"
-"Features: <ul>\n"
-"<li><b>Command deadly close-combat battles</b><br/>\n"
-"Shooting down UFOs is just the beginning: you must then lead a squad of "
-"heavily-armed soldiers across different terrains as they investigate the UFO "
-"crash site. Tackle the aliens with automatic rifles, rocket launchers, and "
-"even tanks in the struggle to retrieve useful technology, weapons or life "
-"forms.</li> \n"
-"<li><b>Research and manufacture alien technologies</b><br/>\n"
-"Successful ground assault missions will allow X-COM scientists to analyze "
-"alien items. Each new breakthrough brings you a little closer to "
-"understanding the technology and culture of the alien races. Once you have "
-"sufficient research data on the UFO's superior weapons and crafts, you'll be "
-"able to manufacture weapons of equal capability.</li>\n"
-"<li><b>Develop a strategy to save the Earth</b><br/>\n"
-"You must make every crucial decision as you combat the powerful alien "
-"forces. But you'll also need to watch the world political situation: "
-"governments may be forced into secret pacts with the aliens and then begin "
-"to reduce X-COM funding.</li>\n"
-"</ul>"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:29
 msgid "htmpl_page_description_ttd_prefomance"
-msgstr "Prefomance test"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:46
 msgid "html_dialog_dune2_atreides_house"
-msgstr "House Atreides"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:14
 msgid "html_register_description"
-msgstr "Here you can register on epicport.com"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:15
 msgid "html_register_keywords"
-msgstr "register,epicport"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:49
 msgid "html_passwords_not_match"
-msgstr "Passwords do not match"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_navbar_ssp.scala:27
 msgid "html_logout"
-msgstr "logout"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:49
 msgid "html_dialog_dune2_ordos_house"
-msgstr "House Ordos"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/DefaultLayout_ssp.scala:107
 msgid "html_support"
-msgstr "Support"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:34
 msgid "html_form_name"
-msgstr "Name"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:55
 msgid "html_name_required"
-msgstr "Name is required"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:35
 msgid "html_page_description_ttd_keywords"
-msgstr "online games,Transport Tycoon,Transport Tycoon Deluxe,browser,game"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:52
 msgid "html_dialog_dune2_harkonnen_house"
-msgstr "House Harkonnen"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:27
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:43
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:30
 msgid "html_page_description_dune2_name"
-msgstr "Dune II: The Building of A Dynasty"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:13
 msgid "html_register_title"
-msgstr "Register / Epicport"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:56
 msgid "html_xcom_data_link"
-msgstr "Enter link to data here"
+msgstr ""
+
+#: ../../../../src/main/scala/com/epicport/action/game/StaticPage.scala:22
+msgid new StringContext("html_static_page_description_", "").s(StaticPage.this.page)
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_dune2_story_ssp.scala:15
 msgid "html_static_page_title_dune2-story"
 msgstr ""
 
+#: ../../../../src/main/scala/com/epicport/action/core/Link.scala:11
+msgid new StringContext("html_static_page_title_", "").s(page)
+msgstr ""
+
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:11
 msgid "html_play_ttd_description"
 msgstr ""
-"Browser version of classic game Transport Tycoon Deluxe (TTD). Here you can "
-"play into Transport Tycoon Deluxe online in your browser."
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:46
 msgid "html_form_button_register"
-msgstr "Register"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:62
 msgid "html_xcom_demo_data_link"
-msgstr "You may use this data link for demo purposes only"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:27
 msgid "html_form_button_login"
-msgstr "Login"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:27
 msgid "html_game_saved"
-msgstr "Game successfully saved"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
 msgid "html_not_found_description"
-msgstr "Error 404 (page not found)"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:43
 msgid "html_confirm_password"
-msgstr "Confirm password"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:45
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:39
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:42
 msgid "html_login_error"
-msgstr "Invalid login or password"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:24
 msgid "html_success"
-msgstr "Success"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:27
 msgid "html_dialog_select_file_list"
-msgstr "Select file"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:15
 msgid "html_login_modal"
-msgstr "Login required"
+msgstr ""
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:17
+msgid helper.param[String]("error", helper.param$default$2[Nothing])(helper.DefaultsTo.default[String], reflect.this.ManifestFactory.classType[String](classOf[java.lang.String]))
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/Root.scala:19
 msgid "html_title"
-msgstr "Free online games"
+msgstr ""
+
+#: ../../../../src/main/scala/com/epicport/action/game/StaticPage.scala:21
+msgid new StringContext("html_static_page_title_", "").s(StaticPage.this.page)
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:28
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:21
 msgid "html_form_email"
-msgstr "Email"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:59
 msgid "html_link_input"
-msgstr "Enter link here"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:10
 msgid "html_play_dune2_title"
-msgstr "Online games / Dune 2"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:21
 msgid "html_note_hangs"
 msgstr ""
-"<b>NOTE:</b>&nbsp;Your browser may hang up during loading of the game, "
-"please be patient"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:24
 msgid "htmpl_page_description_ttd_multipalyer"
-msgstr "Multiplayer game"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:13
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:27
 msgid "html_xcom_description"
 msgstr ""
-"Browser version of classic game X-COM: UFO Defense. Here you can play online "
-"X-COM in your browser."
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:33
 msgid "html_cancel"
-msgstr "Cancel"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/Errors.scala:22
 msgid "html_server_error_description"
-msgstr "Error 500 (server error)"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:24
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:40
 msgid "html_form_password"
-msgstr "Password"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:29
 msgid "html_page_description_dune2_keywords"
-msgstr "online games,dune,browser,game"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:25
 msgid "html_site_description"
 msgstr ""
-"This site is all about the greatest classic games. Now you can play Dune 2, "
-"XCOM, Transport Tycoon Deluxe in your browser. You can start right now - you "
-"don't even need to register on our website. Just click the link of your "
-"favorite game."
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:61
 msgid "html_game_description_openttd"
 msgstr ""
-"Make lots of money. Build complex road-rail-air-sea routes and shift cargo "
-"or passengers through the best routes. Chase trains, boats and planes on "
-"massive worlds; all against a background of cut-throat business rivalry.<p "
-"class='more'><small>Read more</small></p>"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:31
 msgid "html_page_description_dune2_description"
 msgstr ""
-"Dune II is a world first: a blend of arcade action and strategy which "
-"successfully caters for all tastes. There are fierce battles to be taught on "
-"the desert planet Arrakis, the only source of the life-prolonging substance "
-"Spice. Three great Houses are plited against each other to reap the Spice - "
-"and the rewards it will bring ... For he who controls the Spice controls the "
-"universe.<br/><br/>Some key elements that first appeared in Dune II and "
-"later appear in many other RTS games include:<ul>  <li>A world map from "
-"which the next mission is chosen</li>  <li>Resource-gathering to fund unit "
-"construction</li>  <li>Simple base and unit construction</li>  <li>Building "
-"construction dependencies (technology tree)</li>  <li>Mobile units that can "
-"be deployed as buildings</li>  <li>Different sides/factions (the Houses), "
-"each with unique unit-types and super weapons</li></ul>"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:12
 msgid "html_play_dune2_keywords"
-msgstr "online games,dune,browser,game"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:34
 msgid "html_page_description_ttd_description_short"
 msgstr ""
-"Browser version of classic game Transport Tycoon Deluxe (TTD). Here you can "
-"play into Transport Tycoon Deluxe online in your browser."
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:11
 msgid "html_play_dune2_description"
 msgstr ""
-"Browser version of classic game Dune 2. Dune 2 online can be played in every "
-"major browser."
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:50
 msgid "html_eula"
-msgstr "End-user license agreement"
+msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:49
 msgid "html_game_description_opendune"
 msgstr ""
-"Dune II is a world first: a blend of arcade action and strategy which "
-"successfully caters for all tastes. There are fierce battles to be taught on "
-"the desert planet Arrakis, the only source of the life-prolonging substance "
-"Spice.<p class='more'><small>Read more</small></p>"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:22
 msgid "html_site_title"
-msgstr "Free online games"
+msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:37
 msgid "html_page_description_ttd_description"
 msgstr ""
-"Make lots of money. Build complex road-rail-air-sea routes and shift cargo "
-"or passengers through the best routes. Chase trains, boats and planes on "
-"massive worlds; all against a background of cut-throat business rivalry. "
-"Make tacks. Make connections. Make it big.<br/><br/>Computer Gaming World:"
-"<br/>&nbsp;&nbsp;&nbsp;&nbsp;<b>...addictive, strongly strategic game with "
-"great depth, replay, beautiful production values, and fantastic gameplay.</"
-"b><br/><br/>Next Generation:<br/>&nbsp;&nbsp;&nbsp;&nbsp;<b>The best "
-"economic sim since Civilization.</b><br/><br/>PC Gamer:<br/>&nbsp;&nbsp;"
-"&nbsp;&nbsp;<b>...is a good as computer gaming gets.</b>"
 
 msgid "html_powered_by"
-msgstr "Powered by:"
+msgstr ""
 
 msgid "html_static_page_description_xcom-story"
 msgstr ""
@@ -451,9 +387,3 @@ msgstr ""
 
 msgid "html_static_page_keywords_ttd-story"
 msgstr ""
-
-#~ msgid "html_required_fields_not_set"
-#~ msgstr "Reuired fields does not set"
-
-#~ msgid "html_alredy_exists"
-#~ msgstr "User already exists"
