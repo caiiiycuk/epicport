@@ -14,7 +14,8 @@
   at("arguments") = s"""['-m', 'em_midi', '-s', 'sdl', '-x', '-c', '/home/caiiiycuk/play-ttd/etc/preload/openttd.cfg' $multiplayer $perfomance]"""
 
   if (paramo("perfomance").isDefined) {
-    at("preRun") = """function() {
+    at("preRun") = """
+function() {
 
   Module['update_fps'] = function(fps) {
     //document.getElementById('fps').innerHTML = 'FPS: ' + Math.round(fps);
@@ -31,7 +32,16 @@
 }
 """
   } else {
-    at("preRun") = """function () {}"""
+    at("preRun") = """
+function () {
+
+  Module['getStartupScript'] = function() {
+    var profile = Epicport['profile'] || { first_name: 'unknown' };
+    return 'name ' + profile.first_name;
+  };
+
+}
+"""
   }
 
   
