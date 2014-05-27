@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-04-06 17:22+0600\n"
+"PO-Revision-Date: 2014-05-27 07:06+0600\n"
 "Last-Translator: Aleksander Guryanov <caiiiycuk@gmail.com>\n"
 "Language-Team: русский <>\n"
 "MIME-Version: 1.0\n"
@@ -208,6 +208,10 @@ msgstr "Здесь вы можете зарегистрироваться на �
 msgid "html_register_keywords"
 msgstr "Регистрация,epicport"
 
+#: ../../../../src/main/scala/com/epicport/action/privates/Private.scala:21
+msgid "html_private_page_keywords"
+msgstr ""
+
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:49
 msgid "html_passwords_not_match"
 msgstr "Пароли не совпадают"
@@ -246,6 +250,10 @@ msgstr "Дом Харконнен"
 msgid "html_page_description_dune2_name"
 msgstr "Dune II: The Building of A Dynasty"
 
+#: ../../../../src/main/scala/com/epicport/action/privates/Private.scala:19
+msgid "html_private_page_title"
+msgstr "Ресурсы"
+
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:13
 msgid "html_register_title"
 msgstr "Регистрация / Epicport"
@@ -258,15 +266,19 @@ msgstr "Укажите ссылку на игровые ресурсы"
 msgid "html_static_page_title_dune2-story"
 msgstr "История портирования Dune 2"
 
+#: ../../../../src/main/scala/com/epicport/action/privates/Private.scala:20
+msgid "html_private_page_description"
+msgstr ""
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:46
+msgid "html_form_button_register"
+msgstr "Зарегестрироваться"
+
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:11
 msgid "html_play_ttd_description"
 msgstr ""
 "Браузерная версия классической игры Transport Tycoon Deluxe (TTD). Здесь вы "
 "можете играть в Transport Tycoon Deluxe онлайн в вашем браузере."
-
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:46
-msgid "html_form_button_register"
-msgstr "Зарегестрироваться"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:62
 msgid "html_xcom_demo_data_link"
@@ -280,13 +292,13 @@ msgstr "Войти"
 msgid "html_game_saved"
 msgstr "Игра сохранена"
 
-#: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
-msgid "html_not_found_description"
-msgstr "Ошибка 404 (страница не найдена)"
-
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:43
 msgid "html_confirm_password"
 msgstr "Пароль ещё раз"
+
+#: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
+msgid "html_not_found_description"
+msgstr "Ошибка 404 (страница не найдена)"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:45
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:39
@@ -351,6 +363,15 @@ msgstr "Ошибка 500 (ошибка сервера)"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:40
 msgid "html_form_password"
 msgstr "Пароль"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/privates/WargusPrivateAction_ssp.scala:15
+msgid "html_wargus_private_page_div"
+msgstr ""
+"Wargus использует ресурсы из оригинальной игры Warcraft II. Эти ресурсы "
+"принадлежать Blizzard Entertainment. Ниже приведены ссылки на скачивание "
+"собранных ресурсов. Скачивая эти файлы вы соглашаетесь с тем что у вас есть "
+"собственная легальная копия игры Warcraft II: Tides of Darkness. В противном "
+"случае вы должны предоставить эти ресурсы самостоятельно."
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:29
 msgid "html_page_description_dune2_keywords"

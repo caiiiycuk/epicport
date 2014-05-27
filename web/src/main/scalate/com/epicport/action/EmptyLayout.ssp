@@ -1,0 +1,34 @@
+<%
+  import com.epicport.action._
+  import com.epicport.action.core._
+  import com.epicport.i18n.I18N._
+
+  val defaultAction = currentAction.asInstanceOf[DefaultAction]
+  val altUri = alternateUri(request.getUri)
+  
+  import defaultAction._
+%>
+<!DOCTYPE html>
+<html lang="${language}">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <%=unescape(antiCsrfMeta)%>
+    
+    <title>${title}</title>
+    
+    <link type="image/vnd.microsoft.icon" rel="shortcut icon" href="${publicUrl("favicon.ico")}"/>
+
+#if (i18nSupport)
+  #for (lang <- languages)
+      <link rel="alternate" hreflang="${lang}" href="${altUri(lang)}" />
+  #end
+#end
+
+    <meta name="author" content="Guryanov Aleksander" />  
+    <meta name="description" content="${description}" />
+    <meta name="keywords" content="${keywords}" />
+  </head>
+  <body>
+    <%=unescape(renderedView)%>
+  </body>
+</html>

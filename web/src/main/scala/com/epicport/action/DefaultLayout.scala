@@ -40,3 +40,7 @@ trait DefaultAction extends Action {
 trait DefaultLayout extends DefaultAction {
   override def layout = renderViewNoLayout[DefaultLayout]()
 }
+
+trait EmptyLayout extends DefaultAction {
+  override def layout = renderViewNoLayout[EmptyLayout]()
+}

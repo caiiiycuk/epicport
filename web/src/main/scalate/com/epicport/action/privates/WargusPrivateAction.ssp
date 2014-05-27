@@ -1,0 +1,7 @@
+<div><%=unescape(t("html_wargus_private_page_div"))%></div>
+
+<ul>
+  <li><a href="<%=publicUrl("privates/wargus/wargus-ru-0.ezip")%>">Warcraft II - Test (RUS)</a></li>
+  <li>Warcraft II: Tides of Darkness (ENG)</li></a>
+  <li>Warcraft II: Tides of Darkness (RUS)</li>
+</ul>

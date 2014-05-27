@@ -168,6 +168,10 @@ msgstr ""
 msgid "html_register_keywords"
 msgstr ""
 
+#: ../../../../src/main/scala/com/epicport/action/privates/Private.scala:21
+msgid "html_private_page_keywords"
+msgstr ""
+
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:49
 msgid "html_passwords_not_match"
 msgstr ""
@@ -206,6 +210,10 @@ msgstr ""
 msgid "html_page_description_dune2_name"
 msgstr ""
 
+#: ../../../../src/main/scala/com/epicport/action/privates/Private.scala:19
+msgid "html_private_page_title"
+msgstr ""
+
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:13
 msgid "html_register_title"
 msgstr ""
@@ -222,16 +230,20 @@ msgstr ""
 msgid "html_static_page_title_dune2-story"
 msgstr ""
 
+#: ../../../../src/main/scala/com/epicport/action/privates/Private.scala:20
+msgid "html_private_page_description"
+msgstr ""
+
 #: ../../../../src/main/scala/com/epicport/action/core/Link.scala:11
 msgid new StringContext("html_static_page_title_", "").s(page)
 msgstr ""
 
-#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:11
-msgid "html_play_ttd_description"
-msgstr ""
-
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:46
 msgid "html_form_button_register"
+msgstr ""
+
+#: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:11
+msgid "html_play_ttd_description"
 msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:62
@@ -246,12 +258,12 @@ msgstr ""
 msgid "html_game_saved"
 msgstr ""
 
-#: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
-msgid "html_not_found_description"
-msgstr ""
-
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:43
 msgid "html_confirm_password"
+msgstr ""
+
+#: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
+msgid "html_not_found_description"
 msgstr ""
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:45
@@ -321,6 +333,10 @@ msgstr ""
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:24
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:40
 msgid "html_form_password"
+msgstr ""
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/privates/WargusPrivateAction_ssp.scala:15
+msgid "html_wargus_private_page_div"
 msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:29

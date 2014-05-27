@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-04-06 17:24+0600\n"
+"PO-Revision-Date: 2014-05-27 07:03+0600\n"
 "Last-Translator: Aleksander Guryanov <caiiiycuk@gmail.com>\n"
 "Language-Team: русский <>\n"
 "MIME-Version: 1.0\n"
@@ -205,6 +205,10 @@ msgstr "Here you can register on epicport.com"
 msgid "html_register_keywords"
 msgstr "register,epicport"
 
+#: ../../../../src/main/scala/com/epicport/action/privates/Private.scala:21
+msgid "html_private_page_keywords"
+msgstr ""
+
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:49
 msgid "html_passwords_not_match"
 msgstr "Passwords do not match"
@@ -243,6 +247,10 @@ msgstr "House Harkonnen"
 msgid "html_page_description_dune2_name"
 msgstr "Dune II: The Building of A Dynasty"
 
+#: ../../../../src/main/scala/com/epicport/action/privates/Private.scala:19
+msgid "html_private_page_title"
+msgstr "Resources"
+
 #: ../../../../src/main/scala/com/epicport/action/Register.scala:13
 msgid "html_register_title"
 msgstr "Register / Epicport"
@@ -255,15 +263,19 @@ msgstr "Enter link to data here"
 msgid "html_static_page_title_dune2-story"
 msgstr ""
 
+#: ../../../../src/main/scala/com/epicport/action/privates/Private.scala:20
+msgid "html_private_page_description"
+msgstr ""
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:46
+msgid "html_form_button_register"
+msgstr "Register"
+
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:11
 msgid "html_play_ttd_description"
 msgstr ""
 "Browser version of classic game Transport Tycoon Deluxe (TTD). Here you can "
 "play into Transport Tycoon Deluxe online in your browser."
-
-#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:46
-msgid "html_form_button_register"
-msgstr "Register"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Xcom_ssp.scala:62
 msgid "html_xcom_demo_data_link"
@@ -277,13 +289,13 @@ msgstr "Login"
 msgid "html_game_saved"
 msgstr "Game successfully saved"
 
-#: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
-msgid "html_not_found_description"
-msgstr "Error 404 (page not found)"
-
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:43
 msgid "html_confirm_password"
 msgstr "Confirm password"
+
+#: ../../../../src/main/scala/com/epicport/action/Errors.scala:13
+msgid "html_not_found_description"
+msgstr "Error 404 (page not found)"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:45
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:39
@@ -349,6 +361,15 @@ msgstr "Error 500 (server error)"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:40
 msgid "html_form_password"
 msgstr "Password"
+
+#: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/privates/WargusPrivateAction_ssp.scala:15
+msgid "html_wargus_private_page_div"
+msgstr ""
+"Wargus game uses resources of original Warcraft II. These resources belong "
+"to Blizzard Entertainment. There are list of prebuild resources for wargus. "
+"With downloading this files you are agreeing that you have own legal copy of "
+"Warcraft II: Tides of Darkness. Otherwise you should manually build this "
+"resource packages."
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:29
 msgid "html_page_description_dune2_keywords"

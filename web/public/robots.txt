@@ -11,3 +11,5 @@ User-Agent: *
 Allow: /
 Disallow: /en/register
 Disallow: /ru/register
+Disallow: /en/private
+Disallow: /ru/private
