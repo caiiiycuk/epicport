@@ -41,7 +41,7 @@
     <meta name="description" content="${description}" />
     <meta name="keywords" content="${keywords}" />
 
-    <script type="text/javascript" src="${resourceUrl("xitrum/jquery-1.11.0.min.js")}"></script>
+    <script type="text/javascript" src="${publicUrl("js/jquery-1.11.1.min.js")}"></script>
     <script type="text/javascript" src="${publicUrl("js/jquery-ui.min.js")}"></script>
     <script type="text/javascript" src="${publicUrl("js/jquery.cookie.js")}"></script>
     <!-- <script type="text/javascript" src="${publicUrl("js/jquery.valid8.js")}"></script> -->

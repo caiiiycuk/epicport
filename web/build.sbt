@@ -11,7 +11,7 @@ scalateTemplateConfig in Compile := Seq(TemplateConfig(
   Seq(Binding("helper", "xitrum.Action", true))
 ))
 
-libraryDependencies += "tv.cntt" %% "xitrum-scalate" % "1.8"
+libraryDependencies += "tv.cntt" %% "xitrum-scalate" % "2.0"
 
 //------------------------------------------------------------------------------
 
@@ -21,7 +21,7 @@ name         := "epicport"
 
 version      := "1.0-SNAPSHOT"
 
-scalaVersion := "2.10.3"
+scalaVersion := "2.10.4"
 
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
 
@@ -32,11 +32,11 @@ javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
 
 // Most Scala projects are published to Sonatype, but Sonatype is not default
 // and it takes several hours to sync from Sonatype to Maven Central
-resolvers += "SonatypeReleases" at "http://oss.sonatype.org/content/repositories/releases/"
+resolvers += "SonatypeReleases" at "https://oss.sonatype.org/content/repositories/releases/"
 
-resolvers += "SonatypeSnapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
+resolvers += "SonatypeSnapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
 
-libraryDependencies += "tv.cntt" %% "xitrum" % "3.5"
+libraryDependencies += "tv.cntt" %% "xitrum" % "3.14"
 
 libraryDependencies += "org.json4s" %% "json4s-jackson" % "3.2.5"
 
@@ -45,7 +45,7 @@ libraryDependencies += "com.typesafe.slick" %% "slick" % "1.0.1"
 libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.27"
 
 // Xitrum uses SLF4J, an implementation of SLF4J is needed
-libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.1.1"
+libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.1.2"
 
 libraryDependencies += "com.github.caiiiycuk" %% "async4s-http-client" % "0.3-SNAPSHOT" % "compile"
 
@@ -56,14 +56,6 @@ autoCompilerPlugins := true
 addCompilerPlugin("tv.cntt" %% "xgettext" % "1.0")
 
 scalacOptions += "-P:xgettext:xitrum.I18n"
-
-// xitrum.imperatively uses Scala continuation, also a compiler plugin ---------
-
-libraryDependencies <+= scalaVersion { sv =>
-  compilerPlugin("org.scala-lang.plugins" % "continuations" % sv)
-}
-
-scalacOptions += "-P:continuations:enable"
 
 // Put config directory in classpath for easier development --------------------
 

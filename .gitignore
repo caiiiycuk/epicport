@@ -18,6 +18,7 @@ project/plugins/project/
 .metadata
 
 # Xitrum
+config/logback.xml
 web/log
 web/public/js/game/
 web/routes.cache
