@@ -14,7 +14,6 @@ class Xcom extends GameLayout {
   def keywords = t("html_xcom_keywords")
 
   def execute() {
-    at("demoLink") = Configuration.demoLink
     respondView()
   }
 

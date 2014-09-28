@@ -1,7 +1,0 @@
-<div><%=unescape(t("html_wargus_private_page_div"))%></div>
-<!--
-<ul>
-  <li><a href="<%=publicUrl("privates/wargus/wargus-eng-1.ezip")%>">(ENG v1) Warcraft II: Tides of Darkness + Beyond the Dark Portal</a></li>
-  <li><a href="<%=publicUrl("privates/wargus/wargus-rus-1.ezip")%>">(RUS v1) Warcraft II: Tides of Darkness</a></li>
-</ul>
--->
