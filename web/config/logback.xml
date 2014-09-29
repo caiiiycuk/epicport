@@ -23,9 +23,9 @@
 
   <!-- Should be set to INFO in production mode for speed  -->
   <root level="INFO">
-    <!-- Should be commented out in production mode for speed 
+    <!-- Should be commented out in production mode for speed --> 
     <appender-ref ref="CONSOLE"/>
-    -->
+
     <appender-ref ref="FILE"/>
   </root>
 </configuration>
