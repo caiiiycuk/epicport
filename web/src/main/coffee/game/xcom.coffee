@@ -12,7 +12,7 @@ class Epicport.XCOM
     Module['openxcom.data'] = "/storage/proxy?url=https://dl.dropboxusercontent.com/s/kp9i4z5qtpede1d/openxcom.data"
 
     startGame = () => $.ajax
-      url: "openxcom.js"
+      url: "/emscripten/xcom/openxcom.js"
       dataType: "script"
       xhr: () ->
         Module.setStatus "Downloading script (openxcom.js)"

@@ -7,7 +7,7 @@
 
   at("preRun") = """
 function () {
-  Module['FS_createFolder']('/', 'home', true, true);
+//  Module['FS_createFolder']('/', 'home', true, true);
   Module['FS_createFolder']('/home', 'emscripten', true, true);
   Module['FS_createFolder']('/home/emscripten', '.openxcom', true, true);
   Module['FS_createFolder']('/home/emscripten', '.config', true, true);

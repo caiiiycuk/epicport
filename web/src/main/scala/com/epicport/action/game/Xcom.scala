@@ -2,9 +2,9 @@ package com.epicport.action.game
 
 import com.epicport.Configuration
 import com.epicport.action.core.StaticPageLink
-
 import xitrum.Action
 import xitrum.annotation.GET
+import com.epicport.action.StaticFile
 
 @GET("/:lang/xcom")
 class Xcom extends GameLayout {
@@ -22,17 +22,17 @@ class Xcom extends GameLayout {
 @GET("/:lang/xcom/description")
 class XcomDescription extends GameDescription {
 
-  def title           = t("html_xcom_game_name")
-  def description     = t("html_xcom_description")
-  def keywords        = t("html_xcom_keywords")
-  def gameName        = t("html_xcom_game_name")
+  def title = t("html_xcom_game_name")
+  def description = t("html_xcom_description")
+  def keywords = t("html_xcom_keywords")
+  def gameName = t("html_xcom_game_name")
   def gameDescription = t("html_xcom_game_description_full")
-  def linkToPlay      = url[Xcom]("lang" -> language)
-  def links           = language match {
+  def linkToPlay = url[Xcom]("lang" -> language)
+  def links = language match {
     case "ru" => Seq(StaticPageLink("xcom-story"))
     case _ => Seq()
   }
-    
+
   def screenshots: Seq[ScreenShot] =
     Seq(ScreenShot("xcom/00_small.png", "xcom/00.png"),
       ScreenShot("xcom/01_small.png", "xcom/01.png"),
@@ -45,13 +45,19 @@ class XcomDescription extends GameDescription {
 class XcomStory extends Action {
 
   beforeFilter {
-    redirectTo[StaticPage]("lang" -> param("lang"), 
-        "page" -> "xcom-story")  
+    redirectTo[StaticPage]("lang" -> param("lang"),
+      "page" -> "xcom-story")
     false
   }
-  
+
   def execute = {
     throw new UnsupportedOperationException()
   }
 
 }
+
+@GET("/:lang/openxcom.data")
+class XcomData extends StaticFile("emscripten/xcom/openxcom.data")
+
+@GET("/:lang/openxcom.js.mem")
+class XcomMem extends StaticFile("emscripten/xcom/openxcom.js.mem")
