@@ -1,29 +1,39 @@
 cmake_minimum_required (VERSION 2.8)
 
-message("-----------------------------------------------")
-message("- openxcom build script")
-message("- @author caiiiycuk aka Aleksander Guryanov")
-message("- @feedback https://github.com/caiiiycuk/epicport")
-message("-----------------------------------------------")
+message(STATUS "-------------------------------------------------")
+message(STATUS " openxcom build script")
+message(STATUS " @author caiiiycuk aka Aleksander Guryanov")
+message(STATUS " @feedback https://github.com/caiiiycuk/epicport")
+message(STATUS "-------------------------------------------------")
 
 project(openxcom)
 
 set(BUILD_ROOT "${PROJECT_BINARY_DIR}/build")
 set(ROOT "${CMAKE_SOURCE_DIR}/../..")
+set(EMXCOM_REPO "${CMAKE_SOURCE_DIR}/emscriptenXcom")
+set(EMXCOM_TAGET_VERSION "emscriptenXcom-v0.9")
 
-if(NOT EXISTS "$ENV{OPENXCOM_REPO}")
-  message(FATAL_ERROR "Please set OPENXCOM_REPO before building")
+execute_process(
+  COMMAND git describe --tags --exact-match
+  WORKING_DIRECTORY ${EMXCOM_REPO}
+  RESULT_VARIABLE EMXCOM_VERSION_CHECK
+  OUTPUT_VARIABLE EMXCOM_VERSION
+  ERROR_VARIABLE EMXCOM_VERSION_ERROR
+)
+
+if(EMXCOM_VERSION AND (EMXCOM_VERSION STREQUAL "${EMXCOM_TAGET_VERSION}\n"))
+  message(STATUS "Found emscriptenXcom version '${EMXCOM_TAGET_VERSION}'")
+else()
+  message(STATUS "Wrong version of emscriptenXcom should be '${EMXCOM_TAGET_VERSION}'")
+  message(FATAL_ERROR "${EMXCOM_VERSION} != ${EMXCOM_TAGET_VERSION} in ${EMXCOM_REPO}\n (${EMXCOM_VERSION_CHECK}, ${EMXCOM_VERSION_ERROR})")
 endif()
 
-message("-- Making fresh environment")
+message(STATUS "Making fresh environment")
 execute_process(COMMAND rm -rf ${BUILD_ROOT})
 execute_process(COMMAND mkdir -p ${BUILD_ROOT})
 
-message("-- Copying original sources")
-execute_process(COMMAND cp -r $ENV{OPENXCOM_REPO}/. ${BUILD_ROOT})
-
-message("-- Patching openxcom to be emscripten ready")
-execute_process(COMMAND cp -r ${CMAKE_CURRENT_SOURCE_DIR}/patch/. ${BUILD_ROOT})
+message(STATUS "Copying original sources")
+execute_process(COMMAND cp -r ${EMXCOM_REPO}/. ${BUILD_ROOT})
 
 message("-- Collecting sources")
 
