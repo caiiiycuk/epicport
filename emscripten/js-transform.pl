@@ -11,7 +11,6 @@ Module['FS_findObject'] = FS.findObject;
 Module['dunCall'] = Runtime.dynCall;
 Module['dynCall'] = Runtime.dynCall;
 Module.screenIsReadOnly = true;
-SDL.defaults.copyOnLock = false;
 
 Module['SDL_numSimultaneouslyQueuedBuffers'] = 1;
 };
