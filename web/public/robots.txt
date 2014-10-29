@@ -13,3 +13,9 @@ Disallow: /en/register
 Disallow: /ru/register
 Disallow: /en/private
 Disallow: /ru/private
+Disallow: /en/dune2/browser
+Disallow: /ru/dune2/browser
+Disallow: /en/ttd/browser
+Disallow: /ru/ttd/browser
+Disallow: /en/xcom/browser
+Disallow: /ru/xcom/browser

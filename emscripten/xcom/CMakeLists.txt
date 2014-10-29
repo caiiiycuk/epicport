@@ -24,8 +24,8 @@ execute_process(
 if(EMXCOM_VERSION AND (EMXCOM_VERSION STREQUAL "${EMXCOM_TAGET_VERSION}\n"))
   message(STATUS "Found emscriptenXcom version '${EMXCOM_TAGET_VERSION}'")
 else()
-  message(STATUS "Wrong version of emscriptenXcom should be '${EMXCOM_TAGET_VERSION}'")
-  message(FATAL_ERROR "${EMXCOM_VERSION} != ${EMXCOM_TAGET_VERSION} in ${EMXCOM_REPO}\n (${EMXCOM_VERSION_CHECK}, ${EMXCOM_VERSION_ERROR})")
+  message(WARNING "Wrong version of emscriptenXcom should be '${EMXCOM_TAGET_VERSION}'")
+  message(WARNING "${EMXCOM_VERSION} != ${EMXCOM_TAGET_VERSION} in ${EMXCOM_REPO}\n (${EMXCOM_VERSION_CHECK}, ${EMXCOM_VERSION_ERROR})")
 endif()
 
 message(STATUS "Making fresh environment")

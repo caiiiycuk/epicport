@@ -47,7 +47,7 @@ msgstr "Version for Android"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:31
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:26
 msgid "html_xcom_game_name"
-msgstr "X-COM: UFO Defense"
+msgstr "X-COM: UFO Defense - Online (browser version)"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:18
 msgid "html_can_save_desc"
@@ -60,7 +60,7 @@ msgstr ""
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:14
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:28
 msgid "html_xcom_keywords"
-msgstr "online games,ufo,xcom"
+msgstr "ufo,xcom,browser,online,play,game"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:52
 msgid "html_email_required"
@@ -118,7 +118,7 @@ msgstr "Choose your side"
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:36
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:55
 msgid "html_page_description_ttd_name"
-msgstr "Transport Tycoon Deluxe"
+msgstr "Transport Tycoon Deluxe (TTD) - Online (browser version)"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:18
 msgid "html_advice_login"
@@ -235,7 +235,7 @@ msgstr "Name is required"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:35
 msgid "html_page_description_ttd_keywords"
-msgstr "online games,Transport Tycoon,Transport Tycoon Deluxe,browser,game"
+msgstr "ttd,Transport Tycoon,Transport Tycoon Deluxe,browser,online,play,game"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:52
 msgid "html_dialog_dune2_harkonnen_house"
@@ -245,7 +245,7 @@ msgstr "House Harkonnen"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:43
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:30
 msgid "html_page_description_dune2_name"
-msgstr "Dune II: The Building of A Dynasty"
+msgstr "Dune 2 - Online (browser verion)"
 
 #: ../../../../src/main/scala/com/epicport/action/privates/Private.scala:19
 msgid "html_private_page_title"
@@ -371,7 +371,7 @@ msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:29
 msgid "html_page_description_dune2_keywords"
-msgstr "online games,dune,browser,game"
+msgstr "dune,dune 2,browser,online,play,game"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:25
 msgid "html_site_description"
@@ -392,18 +392,10 @@ msgstr ""
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:31
 msgid "html_page_description_dune2_description"
 msgstr ""
-"Dune II is a world first: a blend of arcade action and strategy which "
-"successfully caters for all tastes. There are fierce battles to be taught on "
-"the desert planet Arrakis, the only source of the life-prolonging substance "
-"Spice. Three great Houses are plited against each other to reap the Spice - "
-"and the rewards it will bring ... For he who controls the Spice controls the "
-"universe.<br/><br/>Some key elements that first appeared in Dune II and "
-"later appear in many other RTS games include:<ul>  <li>A world map from "
-"which the next mission is chosen</li>  <li>Resource-gathering to fund unit "
-"construction</li>  <li>Simple base and unit construction</li>  <li>Building "
-"construction dependencies (technology tree)</li>  <li>Mobile units that can "
-"be deployed as buildings</li>  <li>Different sides/factions (the Houses), "
-"each with unique unit-types and super weapons</li></ul>"
+"<p>This is recreation of the classic strategy game Dune 2. Game is HTML5 "
+"compliant and can be played on every major browser like chrome or firefox.</p>"
+"<p>You can play in single-player mode for all of three houses. All you games "
+"will be saved on server and you can continue playing it any time.</p>"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:12
 msgid "html_play_dune2_keywords"
@@ -440,15 +432,11 @@ msgstr "Free online games"
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:37
 msgid "html_page_description_ttd_description"
 msgstr ""
-"Make lots of money. Build complex road-rail-air-sea routes and shift cargo "
-"or passengers through the best routes. Chase trains, boats and planes on "
-"massive worlds; all against a background of cut-throat business rivalry. "
-"Make tacks. Make connections. Make it big.<br/><br/>Computer Gaming World:"
-"<br/>&nbsp;&nbsp;&nbsp;&nbsp;<b>...addictive, strongly strategic game with "
-"great depth, replay, beautiful production values, and fantastic gameplay.</"
-"b><br/><br/>Next Generation:<br/>&nbsp;&nbsp;&nbsp;&nbsp;<b>The best "
-"economic sim since Civilization.</b><br/><br/>PC Gamer:<br/>&nbsp;&nbsp;"
-"&nbsp;&nbsp;<b>...is a good as computer gaming gets.</b>"
+"<p>This is a recreation of the Transport Tycoon. Game is HTML5 compliant and "
+"can be played in every major browser like chrome or firefox.</p><p>In "
+"single-player mode you can play in Transport Tycoon against computer "
+"(AI: AdmiralAI, AIAI, NoCAB, SimpleAI, Trans AI).</p><p>Multiplayer mode "
+"is highly experimental, server can take up to 255 players in 15 companies.</p>"
 
 msgid "html_powered_by"
 msgstr "Powered by:"

@@ -49,7 +49,7 @@ msgstr "Играть на телефоне"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:31
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:26
 msgid "html_xcom_game_name"
-msgstr "X-COM: UFO Defense"
+msgstr "X-COM: UFO Defense - Онлайн (версия для браузера)"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_core_ssp.scala:18
 msgid "html_can_save_desc"
@@ -62,7 +62,7 @@ msgstr "НЛО прилетело и опубликовало себя в бра
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:14
 #: ../../../../src/main/scala/com/epicport/action/game/Xcom.scala:28
 msgid "html_xcom_keywords"
-msgstr "игры онлайн,xcom,ufo"
+msgstr "xcom,ufo,браузер,онлайн,играть"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/Register_ssp.scala:52
 msgid "html_email_required"
@@ -120,7 +120,7 @@ msgstr "Выберите сторону"
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:36
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:55
 msgid "html_page_description_ttd_name"
-msgstr "Transport Tycoon Deluxe"
+msgstr "Transport Tycoon Deluxe (TTD) - Онлайн (версия для браузера)"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/core/_login_ssp.scala:18
 msgid "html_advice_login"
@@ -238,7 +238,7 @@ msgstr "Введите имя"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:35
 msgid "html_page_description_ttd_keywords"
-msgstr "игры онлайн,Transport Tycoon,Transport Tycoon Deluxe,браузер,играть"
+msgstr "ttd,Transport Tycoon,Transport Tycoon Deluxe,браузер,онлайн,играть"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/Dune2_ssp.scala:52
 msgid "html_dialog_dune2_harkonnen_house"
@@ -248,7 +248,7 @@ msgstr "Дом Харконнен"
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:43
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:30
 msgid "html_page_description_dune2_name"
-msgstr "Dune II: The Building of A Dynasty"
+msgstr "Дюна 2 - Онлайн (версия для браузера)"
 
 #: ../../../../src/main/scala/com/epicport/action/privates/Private.scala:19
 msgid "html_private_page_title"
@@ -374,7 +374,7 @@ msgstr ""
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:29
 msgid "html_page_description_dune2_keywords"
-msgstr "игры онлайн,дюна,dune,dune 2,браузер"
+msgstr "дюна,dune,dune 2,браузер,онлайн,играть"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/I18NRoot_ssp.scala:25
 msgid "html_site_description"
@@ -397,16 +397,9 @@ msgstr ""
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:31
 msgid "html_page_description_dune2_description"
 msgstr ""
-"Одна из первых компьютерных стратегических игр в реальном времени. Её часто "
-"называют первой игрой этого жанра. Игра стала чрезвычайно популярной "
-"благодаря нестандартному на то время игровому процессу и качественному "
-"графическому и звуковому оформлению. Вступите в отчаянную борьбу за "
-"управление Дюной.<br/><br/>Ключевые особенности особенности Dune II, которые "
-"в последствии появились во всех играх жанра:<ul>  <li>Глобальная карта</li>  "
-"<li>Добыча ресурсов для развития базы</li>  <li>Строительство зданий и "
-"юнитов</li>  <li>Дерево технологий</li>  <li>Мобильные юниты которые могут "
-"быть развернуты в здание</li>  <li>Различные стороны (три дома) с "
-"уникальными юнитами и супер оружием</li></ul>"
+"<p>Классическая стратегия в реальном времени Dune 2 воссоздана для игры "
+"в браузере.</p><p>В одиночном режиме вы можете играть за любой из трех домов. "
+"Все ваши игры будут сохранены на сервере, вы сможете продолжить игру в любое время.</p>"
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:12
 msgid "html_play_dune2_keywords"
@@ -444,15 +437,10 @@ msgstr "Бесплатные игры онлайн"
 #: ../../../../src/main/scala/com/epicport/action/game/Ttd.scala:37
 msgid "html_page_description_ttd_description"
 msgstr ""
-"Экономическая стратегия в реальном времени. В TTD игрок выступает в качестве "
-"управляющего транспортной компании и пытается получить максимальную прибыль "
-"за счёт оперативной перевозки пассажиров и разнообразных грузов по "
-"автодорогам, железным дорогам, а также водным и воздушным транспортом. Суть "
-"игры в том, что игроку надо получить как можно больше прибыли.<br/><br/"
-">Особенности: <ul><li>Огромный игровой мир</li><li>Все виды транспорта: "
-"грузовик, автобус, поезд, самолет, вертолет, корабль...</li><li>Десятки "
-"видов грузов</li><li>Десятки предприятий и сотни городов</li><li>Отличная "
-"музыка</li></ul>"
+"<p>Классическая экономическая стратегия Transport Tycoon воссоздана для игры "
+"в браузере.</p><p>В одиночном режиме вы можете играть в Transport Tycoon против "
+"компьютера (список AI: AdmiralAI, AIAI, NoCAB, SimpleAI, Trans AI).</p><p>В "
+"сетевой игре могут играть до 255 игроков в 15 компаниях.</p>"
 
 msgid "html_powered_by"
 msgstr "Основано на:"

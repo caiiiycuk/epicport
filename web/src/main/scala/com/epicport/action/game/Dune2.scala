@@ -1,10 +1,12 @@
 package com.epicport.action.game
 
-import xitrum.annotation.GET
 import com.epicport.action.core.Link
 import com.epicport.action.core.StaticPageLink
 
-@GET("/:lang/dune2")
+import xitrum.Action
+import xitrum.annotation.GET
+
+@GET("/:lang/dune2/browser")
 class Dune2 extends GameLayout {
 
   def title = t("html_play_dune2_title")
@@ -18,6 +20,9 @@ class Dune2 extends GameLayout {
 }
 
 @GET("/:lang/dune2/description")
+class Dune2DescriptionRedircet extends com.epicport.action.Redirect301[Dune2Description]
+
+@GET("/:lang/dune2")
 class Dune2Description extends GameDescription {
 
   lazy val googlePlayLink = Link(t("html_play_on_phone"), 
