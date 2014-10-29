@@ -6,7 +6,7 @@ import xitrum.Action
 import xitrum.annotation.GET
 import com.epicport.action.StaticFile
 
-@GET("/:lang/xcom")
+@GET("/:lang/xcom/browser")
 class Xcom extends GameLayout {
 
   def title = t("html_xcom_title")
@@ -20,6 +20,9 @@ class Xcom extends GameLayout {
 }
 
 @GET("/:lang/xcom/description")
+class XcomDescriptionRedircet extends com.epicport.action.Redirect301[XcomDescription]
+
+@GET("/:lang/xcom")
 class XcomDescription extends GameDescription {
 
   def title = t("html_xcom_game_name")

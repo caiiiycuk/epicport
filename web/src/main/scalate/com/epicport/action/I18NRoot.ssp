@@ -9,10 +9,10 @@ import com.epicport.action.I18NRoot
 <div class="container_12 game_container">
     <div>
       <h2>
-        <a href="/${language}/xcom/description">${t("html_xcom_game_name")}</a>
+        <a href="/${language}/xcom">${t("html_xcom_game_name")}</a>
       </h2>
       
-      <a href="/${language}/xcom/description">
+      <a href="/${language}/xcom">
         <div class="game_description game_description_openxcom">
           ${unescape(t("html_game_description_openxcom"))}
         </div>
@@ -22,8 +22,8 @@ import com.epicport.action.I18NRoot
 <br/>
 <div class="container_12 game_container">
   <div>
-    <h2><a href="/${language}/dune2/description">${t("html_page_description_dune2_name")}</a></h2>
-    <a href="/${language}/dune2/description">
+    <h2><a href="/${language}/dune2">${t("html_page_description_dune2_name")}</a></h2>
+    <a href="/${language}/dune2">
       <div class="game_description game_description_opendune">
         ${unescape(t("html_game_description_opendune"))}
       </div>
@@ -33,8 +33,8 @@ import com.epicport.action.I18NRoot
 <br/>
 <div class="container_12 game_container">
   <div>
-    <h2><a href="/${language}/ttd/description">${t("html_page_description_ttd_name")}</a></h2>
-    <a href="/${language}/ttd/description">
+    <h2><a href="/${language}/ttd">${t("html_page_description_ttd_name")}</a></h2>
+    <a href="/${language}/ttd">
       <div class="game_description game_description_openttd">
         ${unescape(t("html_game_description_openttd"))}
       </div>

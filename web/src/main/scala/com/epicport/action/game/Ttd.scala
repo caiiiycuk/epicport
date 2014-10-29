@@ -4,7 +4,7 @@ import xitrum.annotation.GET
 import com.epicport.action.core.Link
 import com.epicport.action.core.StaticPageLink
 
-@GET("/:lang/ttd")
+@GET("/:lang/ttd/browser")
 class Ttd extends GameLayout {
 
   def title = t("html_play_ttd_title")
@@ -18,6 +18,9 @@ class Ttd extends GameLayout {
 }
 
 @GET("/:lang/ttd/description")
+class TtdDescriptionRedircet extends com.epicport.action.Redirect301[TtdDescription]
+
+@GET("/:lang/ttd")
 class TtdDescription extends GameDescription {
 
   def linkToMultiplayer = Link(
