@@ -12,6 +12,7 @@
   coreComponent.language = language
   loginComponent.language = language
   navbarComponent.language = language
+  navbarComponent.at("browserLanguage") = browserLanguages.headOption.getOrElse("en")
 
   import defaultAction._
 %>
