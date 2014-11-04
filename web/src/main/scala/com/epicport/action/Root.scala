@@ -3,14 +3,12 @@ package com.epicport.action
 import xitrum.annotation.GET
 import xitrum.Action
 import com.epicport.i18n.I18N
+import io.netty.handler.codec.http.HttpResponseStatus
 
 @GET("")
 class Root extends Action {
-  import I18N._
-  
   def execute() {
-    autosetLanguage(languages.toSeq: _*)
-    redirectTo[I18NRoot]("lang" -> language)
+    redirectTo(url[I18NRoot]("lang" -> "en"), HttpResponseStatus.MOVED_PERMANENTLY)
   }
 }
 

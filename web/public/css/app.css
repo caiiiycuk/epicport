@@ -176,6 +176,31 @@ form.register div.input {
   height: 50px;
   display: block;
   background: url("../img/ru.png") center center no-repeat;
+  position: relative;
+}
+
+.navbar .change-lang {
+  position: absolute;
+  top: -40px;
+  left: -15px;
+  width: 250px;
+  height: 50px;
+  padding-left: 15px;
+  background-color: rgba(100, 134, 168, 0.8);
+  border-radius: 5px;
+  color: black;
+  text-decoration: underline;
+}
+
+.navbar .change-lang:before {
+  position: absolute;
+  content: ' ';
+  height: 0;
+  width: 0;
+  top: 50px;
+  left: 18px;
+  border: 10px solid transparent;
+  border-top-color: rgba(100, 134, 168, 0.8);
 }
 
 .navbar .login {
