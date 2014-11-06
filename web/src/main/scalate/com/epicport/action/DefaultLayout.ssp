@@ -13,8 +13,15 @@
   loginComponent.language = language
   navbarComponent.language = language
   navbarComponent.at("browserLanguage") = browserLanguages.headOption.getOrElse("en")
-  navbarComponent.at("urlToEn") = url("lang" -> "en")
-  navbarComponent.at("urlToRu") = url("lang" -> "ru")
+  try {
+    navbarComponent.at("urlToEn") = url("lang" -> "en")
+    navbarComponent.at("urlToRu") = url("lang" -> "ru")
+  } catch {
+    case _: Throwable => {
+      navbarComponent.at("urlToEn") = "/en"
+      navbarComponent.at("urlToRu") = "/ru"
+    }
+  }
 
   import defaultAction._
 %>
