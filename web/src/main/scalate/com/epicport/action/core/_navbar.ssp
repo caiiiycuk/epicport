@@ -19,8 +19,8 @@
     </div>
 <!--/noindex-->
     <div class="games left">
-      <a href="${url[Dune2Description]("lang" -> language)}" class="gray-link">TTD</a>
-      <a href="${url[TtdDescription]("lang" -> language)}" class="gray-link">Dune 2</a>
+      <a href="${url[TtdDescription]("lang" -> language)}" class="gray-link">TTD</a>
+      <a href="${url[Dune2Description]("lang" -> language)}" class="gray-link">Dune 2</a>
       <a href="${url[XcomDescription]("lang" -> language)}" class="gray-link">X-Com</a>
     </div>
 <!--noindex-->    
