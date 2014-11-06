@@ -24,6 +24,9 @@ class Dune2DescriptionRedircet extends com.epicport.action.Redirect301[Dune2Desc
 
 @GET("/:lang/dune2")
 class Dune2Description extends GameDescription {
+  lazy val androidVersion = Link(t("html_play_on_phone"),
+    url[Dune2Android]("lang" -> language),
+    "default-link")
 
   def title = t("html_page_description_dune2_name")
   def description = t("html_page_description_dune2_description_short")
@@ -32,8 +35,8 @@ class Dune2Description extends GameDescription {
   def gameDescription = t("html_page_description_dune2_description")
   def linkToPlay = url[Dune2]("lang" -> language)
   def links = language match {
-    case "ru" => Seq(StaticPageLink("dune2-story"))
-    case _ => Seq()
+    case "ru" => Seq(androidVersion, StaticPageLink("dune2-story"))
+    case _ => Seq(androidVersion)
   }
 
   def screenshots: Seq[ScreenShot] =
