@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://epicport.com/en</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://epicport.com/ru</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://epicport.com/en/ttd</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://epicport.com/en/dune2</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://epicport.com/en/xcom</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://epicport.com/ru/ttd</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://epicport.com/ru/dune2</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://epicport.com/ru/xcom</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://epicport.com/en/dune2/android</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://epicport.com/ru/static/ttd-story</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://epicport.com/ru/dune2/android</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://epicport.com/ru/static/dune2-story</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://epicport.com/ru/static/xcom-story</loc>
+  <lastmod>2014-11-06T17:52:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>
