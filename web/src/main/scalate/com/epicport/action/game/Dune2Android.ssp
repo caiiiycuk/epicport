@@ -1,0 +1,37 @@
+<%
+val action = currentAction.asInstanceOf[com.epicport.action.game.Dune2Android]
+import action._
+%>
+
+<div class="container_12">
+<div class="grid_12"><h1>${title}</h1></div>
+
+<div class="grid_9">
+  <div class="game-description">
+    ${unescape(t("android_description"))}
+  </div>
+</div>
+<div class="grid_3">
+  <div class="android_links">
+    <h2>${t("android_download")}</h2>
+    <a href="${publicUrl("android/dune2/dune2.apk")}">Dune2.apk</a>
+    <br/>
+    <img src="${publicUrl("dune2/qrcode.png")}" alt="qrcode"/>
+  </div>
+</div>
+
+<div class="grid_12">
+  <div class="screenshots">
+    #for (screenshot <- screenshots)
+      <a class="colorbox" href="${publicUrl(screenshot.big)}" rel="nofollow">
+        <img src="${publicUrl(screenshot.small)}" alt="screenshot"/>
+      </a>
+    #end
+  </div>
+</div>
+</div>
+
+<script src="/js/colorbox/jquery.colorbox-min.js"></script>
+<script type="text/javascript">
+  $("a.colorbox").colorbox({ rel: 'screenshots' });
+</script>

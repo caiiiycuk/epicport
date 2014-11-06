@@ -1,28 +1,36 @@
-<!--noindex-->
 <% 
+  import com.epicport.action.game._
   val browserLanguage = at("browserLanguage").asInstanceOf[String]
   val shouldShowHint = browserLanguage.toLowerCase.startsWith("ru") && language != "ru"
 %>
 <div class="navbar">
   <div class="navbar-content">
     <a href="/${language}" class="home left gray-link">${t("html_home")}</a>
-    <a href="/en" class="en left"></a>
-    <a href="/ru" class="ru left">
+    <a href="${at("urlToEn")}" class="en left"></a>
+    <a href="${at("urlToRu")}" class="ru left">
       #if (shouldShowHint)
       <div class="change-lang">You can switch to Russian version here</div>
       #end
     </a>
+<!--noindex-->
     <div class="share left">
       <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
       <div class="yashare-auto-init" data-yashareL10n="${language}" data-yashareType="link" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus"></div> 
     </div>
+<!--/noindex-->
+    <div class="games left">
+      <a href="${url[Dune2Description]("lang" -> language)}" class="gray-link">TTD</a>
+      <a href="${url[TtdDescription]("lang" -> language)}" class="gray-link">Dune 2</a>
+      <a href="${url[XcomDescription]("lang" -> language)}" class="gray-link">X-Com</a>
+    </div>
+<!--noindex-->    
     <div class="login right">
       <a id="navbar_login_link" href="javascript:void(0)" rel="nofollow" class="gray-link dotted-link">${t("html_login")}</a>
       <span id="navbar_name"></span>&nbsp;<a id="navbar_logout_link" href="javascript:void(0)" rel="nofollow" class="gray-link dotted-link">${t("html_logout")}</a>
     </div>
+<!--/noindex-->    
   </div>
 </div>
-<!--/noindex-->
 
 <script>
   new Epicport.Navbar();

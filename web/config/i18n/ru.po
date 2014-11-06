@@ -475,8 +475,29 @@ msgstr ""
 msgid "html_static_page_keywords_ttd-story"
 msgstr "история портирования Transport Tycoon Deluxe на JavaScript"
 
-#~ msgid "html_required_fields_not_set"
-#~ msgstr "Все поля обязательны для заполнения"
+msgid "html_required_fields_not_set"
+msgstr "Все поля обязательны для заполнения"
 
-#~ msgid "html_alredy_exists"
-#~ msgstr "Пользователь уже существует"
+msgid "html_alredy_exists"
+msgstr "Пользователь уже существует"
+
+msgid "android_download"
+msgstr "Скачать"
+
+msgid "html_page_dune2_android_title"
+msgstr "Дюна 2 версия для андроид"
+
+msgid "html_page_dune2_description"
+msgstr "Здесь вы можете скачать знаменитую стратегию Дюна 2 под андроид."
+
+msgid "html_page_dune2_keywords"
+msgstr "Дюна,Дюна 2,Андроид,Скачать,Dune,Dune 2,apk"
+
+msgid "android_description"
+msgstr ""
+"<p>Андроид версия легендарной игры Дюна 2 от Westwood Studios.</p>"
+"<p>Это одна из первых компьютерных стратегических игр в реальном времени. "
+"Дюна 2 установила формат для компьютерных стратегических игр в реальном времени. "
+"Эта игра 2 создала то, на чём строятся современные стратегии в реальном времени. "
+"Строительство базы, tank rush, деление игры на миссии, возможность выбора кампании. "
+"Игра была портирована на все известные игровые платформы, теперь и вы можете насладится этой великой игрой на андроид.</p>"
