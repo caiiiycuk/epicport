@@ -9,5 +9,5 @@ class NavbarComponent extends Action {
   def render = {
     renderFragment("navbar")
   }
-
+  
 }

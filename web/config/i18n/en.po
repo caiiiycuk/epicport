@@ -459,8 +459,30 @@ msgstr ""
 msgid "html_static_page_keywords_ttd-story"
 msgstr ""
 
-#~ msgid "html_required_fields_not_set"
-#~ msgstr "Reuired fields does not set"
+msgid "html_required_fields_not_set"
+msgstr "Reuired fields does not set"
 
-#~ msgid "html_alredy_exists"
-#~ msgstr "User already exists"
+msgid "html_alredy_exists"
+msgstr "User already exists"
+
+msgid "android_download"
+msgstr "Download"
+
+msgid "html_page_dune2_android_title"
+msgstr "Dune 2 android version"
+
+msgid "html_page_dune2_description"
+msgstr "Android version of classic game Dune 2. Here you can download this game for your smartphone."
+
+msgid "html_page_dune2_keywords"
+msgstr "Dune,Dune 2,Android,Download,apk"
+
+msgid "android_description"
+msgstr ""
+"<p>Android version of legendary game Dune 2.</p>"
+"<p>While not necessarily the first real-time strategy game, Dune II established "
+"the format that would be followed for years to come. "
+"As such, Dune II was the archetypal 'real-time strategy' game. Striking a balance between "
+"complexity and innovation, it was a huge success and laid the foundation for Command & Conquer, Warcraft "
+"and many other RTS games that followed. "
+"The game was ported on many platforms, and now you can play it on your android smartphone.</p>"

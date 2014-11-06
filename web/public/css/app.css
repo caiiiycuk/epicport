@@ -217,6 +217,16 @@ form.register div.input {
   margin-right: 5px;
 }
 
+.navbar .games {
+  margin-left: 15px;
+  border-left: 1px solid #CCC;
+  padding-left: 5px;
+}
+
+.navbar .games a {
+  margin-left: 15px;
+}
+
 .left {
   float: left;
 }
@@ -394,9 +404,13 @@ a.dotted-link {
   margin: 10px;
 }
 
+.screenshots a {
+  text-decoration: none;
+}
+
 .screenshots img {
   margin-top: 10px;
-  opacity: 0.7;
+  opacity: 0.9;
   width: 225px;
 
   transition: opacity 1s;
@@ -584,3 +598,21 @@ a.dotted-link {
   margin-top: 10px;
   font-size: 1.2em;
 }
+
+.android_links {
+  text-align: center;
+}
+
+.android_links a {
+  margin: 10px 0;
+  font-size: 2em;
+}
+
+.android_links img {
+  margin: 30px 0;
+}
+
+.android_links h2 {
+  margin: 5px 0;
+}
+
