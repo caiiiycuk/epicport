@@ -1,10 +1,10 @@
 {
-	"version": "0.94.7",
-	"versionCode": "0947",
-	"title": "New version with craslytics and fortumo",
+	"version": "0.94.8",
+	"versionCode": "0948",
+	"title": "New version based on latest OpenDUNE sources",
 	"apk": "http://epicport.com/android/dune2/dune2.apk",
 	"changelog": [
-	  "+ Added craslytics",
-	  "+ Replace google billing with fortumo"
+	  "+ Latest OpenDUNE sources",
+	  "+ Added craslytics"
 	]
 }

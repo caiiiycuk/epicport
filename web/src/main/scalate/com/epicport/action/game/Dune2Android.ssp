@@ -10,14 +10,14 @@ import action._
   <div class="game-description">
     ${unescape(t("android_description"))}
   </div>
+  <div class="android_links">
+    <h2><a href="${publicUrl("android/dune2/dune2.apk")}">${t("android_download")} Dune2.apk</a></h2>
+  </div>
 </div>
 <div class="grid_3">
-  <div class="android_links">
-    <h2>${t("android_download")}</h2>
-    <a href="${publicUrl("android/dune2/dune2.apk")}">Dune2.apk</a>
-    <br/>
+  <a href="${publicUrl("android/dune2/dune2.apk")}">
     <img src="${publicUrl("dune2/qrcode.png")}" alt="qrcode"/>
-  </div>
+  </a>
 </div>
 
 <div class="grid_12">
