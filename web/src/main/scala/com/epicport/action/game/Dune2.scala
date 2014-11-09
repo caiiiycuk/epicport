@@ -26,7 +26,7 @@ class Dune2DescriptionRedircet extends com.epicport.action.Redirect301[Dune2Desc
 class Dune2Description extends GameDescription {
   lazy val androidVersion = Link(t("html_play_on_phone"),
     url[Dune2Android]("lang" -> language),
-    "default-link")
+    "new-badge-link")
 
   def title = t("html_page_description_dune2_name")
   def description = t("html_page_description_dune2_description_short")

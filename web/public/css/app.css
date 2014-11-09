@@ -374,8 +374,8 @@ span.powered {
   background: rgba(178, 255, 178, 1);
 }
 
-.default-link {
-  margin-top: 10px;
+.default-link, .new-badge-link {
+  margin-top: 20px;
   margin-left: 10px;
   text-align: left;
   font-size: 1em;
@@ -388,7 +388,16 @@ span.powered {
   width: 10px;
   color: #333;
   font-weight: bold;
-  margin-left: -10px;
+  margin-left: -15px;
+}
+
+.new-badge-link:before {
+  content: url("/img/new_badge.png");
+  display: block;
+  float: left;
+  color: #333;
+  font-weight: bold;
+  margin-left: -30px;
 }
 
 a.gray-link, a.gray-link:visited {
@@ -600,7 +609,7 @@ a.dotted-link {
 }
 
 .android_links {
-  text-align: center;
+  text-align: left;
 }
 
 .android_links a {

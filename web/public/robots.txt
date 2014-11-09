@@ -9,6 +9,7 @@ Disallow:
 
 User-Agent: *
 Allow: /
+Disallow: /js
 Disallow: /en/register
 Disallow: /ru/register
 Disallow: /en/private
