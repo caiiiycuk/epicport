@@ -13,7 +13,7 @@ class Root extends Action {
 }
 
 @GET("/:lang")
-class I18NRoot extends DefaultLayout {
+class I18NRoot extends DefaultAction {
   def title = t("html_title")
   def description = t("html_description")
   def keywords = t("html_keywords")

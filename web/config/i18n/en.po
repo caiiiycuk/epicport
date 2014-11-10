@@ -486,3 +486,27 @@ msgstr ""
 "complexity and innovation, it was a huge success and laid the foundation for Command & Conquer, Warcraft "
 "and many other RTS games that followed. "
 "The game was ported on many platforms, and now you can play it on your android smartphone.</p>"
+
+msgid "index-intro-body"
+msgstr "Welcome! This portal is about great classic games.<br>Now this games can be played in browser!"
+
+msgid "index-dune2-section"
+msgstr "Dune II is a world first: a blend of arcade action and strategy which successfully caters for all tastes. There are fierce battles to be taught on the desert planet Arrakis, the only source of the life-prolonging substance Spice."
+
+msgid "index-dune2-browser"
+msgstr "Dune 2 in browser"
+
+msgid "index-dune2-android"
+msgstr "Android version"
+
+msgid "index-ttd-section"
+msgstr "Make lots of money. Build complex road-rail-air-sea routes and shift cargo or passengers through the best routes. Chase trains, boats and planes on massive worlds; all against a background of cut-throat business rivalry."
+
+msgid "index-ttd-browser"
+msgstr "TTD in browser"
+
+msgid "index-xcom-section"
+msgstr "You are in control of X-COM: an organization formed by the world's governments to fight the ever-increasing alien menace. Features: command deadly close-combat battles; research and manufacture alien technologies; develop a strategy to save the Earth."
+
+msgid "index-xcom-browser"
+msgstr "X-Com in browser"
