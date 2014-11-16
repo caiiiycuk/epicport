@@ -3,8 +3,9 @@ package com.epicport.action
 import xitrum.Action
 import com.epicport.i18n.I18N
 import io.netty.handler.codec.http.HttpResponseStatus
+import xitrum.FutureAction
 
-trait DefaultAction extends Action {
+trait DefaultAction extends FutureAction with RenderHelper {
   import I18N._
 
   def title: String

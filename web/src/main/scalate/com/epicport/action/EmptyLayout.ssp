@@ -19,9 +19,7 @@
     <link type="image/vnd.microsoft.icon" rel="shortcut icon" href="${publicUrl("favicon.ico")}"/>
 
 #if (i18nSupport)
-  #for (lang <- languages)
-      <link rel="alternate" hreflang="${lang}" href="${altUri(lang)}" />
-  #end
+  ${unescape(renderAlternateUris)}
 #end
 
     <meta name="author" content="Guryanov Aleksander" />  

@@ -1,43 +1,160 @@
 <%
 import com.epicport.action.I18NRoot
+import com.epicport.action.game._
+val action = currentAction.asInstanceOf[I18NRoot]; import action._
 %>
 
-<div class="container_12 margin-bottom">
-  <h1><a href="<%=url[I18NRoot]("lang" -> language)%>" class="hidden-link">${t("html_site_title")}</a></h1>
-  ${t("html_site_description")}
-</div>
-<div class="container_12 game_container">
-    <div>
-      <h2>
-        <a href="/${language}/xcom">${t("html_xcom_game_name")}</a>
-      </h2>
-      
-      <a href="/${language}/xcom">
-        <div class="game_description game_description_openxcom">
-          ${unescape(t("html_game_description_openxcom"))}
-        </div>
-      </a>
-    </div>
-</div>
-<br/>
-<div class="container_12 game_container">
-  <div>
-    <h2><a href="/${language}/dune2">${t("html_page_description_dune2_name")}</a></h2>
-    <a href="/${language}/dune2">
-      <div class="game_description game_description_opendune">
-        ${unescape(t("html_game_description_opendune"))}
+<!DOCTYPE html>
+<html lang="${language}">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Guryanov Aleksander">
+    <meta name="description" content="${description}">
+    <meta name="keywords" content="${keywords}" />
+
+    <title>${title}</title>
+
+    ${unescape(renderAlternateUris)}
+
+    <!-- Bootstrap Core CSS -->
+    <link href="${publicUrl("v2/css/bootstrap.min.css")}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="${publicUrl("v2/css/index.css")}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="${publicUrl("v2/font-awesome-4.2.0/css/font-awesome.min.css")}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                  <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand page-scroll" href="#page-top">
+                  <i class="fa fa-play-circle"></i>  <span class="light">${t("Top")}</span>
+              </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+              <ul class="nav navbar-nav">
+                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                  <li class="hidden">
+                      <a href="#page-top"></a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#dune2">${t("Dune 2")}</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#ttd">${t("TTD")}</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#xcom">${t("X-Com")}</a>
+                  </li>
+               </ul>
+          </div>
+          <!-- /.navbar-collapse -->
       </div>
-    </a>
-  </div>
-</div>
-<br/>
-<div class="container_12 game_container">
-  <div>
-    <h2><a href="/${language}/ttd">${t("html_page_description_ttd_name")}</a></h2>
-    <a href="/${language}/ttd">
-      <div class="game_description game_description_openttd">
-        ${unescape(t("html_game_description_openttd"))}
+      <!-- /.container -->
+  </nav>
+
+  <!-- Intro Header -->
+  <header class="intro">
+      <div class="intro-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                      <h1 class="brand-heading">Epicport</h1>
+                      <p class="intro-text">${unescape(t("index-intro-body"))}</p>
+                      <a href="#dune2" class="btn btn-circle page-scroll">
+                          <i class="fa fa-angle-double-down animated"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
       </div>
-    </a>
-  </div>
-</div>
+  </header>
+
+  <!-- Dune 2 Section -->
+  <section id="dune2" class="content-section text-center">
+      <div class="dune2-section">
+          <div class="container">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <h2>${t("Dune 2")} &copy; Westwood Studios</h2>
+                  <p>${t("index-dune2-section")}</p>
+                  <ul class="list-inline banner-social-buttons">
+                      <li>
+                          <a href="${url[Dune2Description]("lang" -> language)}" class="btn btn-default btn-lg"><span class="network-name">${t("index-dune2-browser")}</span></a>
+                      </li>
+                      <li>
+                          <a href="${url[Dune2Android]("lang" -> language)}" class="btn btn-default btn-lg"><span class="network-name">${t("index-dune2-android")}</span></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- TTD Section -->
+  <section class="content-section text-center">
+      <div id="ttd" class="ttd-section">
+          <div class="container">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <h2>Transport Tycoon Deluxe &copy; Chris Sawyer</h2>
+                  <p>${t("index-ttd-section")}</p>
+                  <a href="${url[TtdDescription]("lang" -> language)}" class="btn btn-default btn-lg"><span class="network-name">${t("index-ttd-browser")}</span></a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- X-Com Section -->
+  <section class="content-section text-center">
+      <div id="xcom" class="xcom-section">
+          <div class="container">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <h2>X-Com &copy; MicroProse</h2>
+                  <p>${t("index-xcom-section")}</p>
+                  <a href="${url[XcomDescription]("lang" -> language)}" class="btn btn-default btn-lg"><span class="network-name">${t("index-xcom-browser")}</span></a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+      <div class="container text-center">
+        <p><a href="http://www.linkedin.com/pub/aleksander-guryanov/3b/738/734">Guryanov Aleksander</a>, 2014</p>
+        ${t("html_support")} <a href="https://github.com/caiiiycuk/epicport" rel="nofollow">github:epicport</a>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="${publicUrl("v2/js/jquery.js")}"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="${publicUrl("v2/js/bootstrap.min.js")}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="${publicUrl("v2/js/jquery.easing.min.js")}"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="${publicUrl("v2/js/index.js")}"></script>
+</body>
+</html>

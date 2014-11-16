@@ -42,9 +42,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="${publicUrl("js/colorbox/colorbox.css")}"/>
 
 #if (i18nSupport)
-  #for (lang <- languages)
-      <link rel="alternate" hreflang="${lang}" href="${altUri(lang)}" />
-  #end
+  ${unescape(renderAlternateUris)}
 #end
 
     <meta name="author" content="Guryanov Aleksander" />  
