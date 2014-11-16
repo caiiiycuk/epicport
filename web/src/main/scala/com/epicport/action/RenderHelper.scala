@@ -10,13 +10,9 @@ trait RenderHelper extends Action {
   def renderAlternateUris() = {
     val altUri = alternateUri(request.getUri)
     val links = languages.filter(_ != language).map { lang =>
-      <link rel="alternate" hreflang={ lang } href={ altUri(lang) } />
+      <link rel="alternate" hreflang={ lang } lang={ lang } href={ altUri(lang) } />
     }
     links.mkString
   }
-  
-//    <meta name="author" content="Guryanov Aleksander" />  
-//    <meta name="description" content="${description}" />
-//    <meta name="keywords" content="${keywords}" />
   
 }
