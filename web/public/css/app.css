@@ -608,6 +608,19 @@ a.dotted-link {
   font-size: 1.2em;
 }
 
+.caesaria {
+  width: 960px;
+  height: 600px;
+  background: url(../caesaria/bg.jpg) no-repeat center center;
+}
+
+.caesaria canvas {
+  cursor: default;
+  width: 960px;
+  height: 600px;
+}
+
+
 .android_links {
   text-align: left;
 }

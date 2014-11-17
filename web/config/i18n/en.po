@@ -36,7 +36,7 @@ msgstr "Register"
 msgid "html_description"
 msgstr ""
 "This site is all about the greatest classic games. Now you can play Dune 2, "
-"XCOM, Transport Tycoon Deluxe online in your browser. You can start right "
+"XCOM, Transport Tycoon Deluxe, Caesar III online in your browser. You can start right "
 "now - you don't even need to register on our website."
 
 #: ../../../../src/main/scala/com/epicport/action/game/Dune2.scala:23
@@ -76,7 +76,7 @@ msgstr "Error"
 
 #: ../../../../src/main/scala/com/epicport/action/Root.scala:21
 msgid "html_keywords"
-msgstr "online games,ufo,xcom,dune,dune 2,Transport Tycoon,Tycoon"
+msgstr "online games,ufo,xcom,dune,dune 2,Transport Tycoon,Tycoon,Caesar,Caesar III"
 
 #: ../../../../target/scala-2.10/src_managed/main/scalate/scalate/com/epicport/action/game/_canvas_ssp.scala:30
 msgid "html_dialog_select_file_no_saves_found"
@@ -460,7 +460,7 @@ msgid "html_static_page_keywords_ttd-story"
 msgstr ""
 
 msgid "html_required_fields_not_set"
-msgstr "Reuired fields does not set"
+msgstr "Required fields does not set"
 
 msgid "html_alredy_exists"
 msgstr "User already exists"
@@ -510,3 +510,38 @@ msgstr "You are in control of X-COM: an organization formed by the world's gover
 
 msgid "index-xcom-browser"
 msgstr "X-Com in browser"
+
+msgid "index-cesaria-browser"
+msgstr "Caesar III in browser"
+
+msgid "index-cesaria-section"
+msgstr ""
+"Caesar is a city-building computer game where the player undertakes the role of a Roman governor, building ancient Roman cities."
+"The game has quite graphics and simple user interfaces. Gameplay came with issues of micromanagement, "
+"including complicated city-planning requirements such as building the right number of schools, theaters, libraries, bathhouses, "
+"and other amenities, within suitable distances of residential areas."
+
+
+msgid "caesaria-description-title"
+msgstr "Caesar III - Online (browser version)"
+
+msgid "caesaria-description-game-description"
+msgstr ""
+"Original classic game Caesar III was ported to many platforms, and now it is ported to work in browser.<br/><br/>"
+"This version of the game appeared thanks to the open source project <!--noindex--><a href='https://bitbucket.org/dalerank/caesaria/wiki/Home'>Caesaria</a><!--/noindex--> which maintained by dalerank."
+
+msgid "caesaria-description-description"
+msgstr ""
+"Browser version of classic game Caesar III. Here you can play in this game online."
+
+msgid "caesaria-description-keywords"
+msgstr "caesar,caesar 3,caesar III,browser,online,play,game"
+
+msgid "caesaria-browser-title"
+msgstr "Caesar III"
+
+msgid "caesaria-browser-description"
+msgstr ""
+
+msgid "caesaria-browser-keywords"
+msgstr ""

@@ -1,0 +1,30 @@
+<%
+  at("game") = "caesaria"
+
+  at("arguments") = s"""[]"""
+
+  at("preRun") = """function () {}"""
+
+  at("start") = s"""
+function () {
+  var preventUpDown = function (e) { 
+    if (e.keyCode === 38 || e.keyCode === 40) {
+      e.preventDefault(); 
+    }
+  }
+
+  document.addEventListener("keydown", preventUpDown);
+  document.addEventListener("keyup", preventUpDown);
+  document.addEventListener("keypress", preventUpDown);
+
+  var caesaria = new Epicport.Caesaria();
+  caesaria.start('caesaria.js');
+}   
+"""
+%>
+
+<div class="container_12">
+  ${unescape(renderFragment("canvas"))}
+</div>
+
+<!-- <script src="/emscripten/caesaria/caesaria.js"/> -->

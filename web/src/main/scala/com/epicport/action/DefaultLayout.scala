@@ -36,6 +36,7 @@ trait DefaultAction extends FutureAction with RenderHelper {
   }
 
   def i18nSupport = true
+  def adsByGoogle = true
 }
 
 trait DefaultLayout extends DefaultAction {

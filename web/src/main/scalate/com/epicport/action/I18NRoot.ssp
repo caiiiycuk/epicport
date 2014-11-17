@@ -68,6 +68,9 @@ val action = currentAction.asInstanceOf[I18NRoot]; import action._
                   <li>
                       <a class="page-scroll" href="#xcom">${t("X-Com")}</a>
                   </li>
+                  <li>
+                      <a class="page-scroll" href="#caesaria">${t("Caesar III")}</a>
+                  </li>
                </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -133,6 +136,19 @@ val action = currentAction.asInstanceOf[I18NRoot]; import action._
                   <h2>X-Com &copy; MicroProse</h2>
                   <p>${t("index-xcom-section")}</p>
                   <a href="${url[XcomDescription]("lang" -> language)}" class="btn btn-default btn-lg"><span class="network-name">${t("index-xcom-browser")}</span></a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Caesaria Section -->
+  <section class="content-section text-center">
+      <div id="caesaria" class="caesaria-section">
+          <div class="container">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <h2>${t("Caesar III")} &copy; Sierra</h2>
+                  <p>${t("index-cesaria-section")}</p>
+                  <a href="${url[CaesariaDescription]("lang" -> language)}" class="btn btn-default btn-lg"><span class="network-name">${t("index-cesaria-browser")}</span></a>
               </div>
           </div>
       </div>

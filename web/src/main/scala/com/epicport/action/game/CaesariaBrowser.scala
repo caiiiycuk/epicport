@@ -1,0 +1,47 @@
+package com.epicport.action.game
+
+import com.epicport.action.DefaultAction
+import xitrum.annotation.GET
+import com.epicport.action.StaticFile
+
+@GET(":lang/caesar3/browser")
+class CaesariaBrowser extends GameLayout {
+  
+  def title = t("caesaria-browser-title")
+  def description = t("caesaria-browser-description")
+  def keywords = t("caesaria-browser-keywords")
+  
+  override def adsByGoogle = false
+  
+  def execute() {
+    respondView()
+  }
+
+}
+
+@GET("/:lang/caesar3")
+class CaesariaDescription extends GameDescription {
+
+  def title = t("caesaria-description-title")
+  def description = t("caesaria-description-description")
+  def keywords = t("caesaria-description-keywords")
+  def gameName = t("caesaria-description-game-name")
+  def gameDescription = t("caesaria-description-game-description")
+  def linkToPlay = url[CaesariaBrowser]("lang" -> language)
+  def links = Seq()
+  
+  override def adsByGoogle = false
+
+  def screenshots: Seq[ScreenShot] =
+    Seq(ScreenShot("caesaria/00_small.jpg", "caesaria/00.jpg"),
+      ScreenShot("caesaria/01_small.jpg", "caesaria/01.jpg"),
+      ScreenShot("caesaria/02_small.jpg", "caesaria/02.jpg"),
+      ScreenShot("caesaria/03_small.jpg", "caesaria/03.jpg"))
+
+}
+
+@GET("/:lang/caesar3/caesaria.data")
+class CaesariaData extends StaticFile("emscripten/caesaria/caesaria.data")
+
+@GET("/:lang/caesar3/caesaria.js.mem")
+class CaesariaMem extends StaticFile("emscripten/caesaria/caesaria.js.mem")
