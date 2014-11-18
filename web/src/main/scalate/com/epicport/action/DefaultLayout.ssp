@@ -55,12 +55,14 @@
     <!-- <script type="text/javascript" src="${publicUrl("js/jquery.valid8.js")}"></script> -->
   </head>
   <body>
+#if (adsByGoogle)  
     <div class="adsense">
       <ins class="adsbygoogle"
            style="display:inline-block;width:970px;height:90px"
            data-ad-client="ca-pub-9186880238664597"
            data-ad-slot="4270728960"></ins>
     </div>
+#end    
 
     ${unescape(coreComponent.render)}
     ${unescape(navbarComponent.render)}
@@ -78,11 +80,13 @@
     </div>
     <!--/noindex-->
 
+#if (adsByGoogle)
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+#end
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

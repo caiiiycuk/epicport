@@ -288,6 +288,18 @@ a:focus {
     -o-background-size: cover;
 }
 
+.caesaria-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/caesaria-bg.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 @media(min-width:767px) {
     .content-section, .ttd-section {
         padding-top: 250px;
