@@ -19,25 +19,12 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
 
     ${unescape(renderAlternateUris)}
 
-    <!-- Bootstrap Core CSS -->
-    <link href="${publicUrl("v2/css/bootstrap.min.css")}" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="${publicUrl("v2/css/game-description.css")}" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="${publicUrl("v2/font-awesome-4.2.0/css/font-awesome.min.css")}" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <link type="text/css" rel="stylesheet" media="all" href="${publicUrl("js/colorbox/colorbox.css")}"/>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -85,27 +72,27 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
     <div class="container">
       <div class="row">
         <div class="col-sm-3">
-          <img class="icon" src="${game.logo}" alt="${t("Logo")}" draggable="false" itemprop="image"><br><br>
-          <a href="${linkToPlay}"><button type="button" class="btn btn-primary btn-lg">${t("html_play_in_browser")}</button></a><br>
+          <img class="icon" src="${game.logo}" alt="${t("Logo")}" draggable="false"><br><br>
+          <a href="${linkToPlay}" class="btn btn-primary btn-lg">${t("html_play_in_browser")}</a><br><br>
        
           <!--noindex-->
-          <p>
+          <div>
             <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
             <div class="yashare-auto-init" data-yashareL10n="${language}" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus" data-yashareTheme="counter"></div>
-          </p>
+          </div>
           <!--/noindex-->
 
           <br>
 
-          <p>
+          <div>
             #for (link <- links)
               <a href="${link.url}"><div class="${link.linkClass}">${link.title}</div></a>
             #end
-          </p>
+          </div>
           <br>
-          ${t("Category")} <font class="color-gray">${t("Games")} / ${t("Strategy")}</font><br>
-          ${t("Age rating")} <font class="color-gray">+0</font><br>
-          ${t("Approximate download size")} <font class="color-gray">10 Mb</font><br>
+          ${t("Category")} <span class="color-gray">${t("Games")} / ${t("Strategy")}</span><br>
+          ${t("Age rating")} <span class="color-gray">+0</span><br>
+          ${t("Approximate download size")} <span class="color-gray">10 Mb</span><br>
 
           <br>
 
@@ -115,20 +102,20 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
 
           #for (game <- games)
             <div class="other-game">
-              <img class="icon" src="${game.logo}" alt="${t("Logo")}" draggable="false" itemprop="image">
+              <img class="icon" src="${game.logo}" alt="${t("Logo")}" draggable="false">
               <a class="page-scroll" href="${game.url}"><strong>${game.name}</strong></a>
             </div>
           #end
         </div>
         <div class="col-sm-9">
             <div class="main-image">
-              <img src="${publicUrl("v2/img/dune2-main-image.jpg")}" alt="${t("Main image")}" class="img-responsive" draggable="false" itemprop="image"/>
+              <img src="${publicUrl("v2/img/dune2-main-image.jpg")}" alt="${t("Main image")}" class="img-responsive" draggable="false">
             </div>
 
             <div class="screenshots">
               #for (screenshot <- screenshots)
                 <a class="colorbox" href="${publicUrl(screenshot.big)}" rel="nofollow">
-                  <img class="small-image" src="${publicUrl(screenshot.small)}" alt="screenshot"/>
+                  <img class="small-image" src="${publicUrl(screenshot.small)}" alt="screenshot">
                 </a>
               #end
             </div>
@@ -159,6 +146,18 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
       </div>
     </div>
   </footer>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="${publicUrl("v2/css/bootstrap.min.css")}" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="${publicUrl("v2/css/game-description.css")}" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="${publicUrl("v2/font-awesome-4.2.0/css/font-awesome.min.css")}" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link type="text/css" rel="stylesheet" media="all" href="${publicUrl("js/colorbox/colorbox.css")}"/>
 
   <!-- jQuery -->
   <script src="${publicUrl("v2/js/jquery.js")}"></script>
