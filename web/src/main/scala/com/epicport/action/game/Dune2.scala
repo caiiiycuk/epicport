@@ -23,7 +23,9 @@ class Dune2 extends GameLayout {
 class Dune2DescriptionRedircet extends com.epicport.action.Redirect301[Dune2Description]
 
 @GET("/:lang/dune2")
-class Dune2Description extends GameDescription {
+class Dune2Description extends GameDescriptionV2 {
+  def game = Game.DUNE2_BROWSER
+  
   lazy val androidVersion = Link(t("html_play_on_phone"),
     url[Dune2Android]("lang" -> language),
     "new-badge-link")

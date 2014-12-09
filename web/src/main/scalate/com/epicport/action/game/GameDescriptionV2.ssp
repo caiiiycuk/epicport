@@ -1,0 +1,175 @@
+<%
+import com.epicport.action.I18NRoot
+import com.epicport.action.game._
+val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
+%>
+
+<!DOCTYPE html>
+<html lang="${language}">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Guryanov Aleksander">
+    <meta name="description" content="${description}">
+    <meta name="keywords" content="${keywords}" />
+
+    <title>${title}</title>
+
+    ${unescape(renderAlternateUris)}
+
+    <!-- Bootstrap Core CSS -->
+    <link href="${publicUrl("v2/css/bootstrap.min.css")}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="${publicUrl("v2/css/game-description.css")}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="${publicUrl("v2/font-awesome-4.2.0/css/font-awesome.min.css")}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link type="text/css" rel="stylesheet" media="all" href="${publicUrl("js/colorbox/colorbox.css")}"/>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                  <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand page-scroll" href="${url[I18NRoot]("lang" -> language)}">
+                  <i class="fa fa-play-circle"></i>  <span class="light">${t("Epicport")}</span>
+              </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+              <ul class="nav navbar-nav">
+                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                  <li class="hidden">
+                      <a href="#page-top"></a>
+                  </li>
+                  #for (game <- games)
+                    <li>
+                      <a class="page-scroll" href="${game.url}">${game.name}</a>
+                    </li>
+                  #end
+               </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+
+  <!-- Intro Header -->
+  <header>
+    <div class="container">
+      <h1>${title}</h1>
+      <div class="section-divider"></div>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="icon" src="${game.logo}" alt="${t("Logo")}" draggable="false" itemprop="image"><br><br>
+          <a href="${linkToPlay}"><button type="button" class="btn btn-primary btn-lg">${t("html_play_in_browser")}</button></a><br>
+       
+          <!--noindex-->
+          <p>
+            <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
+            <div class="yashare-auto-init" data-yashareL10n="${language}" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus" data-yashareTheme="counter"></div>
+          </p>
+          <!--/noindex-->
+
+          <br>
+
+          <p>
+            #for (link <- links)
+              <a href="${link.url}"><div class="${link.linkClass}">${link.title}</div></a>
+            #end
+          </p>
+          <br>
+          ${t("Category")} <font class="color-gray">${t("Games")} / ${t("Strategy")}</font><br>
+          ${t("Age rating")} <font class="color-gray">+0</font><br>
+          ${t("Approximate download size")} <font class="color-gray">10 Mb</font><br>
+
+          <br>
+
+          <h4>${t("More games")}</h4>
+
+          <div class="section-divider"></div>
+
+          #for (game <- games)
+            <div class="other-game">
+              <img class="icon" src="${game.logo}" alt="${t("Logo")}" draggable="false" itemprop="image">
+              <a class="page-scroll" href="${game.url}"><strong>${game.name}</strong></a>
+            </div>
+          #end
+        </div>
+        <div class="col-sm-9">
+            <div class="main-image">
+              <img src="${publicUrl("v2/img/dune2-main-image.jpg")}" alt="${t("Main image")}" class="img-responsive" draggable="false" itemprop="image"/>
+            </div>
+
+            <div class="screenshots">
+              #for (screenshot <- screenshots)
+                <a class="colorbox" href="${publicUrl(screenshot.big)}" rel="nofollow">
+                  <img class="small-image" src="${publicUrl(screenshot.small)}" alt="screenshot"/>
+                </a>
+              #end
+            </div>
+
+            <h2>${t("Description")}</h2>
+
+            <div class="game-description">
+              ${unescape(gameDescription)}
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  
+      
+  <footer>
+    <div class="container">
+      <div class="section-divider"></div>
+      <div class="footer-content">
+        <p>
+          ${t("html_support")} <a href="https://github.com/caiiiycuk/epicport" rel="nofollow">github:epicport</a>
+        </p>
+        <p>
+          <a href="http://www.linkedin.com/pub/aleksander-guryanov/3b/738/734">Guryanov Aleksander</a>, 2014
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="${publicUrl("v2/js/jquery.js")}"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="${publicUrl("v2/js/bootstrap.min.js")}"></script>
+
+  <!-- Colorbox -->
+  <script src="/js/colorbox/jquery.colorbox-min.js"></script>
+  <script type="text/javascript">
+    $("a.colorbox").colorbox({ rel: 'screenshots' });
+  </script>
+</body>
+</html>
