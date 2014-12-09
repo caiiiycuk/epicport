@@ -569,3 +569,30 @@ msgstr ""
 
 msgid "caesaria-browser-keywords"
 msgstr ""
+
+msgid "Dune 2 - Android"
+msgstr "Дюна 2 - Андроид"
+
+msgid "Dune 2 - Browser"
+msgstr "Дюна 2 - Браузер"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Category"
+msgstr "Категория"
+
+msgid "Games"
+msgstr "Игры"
+
+msgid "Strategy"
+msgstr "Стратегия"
+
+msgid "Age rating"
+msgstr "Возрастная категория"
+
+msgid "Approximate download size"
+msgstr "Приблизительный размер"
+
+msgid "More games"
+msgstr "Другие игры"
