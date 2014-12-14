@@ -12,7 +12,7 @@ import io.netty.handler.codec.http.HttpResponseStatus
 @POST("/xhr/login")
 class Login extends FutureAction with Db {
 
-  def execute() = db.withSession {
+  def execute() = db.withDynSession {
     val email = param("email")
     val password = param("password")
 
