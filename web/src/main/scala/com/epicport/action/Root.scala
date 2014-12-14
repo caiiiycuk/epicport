@@ -12,7 +12,7 @@ class Root extends FutureAction {
   }
 }
 
-@GET("/:lang")
+@GET("/en", "/ru")
 class I18NRoot extends DefaultAction {
   def title = t("html_title")
   def description = t("html_description")
