@@ -47,7 +47,7 @@ class NewRegistration extends FutureAction with Db {
       return
     }
 
-    db.withTransaction {
+    db.withDynTransaction {
       if (User.byEmail(email).isDefined) {
         redirectTo[Register]("lang" -> param("lang"),
           "email" -> email,

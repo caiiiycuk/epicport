@@ -5,8 +5,8 @@ import java.security.MessageDigest
 import scala.Array.canBuildFrom
 import scala.slick.jdbc.GetResult
 import scala.slick.jdbc.StaticQuery.interpolation
-import scala.slick.session.Database
-import scala.slick.session.Database.threadLocalSession
+import scala.slick.jdbc.JdbcBackend.Database
+import scala.slick.jdbc.JdbcBackend.Database.dynamicSession
 
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
@@ -25,19 +25,19 @@ object User {
 
   implicit val getUserResult = GetResult(r => User(r.nextString, r.nextString))
 
-  def byEmail(email: String)(implicit db: Database): Option[User] = {
+  def byEmail(email: String): Option[User] = {
     sql"""select email, name from users where email = $email"""
       .as[User].firstOption
   }
 
-  def byEmail(email: String, password: String)(implicit db: Database): Option[User] = {
+  def byEmail(email: String, password: String): Option[User] = {
     val hashedPassword = hashPassword(password)
     
     sql"""select email, name from users where email = $email and password = $hashedPassword"""
       .as[User].firstOption
   }
 
-  def create(email: String, name: String, password: String)(implicit db: Database): User = {
+  def create(email: String, name: String, password: String): User = {
     val hashedPassword = hashPassword(password)
 
     sqlu"""insert into users(email, name, password) values($email, $name, $hashedPassword)"""
