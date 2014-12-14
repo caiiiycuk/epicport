@@ -3,14 +3,14 @@ package com.epicport.action.xhr.login
 import com.epicport.db.Db
 import com.epicport.db.User
 
-import xitrum.Action
+import xitrum.FutureAction
 import xitrum.SkipCsrfCheck
 import xitrum.annotation.POST
 
 import io.netty.handler.codec.http.HttpResponseStatus
 
 @POST("/xhr/login")
-class Login extends Action with Db {
+class Login extends FutureAction with Db {
 
   def execute() = db.withSession {
     val email = param("email")

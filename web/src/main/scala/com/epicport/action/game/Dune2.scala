@@ -25,6 +25,8 @@ class Dune2DescriptionRedircet extends com.epicport.action.Redirect301[Dune2Desc
 @GET("/:lang/dune2")
 class Dune2Description extends GameDescriptionV2 {
   def game = Game.DUNE2_BROWSER
+  def downloadSizeInMb = 4
+  def mainImageUrl = publicUrl("v2/img/dune2-main-image.jpg")
   
   lazy val androidVersion = Link(t("html_play_on_phone"),
     url[Dune2Android]("lang" -> language),
@@ -35,7 +37,7 @@ class Dune2Description extends GameDescriptionV2 {
   def keywords = t("html_page_description_dune2_keywords")
   def gameName = t("html_page_description_dune2_name")
   def gameDescription = t("html_page_description_dune2_description")
-  def linkToPlay = url[Dune2]("lang" -> language)
+  def linkToPlay = Link(t("html_play_in_browser"), url[Dune2]("lang" -> language))
   def links = language match {
     case "ru" => Seq(androidVersion, StaticPageLink("dune2-story"))
     case _ => Seq(androidVersion)
@@ -50,14 +52,22 @@ class Dune2Description extends GameDescriptionV2 {
 }
 
 @GET("/:lang/dune2/android")
-class Dune2Android extends DefaultLayout {
+class Dune2Android extends GameDescriptionV2 {
+  def game = Game.DUNE2_ANDROID
+  def downloadSizeInMb = 20
+  def mainImageUrl = publicUrl("v2/img/dune2-main-image.jpg")
+  
   def title = t("html_page_dune2_android_title")
   def description = t("html_page_dune2_description")
   def keywords = t("html_page_dune2_keywords")
+  
+  def gameName: String = title
 
-  def execute = {
-    respondView()
-  }
+  def gameDescription: String = description
+  
+  def linkToPlay = Link(t("android_download") + " Dune2.apk", publicUrl("android/dune2/dune2.apk"))
+  
+  def links: Seq[Link] = Seq.empty
 
   def screenshots: Seq[ScreenShot] =
     Seq(ScreenShot("dune2/android_00_small.png", "dune2/android_00.png"),

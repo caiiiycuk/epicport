@@ -1,8 +1,8 @@
 package com.epicport.action.core
 
-import xitrum.Action
+import xitrum.FutureAction
 
-class NavbarComponent extends Action {
+class NavbarComponent extends FutureAction {
 
   def execute = {}
 

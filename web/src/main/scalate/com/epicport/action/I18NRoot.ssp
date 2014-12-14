@@ -159,6 +159,7 @@ val action = currentAction.asInstanceOf[I18NRoot]; import action._
       <div class="container text-center">
         <p><a href="http://www.linkedin.com/pub/aleksander-guryanov/3b/738/734">Guryanov Aleksander</a>, 2014</p>
         ${t("html_support")} <a href="https://github.com/caiiiycuk/epicport" rel="nofollow">github:epicport</a>
+      </div>
   </footer>
 
   <!-- jQuery -->
@@ -172,5 +173,8 @@ val action = currentAction.asInstanceOf[I18NRoot]; import action._
 
   <!-- Custom Theme JavaScript -->
   <script src="${publicUrl("v2/js/index.js")}"></script>
+
+  ${unescape(yandexMetrika)}
+  ${unescape(googleAnalytics)}
 </body>
 </html>

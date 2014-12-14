@@ -1,8 +1,8 @@
 package com.epicport.action.core
 
-import xitrum.Action
+import xitrum.FutureAction
 
-class LoginComponent extends Action {
+class LoginComponent extends FutureAction {
 
   def execute = {}
   

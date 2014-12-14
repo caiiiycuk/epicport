@@ -85,7 +85,7 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
       <div class="row">
         <div class="col-sm-3">
           <img class="icon" src="${game.logo}" alt="${t("Logo")}" draggable="false"><br><br>
-          <a href="${linkToPlay}" class="btn btn-primary btn-lg">${t("html_play_in_browser")}</a><br><br>
+          <a href="${linkToPlay.url}" class="btn btn-primary btn-lg">${linkToPlay.title}</a><br><br>
        
           <!--noindex-->
           <div>
@@ -103,13 +103,13 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
           <br>
           ${t("Category")} <span class="color-gray">${t("Games")} / ${t("Strategy")}</span><br>
           ${t("Age rating")} <span class="color-gray">+0</span><br>
-          ${t("Approximate download size")} <span class="color-gray">10 Mb</span><br>
+          ${t("Approximate download size")} <span class="color-gray"><strong>${downloadSizeInMb} Mb</strong></span><br>
 
           <br>
 
           <h4>${t("More games")}</h4>
 
-          <div class="section-divider"></div>
+          <div class="section-divider other-game-section-divider"></div>
 
           #for (game <- games)
             <div class="other-game">
@@ -120,7 +120,7 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
         </div>
         <div class="col-sm-9">
             <div class="main-image">
-              <img src="${publicUrl("v2/img/dune2-main-image.jpg")}" alt="${t("Main image")}" class="img-responsive" draggable="false">
+              <img src="${mainImageUrl}" alt="${t("Main image")}" class="img-responsive" draggable="false">
             </div>
 
             <div class="screenshots">
@@ -132,18 +132,30 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
             </div>
 
             <h2>${t("Description")}</h2>
+#if (adsByGoogle)
+            <div class="adsense">
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-9186880238664597"
+                   data-ad-slot="2592254161"
+                   data-ad-format="auto"></ins>
+            </div>
+            <br>
+#end 
 
             <div class="game-description">
               ${unescape(gameDescription)}
             </div>
+
+            <p class="text-right">
+              <a href="${linkToPlay.url}" class="btn btn-default btn-lg">${linkToPlay.title}</a>
+            </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  
-      
   <footer>
     <div class="container">
       <div class="section-divider"></div>
@@ -172,5 +184,15 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
   <script type="text/javascript">
     $("a.colorbox").colorbox({ rel: 'screenshots' });
   </script>
+
+#if (adsByGoogle)
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>     
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+#end
+
+  ${unescape(yandexMetrika)}
+  ${unescape(googleAnalytics)}
 </body>
 </html>
