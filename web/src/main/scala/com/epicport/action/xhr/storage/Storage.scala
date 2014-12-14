@@ -3,12 +3,12 @@ package com.epicport.action.xhr.storage
 import com.epicport.action.NotFoundError
 import com.epicport.player.Profile
 
-import xitrum.Action
+import xitrum.FutureAction
 import xitrum.SkipCsrfCheck
 import xitrum.annotation.Error404
 import xitrum.scope.session.Csrf
 
-trait Storage extends Action with SkipCsrfCheck {
+trait Storage extends FutureAction with SkipCsrfCheck {
 
   lazy val profile =
     Option(handlerEnv.request.headers.get("X-Profile")).map(Profile.fromJson(_)).getOrElse(

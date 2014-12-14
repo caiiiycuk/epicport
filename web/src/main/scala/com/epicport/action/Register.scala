@@ -2,7 +2,7 @@ package com.epicport.action
 
 import xitrum.annotation.GET
 import com.epicport.db.Db
-import xitrum.Action
+import xitrum.FutureAction
 import xitrum.annotation.POST
 import com.epicport.db.User
 import io.netty.handler.codec.http.DefaultCookie
@@ -20,7 +20,7 @@ class Register extends DefaultLayout {
 }
 
 @POST("/:lang/register")
-class NewRegistration extends Action with Db {
+class NewRegistration extends FutureAction with Db {
 
   def execute() {
     val email = paramo("email")

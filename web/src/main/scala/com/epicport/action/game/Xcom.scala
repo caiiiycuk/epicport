@@ -2,9 +2,10 @@ package com.epicport.action.game
 
 import com.epicport.Configuration
 import com.epicport.action.core.StaticPageLink
-import xitrum.Action
+import xitrum.FutureAction
 import xitrum.annotation.GET
 import com.epicport.action.StaticFile
+import com.epicport.action.core.Link
 
 @GET("/:lang/xcom/browser")
 class Xcom extends GameLayout {
@@ -23,14 +24,17 @@ class Xcom extends GameLayout {
 class XcomDescriptionRedircet extends com.epicport.action.Redirect301[XcomDescription]
 
 @GET("/:lang/xcom")
-class XcomDescription extends GameDescription {
+class XcomDescription extends GameDescriptionV2 {
+  def game = Game.XCOM
+  def downloadSizeInMb = 7
+  def mainImageUrl = publicUrl("v2/img/xcom-main-image.jpg")
 
   def title = t("html_xcom_game_name")
   def description = t("html_xcom_description")
   def keywords = t("html_xcom_keywords")
   def gameName = t("html_xcom_game_name")
   def gameDescription = t("html_xcom_game_description_full")
-  def linkToPlay = url[Xcom]("lang" -> language)
+  def linkToPlay = Link(t("html_play_in_browser"), url[Xcom]("lang" -> language))
   def links = language match {
     case "ru" => Seq(StaticPageLink("xcom-story"))
     case _ => Seq()
@@ -45,7 +49,7 @@ class XcomDescription extends GameDescription {
 }
 
 @GET("/:lang/xcom/story")
-class XcomStory extends Action {
+class XcomStory extends FutureAction {
 
   beforeFilter {
     redirectTo[StaticPage]("lang" -> param("lang"),

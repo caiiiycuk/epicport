@@ -21,8 +21,11 @@ class Ttd extends GameLayout {
 class TtdDescriptionRedircet extends com.epicport.action.Redirect301[TtdDescription]
 
 @GET("/:lang/ttd")
-class TtdDescription extends GameDescription {
-
+class TtdDescription extends GameDescriptionV2 {
+  def game = Game.TTD
+  def downloadSizeInMb = 7
+  def mainImageUrl = publicUrl("v2/img/ttd-main-image.jpg")
+  
   def linkToMultiplayer = Link(
     t("htmpl_page_description_ttd_multipalyer"), 
     url[Ttd]("lang" -> language, "multiplayer" -> "yes"), 
@@ -39,7 +42,7 @@ class TtdDescription extends GameDescription {
   def gameName        = t("html_page_description_ttd_name")
   def gameDescription = t("html_page_description_ttd_description")
 
-  def linkToPlay        = url[Ttd]("lang" -> language)
+  def linkToPlay        = Link(t("html_play_in_browser"), url[Ttd]("lang" -> language))
   def links             = language match {
     case "ru" => Seq(linkToMultiplayer, linkToPerfomanceTest, StaticPageLink("ttd-story"))
     case _ => Seq(linkToMultiplayer, linkToPerfomanceTest)

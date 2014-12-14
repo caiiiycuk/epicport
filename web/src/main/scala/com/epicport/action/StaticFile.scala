@@ -1,8 +1,8 @@
 package com.epicport.action
 
-import xitrum.Action
+import xitrum.FutureAction
 
-abstract class StaticFile(fileName: String) extends Action {
+abstract class StaticFile(fileName: String) extends FutureAction {
 
   beforeFilter {
     redirectTo(publicUrl(fileName))

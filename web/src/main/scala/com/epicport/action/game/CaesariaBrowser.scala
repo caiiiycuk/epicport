@@ -3,6 +3,7 @@ package com.epicport.action.game
 import com.epicport.action.DefaultAction
 import xitrum.annotation.GET
 import com.epicport.action.StaticFile
+import com.epicport.action.core.Link
 
 @GET(":lang/caesar3/browser")
 class CaesariaBrowser extends GameLayout {
@@ -20,18 +21,19 @@ class CaesariaBrowser extends GameLayout {
 }
 
 @GET("/:lang/caesar3")
-class CaesariaDescription extends GameDescription {
+class CaesariaDescription extends GameDescriptionV2 {
+  def game = Game.CAESAR3
+  def downloadSizeInMb = 38
+  def mainImageUrl = publicUrl("v2/img/caesar-main-image.jpg")
 
   def title = t("caesaria-description-title")
   def description = t("caesaria-description-description")
   def keywords = t("caesaria-description-keywords")
   def gameName = t("caesaria-description-game-name")
   def gameDescription = t("caesaria-description-game-description")
-  def linkToPlay = url[CaesariaBrowser]("lang" -> language)
+  def linkToPlay = Link(t("html_play_in_browser"), url[CaesariaBrowser]("lang" -> language))
   def links = Seq()
   
-  override def adsByGoogle = false
-
   def screenshots: Seq[ScreenShot] =
     Seq(ScreenShot("caesaria/00_small.jpg", "caesaria/00.jpg"),
       ScreenShot("caesaria/01_small.jpg", "caesaria/01.jpg"),
