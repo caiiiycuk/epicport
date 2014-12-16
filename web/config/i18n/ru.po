@@ -596,3 +596,12 @@ msgstr "Приблизительный размер"
 
 msgid "More games"
 msgstr "Другие игры"
+
+msgid "Platform"
+msgstr "Платформа"
+
+msgid "Browser"
+msgstr "Браузер"
+
+msgid "Android"
+msgstr "Андроид"

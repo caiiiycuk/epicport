@@ -56,6 +56,7 @@ class Dune2Android extends GameDescriptionV2 {
   def game = Game.DUNE2_ANDROID
   def downloadSizeInMb = 20
   def mainImageUrl = publicUrl("v2/img/dune2-main-image.jpg")
+  override def platform = t("Android")
   
   def title = t("html_page_dune2_android_title")
   def description = t("html_page_dune2_description")

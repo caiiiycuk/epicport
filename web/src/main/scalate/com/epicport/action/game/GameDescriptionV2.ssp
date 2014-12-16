@@ -38,7 +38,7 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" itemscope itemtype="http://schema.org/VideoGame">
 
   <!-- Navigation -->
   <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
@@ -74,7 +74,7 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
   <!-- Intro Header -->
   <header>
     <div class="container">
-      <h1>${title}</h1>
+      <h1 itemprop="name">${title}</h1>
       <div class="section-divider"></div>
     </div>
   </header>
@@ -102,8 +102,11 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
           </div>
           <br>
           ${t("Category")} <span class="color-gray">${t("Games")} / ${t("Strategy")}</span><br>
-          ${t("Age rating")} <span class="color-gray">+0</span><br>
-          ${t("Approximate download size")} <span class="color-gray"><strong>${downloadSizeInMb} Mb</strong></span><br>
+          ${t("Age rating")} <span itemscope itemtype="http://schema.org/AggregateRating" itemprop="aggregateRating" class="color-gray">+<b itemprop="ratingValue">0</b></span><br>
+          ${t("Approximate download size")} <span class="color-gray"><strong><span itemprop="fileSize">${downloadSizeInMb}</span> Mb</strong></span><br>
+          ${t("Platform")} <span class="color-gray" itemprop="gamePlatform">${platform}</span><br>
+
+          <meta itemprop="playMode" content=" SinglePlayer" >
 
           <br>
 
@@ -120,13 +123,13 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
         </div>
         <div class="col-sm-9">
             <div class="main-image">
-              <img src="${mainImageUrl}" alt="${t("Main image")}" class="img-responsive" draggable="false">
+              <img src="${mainImageUrl}" alt="${t("Main image")}" class="img-responsive" draggable="false" itemprop="image">
             </div>
 
             <div class="screenshots">
               #for (screenshot <- screenshots)
-                <a class="colorbox" href="${publicUrl(screenshot.big)}" rel="nofollow">
-                  <img class="small-image" src="${publicUrl(screenshot.small)}" alt="screenshot">
+                <a class="colorbox" href="${publicUrl(screenshot.big)}" rel="nofollow" itemprop="screenshot">
+                  <img class="small-image" src="${publicUrl(screenshot.small)}" alt="screenshot" itemprop="thumbnail">
                 </a>
               #end
             </div>
@@ -143,7 +146,7 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
             <br>
 #end 
 
-            <div class="game-description">
+            <div class="game-description" itemprop="description">
               ${unescape(gameDescription)}
             </div>
 
