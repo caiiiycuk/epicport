@@ -24,6 +24,8 @@ trait GameDescriptionV2 extends DefaultAction with RenderHelper {
   def downloadSizeInMb: Int
   
   def mainImageUrl: String
+  
+  def platform = t("Browser")
 
   final def execute() {
     respondView[GameDescriptionV2]()

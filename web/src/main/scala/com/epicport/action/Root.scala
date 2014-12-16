@@ -7,8 +7,11 @@ import io.netty.handler.codec.http.HttpResponseStatus
 
 @GET("")
 class Root extends FutureAction {
+  import I18N._
+  
   def execute() {
-    redirectTo(url[I18NRoot]("lang" -> "en"), HttpResponseStatus.MOVED_PERMANENTLY)
+    autosetLanguage(languages.toSeq: _*)
+    redirectTo(url[I18NRoot]("lang" -> language))
   }
 }
 
