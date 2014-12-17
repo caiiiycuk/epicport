@@ -163,16 +163,16 @@ val action = currentAction.asInstanceOf[I18NRoot]; import action._
   </footer>
 
   <!-- jQuery -->
-  <script src="${publicUrl("v2/js/jquery.js")}"></script>
+  <script src="${publicUrl("v2/js/jquery.js")}" defer></script>
 
   <!-- Bootstrap Core JavaScript -->
-  <script src="${publicUrl("v2/js/bootstrap.min.js")}"></script>
+  <script src="${publicUrl("v2/js/bootstrap.min.js")}" defer></script>
 
   <!-- Plugin JavaScript -->
-  <script src="${publicUrl("v2/js/jquery.easing.min.js")}"></script>
+  <script src="${publicUrl("v2/js/jquery.easing.min.js")}" defer></script>
 
   <!-- Custom Theme JavaScript -->
-  <script src="${publicUrl("v2/js/index.js")}"></script>
+  <script src="${publicUrl("v2/js/index.js")}" defer></script>
 
   ${unescape(yandexMetrika)}
   ${unescape(googleAnalytics)}
