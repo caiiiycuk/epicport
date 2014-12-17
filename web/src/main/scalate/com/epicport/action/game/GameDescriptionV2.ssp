@@ -174,22 +174,22 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
   </footer>
 
   <!-- Yandex -->
-  <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
+  <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8" defer></script>
 
   <!-- jQuery -->
-  <script src="${publicUrl("v2/js/jquery.js")}"></script>
+  <script src="${publicUrl("v2/js/jquery.js")}" defer></script>
 
   <!-- Bootstrap Core JavaScript -->
-  <script src="${publicUrl("v2/js/bootstrap.min.js")}"></script>
+  <script src="${publicUrl("v2/js/bootstrap.min.js")}" defer></script>
 
   <!-- Colorbox -->
-  <script src="/js/colorbox/jquery.colorbox-min.js"></script>
+  <script src="/js/colorbox/jquery.colorbox-min.js" defer></script>
   <script type="text/javascript">
     $("a.colorbox").colorbox({ rel: 'screenshots' });
   </script>
 
 #if (adsByGoogle)
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>     
+  <script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>     
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
