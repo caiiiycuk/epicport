@@ -185,7 +185,9 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
   <!-- Colorbox -->
   <script src="/js/colorbox/jquery.colorbox-min.js" defer></script>
   <script type="text/javascript">
-    $("a.colorbox").colorbox({ rel: 'screenshots' });
+    setTimeout(function() {
+      $("a.colorbox").colorbox({ rel: 'screenshots' })  ;
+    }, 3000);    
   </script>
 
 #if (adsByGoogle)
