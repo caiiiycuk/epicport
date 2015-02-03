@@ -34,9 +34,9 @@ val action = currentAction.asInstanceOf[I18NRoot]; import action._
       }
     </style>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-app="dos-catalog">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-ng-app="dos-catalog">
 
-  <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -58,15 +58,15 @@ val action = currentAction.asInstanceOf[I18NRoot]; import action._
     </div>
   </div>
 
-  <div class="container" ng-controller="CatalogController as catalog">
+  <div class="container" data-ng-controller="CatalogController as catalog">
     <div class="hero-unit">
       ${unescape(t("root-hero-unit"))}
     </div>
 
     <div class="row">
       <div class="span12">
-        <label>${t("Filter")}:&nbsp</label>
-        <input type="text"  placeholder="${t("Type game name")}" ng-model="catalog.filterPhrase" ng-change="catalog.filter()"/>
+        <label>${t("Filter")}:&nbsp;</label>
+        <input type="text"  placeholder="${t("Type game name")}" data-ng-model="catalog.filterPhrase" data-ng-change="catalog.filter()"/>
       </div>
     </div>
 
@@ -75,7 +75,7 @@ val action = currentAction.asInstanceOf[I18NRoot]; import action._
 #for (rows <- Game.all.zipWithIndex.grouped(3))
     <div class="row">
 #for ((game, index) <- rows)
-      <div class="span4" ng-show="catalog.games[${index}].show" itemscope itemtype="http://schema.org/VideoGame">
+      <div class="span4" data-ng-show="catalog.games[${index}].show" itemscope itemtype="http://schema.org/VideoGame">
         <meta itemprop="playMode" content=" SinglePlayer" >
         <h2 itemprop="name"><a href="${game.url}" style="color: #333;">${game.name}</a></h2>
         <p>
