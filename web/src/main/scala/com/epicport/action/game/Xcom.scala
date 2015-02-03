@@ -27,7 +27,6 @@ class XcomDescriptionRedircet extends com.epicport.action.Redirect301[XcomDescri
 class XcomDescription extends GameDescriptionV2 {
   def game = Game.XCOM
   def downloadSizeInMb = 7
-  def mainImageUrl = publicUrl("v2/img/xcom-main-image.jpg")
 
   def title = t("html_xcom_game_name")
   def description = t("html_xcom_description")

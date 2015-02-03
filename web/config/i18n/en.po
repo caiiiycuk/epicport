@@ -545,3 +545,10 @@ msgstr ""
 
 msgid "caesaria-browser-keywords"
 msgstr ""
+
+msgid "root-hero-unit"
+msgstr ""
+"<h1>Welcome!</h1><br/>"
+"<p>On this site you can play in great games in your browser. "
+"You can choose one of the available games and run it in browser. If you want add one or more games to this site, "
+"then fill issue on <a href='https://github.com/caiiiycuk/epicport'>our github page</a>.</p>"

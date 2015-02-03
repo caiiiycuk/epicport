@@ -24,7 +24,7 @@ class TtdDescriptionRedircet extends com.epicport.action.Redirect301[TtdDescript
 class TtdDescription extends GameDescriptionV2 {
   def game = Game.TTD
   def downloadSizeInMb = 7
-  def mainImageUrl = publicUrl("v2/img/ttd-main-image.jpg")
+
   
   def linkToMultiplayer = Link(
     t("htmpl_page_description_ttd_multipalyer"), 

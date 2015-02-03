@@ -605,3 +605,19 @@ msgstr "Браузер"
 
 msgid "Android"
 msgstr "Андроид"
+
+msgid "root-hero-unit"
+msgstr ""
+"<h1>Добро пожаловать!</h1><br/>"
+"<p>Здесь вы можете играть в легендарные игры прямо в браузере. "
+"Вы можете выбрать одну из доступных игры из списка ниже что бы играть в браузере. Если вашей любимой игры нет в списке, тогда "
+"создайте задачу на <a href='https://github.com/caiiiycuk/epicport'>трекере</a>.</p>"
+
+msgid "Filter"
+msgstr "Фильтр"
+
+msgid "Type game name"
+msgstr "Введите название игры"
+
+msgid "Guryanov Aleksander"
+msgstr "Гурьянов Александр"

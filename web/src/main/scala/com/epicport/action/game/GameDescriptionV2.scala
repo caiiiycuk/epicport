@@ -18,17 +18,17 @@ trait GameDescriptionV2 extends DefaultAction with RenderHelper {
   def screenshots: Seq[ScreenShot]
 
   def game: Game
-  
+
   def games = Game.all.filter(_ != game)
-  
+
   def downloadSizeInMb: Int
-  
-  def mainImageUrl: String
-  
+
   def platform = t("Browser")
 
   final def execute() {
     respondView[GameDescriptionV2]()
   }
+
+  final def mainImageUrl = game.mainImageUrl
 
 }
