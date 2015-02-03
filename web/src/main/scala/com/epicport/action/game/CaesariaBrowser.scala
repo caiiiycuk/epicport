@@ -24,7 +24,6 @@ class CaesariaBrowser extends GameLayout {
 class CaesariaDescription extends GameDescriptionV2 {
   def game = Game.CAESAR3
   def downloadSizeInMb = 38
-  def mainImageUrl = publicUrl("v2/img/caesar-main-image.jpg")
 
   def title = t("caesaria-description-title")
   def description = t("caesaria-description-description")

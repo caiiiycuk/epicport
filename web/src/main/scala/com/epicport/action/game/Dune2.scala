@@ -26,7 +26,6 @@ class Dune2DescriptionRedircet extends com.epicport.action.Redirect301[Dune2Desc
 class Dune2Description extends GameDescriptionV2 {
   def game = Game.DUNE2_BROWSER
   def downloadSizeInMb = 4
-  def mainImageUrl = publicUrl("v2/img/dune2-main-image.jpg")
   
   lazy val androidVersion = Link(t("html_play_on_phone"),
     url[Dune2Android]("lang" -> language),
@@ -55,7 +54,7 @@ class Dune2Description extends GameDescriptionV2 {
 class Dune2Android extends GameDescriptionV2 {
   def game = Game.DUNE2_ANDROID
   def downloadSizeInMb = 20
-  def mainImageUrl = publicUrl("v2/img/dune2-main-image.jpg")
+  
   override def platform = t("Android")
   
   def title = t("html_page_dune2_android_title")
