@@ -4,7 +4,7 @@ name         := "epicport"
 
 version      := "1.0-SNAPSHOT"
 
-scalaVersion := "2.11.5"
+scalaVersion := "2.11.7"
 //scalaVersion := "2.10.4"
 
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
@@ -14,25 +14,25 @@ javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
 
 //------------------------------------------------------------------------------
 
-libraryDependencies += "tv.cntt" %% "xitrum" % "3.22"
+libraryDependencies += "tv.cntt" %% "xitrum" % "3.25.0"
 
 // Xitrum uses SLF4J, an implementation of SLF4J is needed
-libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.1.2"
+libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.1.3"
 
 // For writing condition in logback.xml
-libraryDependencies += "org.codehaus.janino" % "janino" % "2.7.7"
+libraryDependencies += "org.codehaus.janino" % "janino" % "2.7.8"
 
-libraryDependencies += "org.webjars" % "bootstrap" % "3.3.2"
+libraryDependencies += "org.webjars" % "bootstrap" % "3.3.5"
 
 libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.27"
 
 libraryDependencies += "com.typesafe.slick" %% "slick" % "2.1.0"
 
-libraryDependencies += "org.json4s" %% "json4s-jackson" % "3.2.5"
+libraryDependencies += "org.json4s" %% "json4s-jackson" % "3.2.11"
 
 // Scalate template engine config for Xitrum -----------------------------------
 
-libraryDependencies += "tv.cntt" %% "xitrum-scalate" % "2.3"
+libraryDependencies += "tv.cntt" %% "xitrum-scalate" % "2.5"
 
 // Precompile Scalate templates
 seq(scalateSettings:_*)

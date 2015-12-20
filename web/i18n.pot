@@ -403,3 +403,6 @@ msgstr ""
 
 msgid "html_static_page_keywords_ttd-story"
 msgstr ""
+
+msgid "html_page_description_ttd_singlepalyer"
+msgstr ""

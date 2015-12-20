@@ -1,3 +1,15 @@
+<%
+  import com.epicport.action.core._
+  val coreComponent = new CoreComponent()
+  val loginComponent = new LoginComponent()
+
+  coreComponent.language = language
+  loginComponent.language = language
+%>
+
+${unescape(coreComponent.render)}
+${unescape(loginComponent.render)}
+
 <div class="canvas_container ${at("game")}">
   <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
   <div id="output" class="canvas_overlay">

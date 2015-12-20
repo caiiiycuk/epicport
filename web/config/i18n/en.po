@@ -552,3 +552,6 @@ msgstr ""
 "<p>Here you can play some legendary games right in your browser. "
 "You can choose one of the available games from the list to play in the browser. If you can't find your favorite game in the list, "
 "feel free to file an issue on <a href='https://github.com/caiiiycuk/epicport'>our github page</a>.</p>"
+
+msgid "html_page_description_ttd_singlepalyer"
+msgstr "Single player"

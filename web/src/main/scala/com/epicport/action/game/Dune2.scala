@@ -7,17 +7,7 @@ import xitrum.annotation.GET
 import com.epicport.action.DefaultLayout
 
 @GET("/:lang/dune2/browser")
-class Dune2 extends GameLayout {
-
-  def title = t("html_play_dune2_title")
-  def description = t("html_play_dune2_description")
-  def keywords = t("html_play_dune2_keywords")
-
-  def execute() {
-    respondView()
-  }
-
-}
+class Dune2 extends com.epicport.action.Redirect301[Dune2Description]
 
 @GET("/:lang/dune2/description")
 class Dune2DescriptionRedircet extends com.epicport.action.Redirect301[Dune2Description]
@@ -26,6 +16,7 @@ class Dune2DescriptionRedircet extends com.epicport.action.Redirect301[Dune2Desc
 class Dune2Description extends GameDescriptionV2 {
   def game = Game.DUNE2_BROWSER
   def downloadSizeInMb = 4
+  def gameContainerFragment = Some("dune2")
   
   lazy val androidVersion = Link(t("html_play_on_phone"),
     url[Dune2Android]("lang" -> language),
@@ -36,7 +27,7 @@ class Dune2Description extends GameDescriptionV2 {
   def keywords = t("html_page_description_dune2_keywords")
   def gameName = t("html_page_description_dune2_name")
   def gameDescription = t("html_page_description_dune2_description")
-  def linkToPlay = Link(t("html_play_in_browser"), url[Dune2]("lang" -> language))
+  def linkToPlay = Link(t("html_play_in_browser"))
   def links = language match {
     case "ru" => Seq(androidVersion, StaticPageLink("dune2-story"))
     case _ => Seq(androidVersion)
@@ -54,6 +45,7 @@ class Dune2Description extends GameDescriptionV2 {
 class Dune2Android extends GameDescriptionV2 {
   def game = Game.DUNE2_ANDROID
   def downloadSizeInMb = 20
+  def gameContainerFragment = None
   
   override def platform = t("Android")
   

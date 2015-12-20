@@ -8,17 +8,7 @@ import com.epicport.action.StaticFile
 import com.epicport.action.core.Link
 
 @GET("/:lang/xcom/browser")
-class Xcom extends GameLayout {
-
-  def title = t("html_xcom_title")
-  def description = t("html_xcom_description")
-  def keywords = t("html_xcom_keywords")
-
-  def execute() {
-    respondView()
-  }
-
-}
+class Xcom extends com.epicport.action.Redirect301[XcomDescription]
 
 @GET("/:lang/xcom/description")
 class XcomDescriptionRedircet extends com.epicport.action.Redirect301[XcomDescription]
@@ -27,16 +17,17 @@ class XcomDescriptionRedircet extends com.epicport.action.Redirect301[XcomDescri
 class XcomDescription extends GameDescriptionV2 {
   def game = Game.XCOM
   def downloadSizeInMb = 7
+  def gameContainerFragment = Some("xcom")
 
   def title = t("html_xcom_game_name")
   def description = t("html_xcom_description")
   def keywords = t("html_xcom_keywords")
   def gameName = t("html_xcom_game_name")
   def gameDescription = t("html_xcom_game_description_full")
-  def linkToPlay = Link(t("html_play_in_browser"), url[Xcom]("lang" -> language))
+  def linkToPlay = Link(t("html_play_in_browser"))
   def links = language match {
     case "ru" => Seq(StaticPageLink("xcom-story"))
-    case _ => Seq()
+    case _    => Seq()
   }
 
   def screenshots: Seq[ScreenShot] =

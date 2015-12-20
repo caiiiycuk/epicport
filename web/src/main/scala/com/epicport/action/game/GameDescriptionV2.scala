@@ -7,6 +7,8 @@ import com.epicport.action.core.Link
 
 trait GameDescriptionV2 extends DefaultAction with RenderHelper {
 
+  def gameContainerFragment: Option[String]
+
   def gameName: String
 
   def gameDescription: String

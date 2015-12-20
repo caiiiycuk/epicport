@@ -18,5 +18,10 @@ Disallow: /en/dune2/browser
 Disallow: /ru/dune2/browser
 Disallow: /en/ttd/browser
 Disallow: /ru/ttd/browser
+Disallow: /ru/ttd/multiplayer
+Disallow: /en/ttd/multiplayer
+Disallow: /ru/ttd/perfomance
+Disallow: /en/ttd/perfomance
 Disallow: /en/xcom/browser
 Disallow: /ru/xcom/browser
+
