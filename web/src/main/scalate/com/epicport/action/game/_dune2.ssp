@@ -32,16 +32,10 @@ function () {
   </div>
 </div>
 
-<div class="container_12">
-<div class="grid_2">
-  <div class="opendune-toggle-sound opendune-mute"></div>
-  &nbsp;
+<div class="row">
+  <div class="col-sm-12">
+    <div class="opendune-toggle-sound opendune-mute"></div>
+    ${unescape(renderFragment("canvas"))}
+  </div>
+   <!-- <script src="/opendune-en.js"/> -->
 </div>
-
-<div class="grid_8">
-  ${unescape(renderFragment("canvas"))}
-</div>
-
-</div>
-
- <!-- <script src="/opendune-en.js"/> -->

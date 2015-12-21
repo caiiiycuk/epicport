@@ -79,7 +79,8 @@ val action = currentAction.asInstanceOf[I18NRoot]; import action._
         <meta itemprop="playMode" content=" SinglePlayer" >
         <h2 itemprop="name"><a href="${game.url}" style="color: #333;">${game.name}</a></h2>
         <p>
-        <img src="${game.mainImageUrl}" alt="${game.name} screenshot" class="img-responsive" draggable="false" itemprop="image"></p>
+          <a href="${game.url}" style="color: #333;"><img src="${game.mainImageUrl}" alt="${game.name} screenshot" class="img-responsive" draggable="false" itemprop="image"></a>
+        </p>
         <p itemprop="description">${game.wikilikeText}</p>
         <br/>
         <p><a class="btn btn-primary" href="${game.url}">${game.urlTitle}</a></p>

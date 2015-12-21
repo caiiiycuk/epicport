@@ -1,19 +1,24 @@
 <%
-  val multiplayer = 
-    paramo("multiplayer")
-      .map(_ => ", '-n', '23.92.28.238:3980'")
-      .getOrElse("")
+  val isMultiplayer = currentAction.isInstanceOf[com.epicport.action.game.TtdMultiplayer]
+  val isPerfomance = currentAction.isInstanceOf[com.epicport.action.game.TtdPerfomance]
 
-  val perfomance =
-    paramo("perfomance")
-      .map(_ => ", '-g', '/home/caiiiycuk/play-ttd/etc/preload/save/perfomance_test.sav'")
-      .getOrElse("")
+  val multiplayer = if (isMultiplayer) { 
+    ", '-n', '23.92.28.238:3980'"
+  } else {
+    ""
+  }
+
+  val perfomance = if (isPerfomance) {
+    ", '-g', '/home/caiiiycuk/play-ttd/etc/preload/save/perfomance_test.sav'"
+  } else {
+    ""
+  }
 
   at("game") = "ttd"
 
   at("arguments") = s"""['-m', 'em_midi', '-s', 'sdl', '-x', '-c', '/home/caiiiycuk/play-ttd/etc/preload/openttd.cfg' $multiplayer $perfomance]"""
 
-  if (paramo("perfomance").isDefined) {
+  if (isPerfomance) {
     at("preRun") = """
 function() {
 

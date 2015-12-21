@@ -3,14 +3,14 @@ package com.epicport.action.game
 import xitrum.Action
 
 case class Game(
-  name: String,
-  logo: String,
-  url: String,
-  urlTitle: String,
-  mainImageUrl: String,
-  wikilikeText: String,
-  fts: String = "") {
-  
+    name: String,
+    logo: String,
+    url: String,
+    urlTitle: String,
+    mainImageUrl: String,
+    wikilikeText: String,
+    fts: String = "") {
+
   def autoFts() = {
     copy(fts = List(fts, name, wikilikeText).mkString(" "))
   }
@@ -47,7 +47,7 @@ object Game {
     Game(
       name = action.t("TTD"),
       logo = publicUrl("v2/img/openttd-icon-50x50.png"),
-      url = url[TtdDescription]("lang" -> language),
+      url = url[TtdSinglePlayer]("lang" -> language),
       urlTitle = t("index-ttd-browser"),
       mainImageUrl = publicUrl("v2/img/ttd-main-image.jpg"),
       wikilikeText = t("index-ttd-section"),

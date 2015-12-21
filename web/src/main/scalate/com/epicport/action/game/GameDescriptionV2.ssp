@@ -36,6 +36,13 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- from browser -->
+    <link type="text/css" rel="stylesheet" media="all" href="${publicUrl("css/Aristo/Aristo.css")}"/>
+
+    <script src="${publicUrl("v2/js/jquery.js")}"></script>
+    <script type="text/javascript" src="${publicUrl("js/jquery-ui.min.js")}"></script>
+    <script type="text/javascript" src="${publicUrl("js/jquery.cookie.js")}"></script>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" itemscope itemtype="http://schema.org/VideoGame">
 
@@ -55,8 +62,9 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">${game.name}</a></li>
+          <li class="active"><a href="${url("lang" -> param("lang"))}">${game.name}</a></li>
           <li ><a href="/${language}">${t("More games")}</a></li>
+          <!-- <li ><div class="under-maintenance">Web site is under maintenance something can goes wrong, please be patient</div></li> -->
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="${ if (language == "en") "active" else ""  }"><a href="${url("lang" -> "en")}">English</a></li>
@@ -73,14 +81,18 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
       <div class="section-divider"></div>
     </div>
   </header>
+<% gameContainerFragment.foreach { fragmentName => %>
+  <section class="game_container">
+    ${unescape(renderFragment(fragmentName))}
+  </section>
+<% } %>
 
-  <!-- Sidebar -->
-  <section>
+  <section class="description_container">
     <div class="container">
       <div class="row">
         <div class="col-sm-3">
           <img class="icon" src="${game.logo}" alt="${t("Logo")}" draggable="false"><br><br>
-          <a href="${linkToPlay.url}" class="btn btn-primary btn-lg">${linkToPlay.title}</a><br><br>
+          <a href="${linkToPlay.url}" class="btn btn-primary btn-lg link-to-play">${linkToPlay.title}</a><br><br>
        
           <!--noindex-->
           <div>
@@ -146,7 +158,7 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
             </div>
 
             <p class="text-right">
-              <a href="${linkToPlay.url}" class="btn btn-default btn-lg">${linkToPlay.title}</a>
+              <a href="${linkToPlay.url}" class="btn btn-default btn-lg link-to-play">${linkToPlay.title}</a>
             </p>
         </div>
       </div>
@@ -166,9 +178,6 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
   <!-- Yandex -->
   <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8" defer></script>
 
-  <!-- jQuery -->
-  <script src="${publicUrl("v2/js/jquery.js")}" defer></script>
-
   <!-- Bootstrap Core JavaScript -->
   <script src="${publicUrl("v2/js/bootstrap.min.js")}" defer></script>
 
@@ -177,7 +186,17 @@ val action = currentAction.asInstanceOf[GameDescriptionV2]; import action._
   <script type="text/javascript">
     setTimeout(function() {
       $("a.colorbox").colorbox({ rel: 'screenshots' })  ;
-    }, 3000);    
+    }, 3000);
+<% gameContainerFragment.foreach { fragmentName => %>    
+    $('.link-to-play').click(function(e) {
+      e.preventDefault();
+
+      $('.description_container').hide();
+      $('.game_container').fadeIn('slow', function() {
+        $('.click_to_start').trigger('click');
+      });
+    });
+<% } %>
   </script>
 
 #if (adsByGoogle)

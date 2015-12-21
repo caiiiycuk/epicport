@@ -4,8 +4,8 @@ class Epicport.Ttd
 
   start: (jsFile) ->
     $(".canvas_container").width($(window).width())
-    $(".canvas_container").height($(window).height())
-    $(window).scrollTop($(".canvas_container").offset().top)
+    $(".canvas_container").height($(window).height() - 80)
+    $(window).scrollTop($(".canvas_container").offset().top - 60)
 
     Epicport.API.Module.arguments.push('-r')
     Epicport.API.Module.arguments.push($(".canvas_container").width() + 'x' + $(".canvas_container").height())

@@ -3,7 +3,7 @@ package com.epicport.action.core
 import xitrum.Action
 import com.epicport.action.game.StaticPage
 
-case class Link(title: String, url: String, linkClass: String = "")
+case class Link(title: String, url: String = "#", linkClass: String = "")
 
 object StaticPageLink {
   

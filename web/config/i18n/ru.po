@@ -621,3 +621,6 @@ msgstr "Введите название игры"
 
 msgid "Guryanov Aleksander"
 msgstr "Гурьянов Александр"
+
+msgid "html_page_description_ttd_singlepalyer"
+msgstr "Одиночная игра"
