@@ -3,9 +3,10 @@ package com.epicport.action.game
 import com.epicport.action.DefaultLayout
 import xitrum.annotation.GET
 import com.epicport.action.I18NRoot
+import xitrum.SkipCsrfCheck
 
 @GET("/:lang/static/:page")
-class StaticPage extends DefaultLayout {
+class StaticPage extends DefaultLayout with SkipCsrfCheck {
 
   lazy val page = param("page")
   

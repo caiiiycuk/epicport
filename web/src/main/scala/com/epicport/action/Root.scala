@@ -4,9 +4,10 @@ import xitrum.annotation.GET
 import xitrum.FutureAction
 import com.epicport.i18n.I18N
 import io.netty.handler.codec.http.HttpResponseStatus
+import xitrum.SkipCsrfCheck
 
 @GET("")
-class Root extends FutureAction {
+class Root extends FutureAction with SkipCsrfCheck  {
   import I18N._
   
   def execute() {

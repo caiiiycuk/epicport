@@ -6,77 +6,77 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://epicport.com/en</loc>
+  <loc>https://epicport.com/en</loc>
   <lastmod>2015-01-02T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/ru</loc>
+  <loc>https://epicport.com/ru</loc>
   <lastmod>2015-01-02T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/en/caesar3</loc>
+  <loc>https://epicport.com/en/caesar3</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/ru/caesar3</loc>
+  <loc>https://epicport.com/ru/caesar3</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/en/ttd</loc>
+  <loc>https://epicport.com/en/ttd</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/en/dune2</loc>
+  <loc>https://epicport.com/en/dune2</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/en/xcom</loc>
+  <loc>https://epicport.com/en/xcom</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/ru/ttd</loc>
+  <loc>https://epicport.com/ru/ttd</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/ru/dune2</loc>
+  <loc>https://epicport.com/ru/dune2</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/ru/xcom</loc>
+  <loc>https://epicport.com/ru/xcom</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/en/dune2/android</loc>
+  <loc>https://epicport.com/en/dune2/android</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/ru/static/ttd-story</loc>
+  <loc>https://epicport.com/ru/static/ttd-story</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/ru/dune2/android</loc>
+  <loc>https://epicport.com/ru/dune2/android</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/ru/static/dune2-story</loc>
+  <loc>https://epicport.com/ru/static/dune2-story</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://epicport.com/ru/static/xcom-story</loc>
+  <loc>https://epicport.com/ru/static/xcom-story</loc>
   <lastmod>2014-12-14T17:52:46+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>

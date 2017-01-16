@@ -1,8 +1,9 @@
 package com.epicport.action.core
 
 import xitrum.FutureAction
+import xitrum.SkipCsrfCheck
 
-class LoginComponent extends FutureAction {
+class LoginComponent extends FutureAction with SkipCsrfCheck  {
 
   def execute = {}
   

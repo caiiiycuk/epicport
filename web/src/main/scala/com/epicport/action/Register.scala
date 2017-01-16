@@ -7,9 +7,10 @@ import xitrum.annotation.POST
 import com.epicport.db.User
 import io.netty.handler.codec.http.DefaultCookie
 import java.net.URLEncoder
+import xitrum.SkipCsrfCheck
 
 @GET("/:lang/register")
-class Register extends DefaultLayout {
+class Register extends DefaultLayout with SkipCsrfCheck  {
   def title = t("html_register_title")
   def description = t("html_register_description")
   def keywords = t("html_register_keywords")
@@ -20,7 +21,7 @@ class Register extends DefaultLayout {
 }
 
 @POST("/:lang/register")
-class NewRegistration extends FutureAction with Db {
+class NewRegistration extends FutureAction with Db with SkipCsrfCheck  {
 
   def execute() {
     val email = paramo("email")

@@ -4,8 +4,9 @@ import xitrum.Action
 import com.epicport.i18n.I18N
 import io.netty.handler.codec.http.HttpResponseStatus
 import xitrum.FutureAction
+import xitrum.SkipCsrfCheck
 
-trait DefaultAction extends FutureAction with RenderHelper {
+trait DefaultAction extends FutureAction with RenderHelper with SkipCsrfCheck {
   import I18N._
 
   def title: String

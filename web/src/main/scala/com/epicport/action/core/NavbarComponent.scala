@@ -1,8 +1,9 @@
 package com.epicport.action.core
 
 import xitrum.FutureAction
+import xitrum.SkipCsrfCheck
 
-class NavbarComponent extends FutureAction {
+class NavbarComponent extends FutureAction with SkipCsrfCheck {
 
   def execute = {}
 

@@ -1,6 +1,5 @@
 package com.epicport.secret
 
-import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException
 
 object Secret {
