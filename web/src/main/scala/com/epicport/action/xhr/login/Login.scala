@@ -10,7 +10,7 @@ import xitrum.annotation.POST
 import io.netty.handler.codec.http.HttpResponseStatus
 
 @POST("/xhr/login")
-class Login extends FutureAction with Db {
+class Login extends FutureAction with Db with SkipCsrfCheck {
 
   def execute() = db.withDynSession {
     val email = param("email")

@@ -5,13 +5,14 @@ import xitrum.FutureAction
 
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
+import xitrum.SkipCsrfCheck
 
 object Update {
   final val DUNE2_VERSION_FILE = "public/android/dune2/version.json"
 }
 
 @GET("/android/update/dune2")
-class Dune2Update extends FutureAction {
+class Dune2Update extends FutureAction with SkipCsrfCheck  {
 
   import Update._
 

@@ -3,8 +3,9 @@ package com.epicport.action
 import xitrum.annotation.Error404
 import xitrum.annotation.Error500
 import io.netty.handler.codec.http.HttpResponseStatus
+import xitrum.SkipCsrfCheck
 
-trait ErrorAction extends DefaultAction {
+trait ErrorAction extends DefaultAction with SkipCsrfCheck  {
   def title = t("html_error_title")
   def keywords = ""
 }

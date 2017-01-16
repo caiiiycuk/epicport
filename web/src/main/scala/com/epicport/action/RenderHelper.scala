@@ -2,8 +2,9 @@ package com.epicport.action
 
 import xitrum.Action
 import com.epicport.i18n.I18N
+import xitrum.SkipCsrfCheck
 
-trait RenderHelper extends Action {
+trait RenderHelper extends Action with SkipCsrfCheck  {
 
   import I18N._
   
