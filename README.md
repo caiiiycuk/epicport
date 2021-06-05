@@ -1,3 +1,5 @@
+This repository is absolute, visit [DOS.Zone](https://github.com/js-dos/dos.zone.app) repository instead.
+
 epicport
 ========
 
